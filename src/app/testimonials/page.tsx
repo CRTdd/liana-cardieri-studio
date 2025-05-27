@@ -12,10 +12,7 @@ import Link from 'next/link';
 import { Star, Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
-export const metadata = {
-    title: 'Patient Testimonials - Kitchener Smiles',
-    description: 'Read what our happy patients have to say about their experiences at Kitchener Smiles with Dr. Liana Cardieri and her team.',
-};
+// Removed metadata export from here
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
   <Card className="h-full bg-white/90 backdrop-blur-sm shadow-xl rounded-xl border-border/50 p-6 md:p-8 flex flex-col justify-between items-center text-center">
