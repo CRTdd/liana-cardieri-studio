@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm p-3 rounded-lg shadow-md">
-    <Icon className="h-10 w-10 text-brand-blue" /> {/* Updated size from h-8 w-8 */}
+    <Icon className="h-10 w-10 text-brand-blue" />
     <span className="text-sm font-medium text-foreground">{text}</span>
   </div>
 );
@@ -23,7 +23,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center bg-brand-light-blue text-foreground px-4 overflow-hidden">
+    <section className="relative min-h-[70vh] flex flex-col justify-center items-center bg-brand-light-blue text-foreground px-4 overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
