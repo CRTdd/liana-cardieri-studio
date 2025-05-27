@@ -21,11 +21,18 @@ const appLanguages = [
   { code: 'pl', labelKey: 'polish', nativeLabel: 'Polski' },
 ];
 
+// Function to set a cookie
+const setLanguageCookie = (locale: string) => {
+  if (typeof document !== 'undefined') {
+    document.cookie = `NEXT_LOCALE=${locale};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`; // Max age 1 year
+  }
+};
+
 export default function Header() {
   const t = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const currentLocale = useLocale();
-  const pathname = usePathname(); // Gets the path *without* the current locale prefix
+  const pathnameWithoutLocale = usePathname(); // Gets the path *without* the current locale prefix
 
   const navItems = [
     { href: '/', labelKey: 'home' },
@@ -38,14 +45,19 @@ export default function Header() {
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
   const getLocalizedPath = (targetLocale: string, currentPath: string) => {
-    // Ensure currentPath doesn't already start with a known locale (it shouldn't from next/navigation's usePathname)
-    const pathWithoutKnownLocale = appLanguages.reduce((path, lang) => {
-        if (path.startsWith(`/${lang.code}`)) {
-            return path.substring(`/${lang.code}`.length) || "/";
-        }
-        return path;
-    }, currentPath);
-    return `/${targetLocale}${pathWithoutKnownLocale === "/" && targetLocale !== "en" ? "" : pathWithoutKnownLocale}`;
+    // currentPath from usePathname (next/navigation) is already without locale prefix
+    // e.g. /about for /en/about or /pt/about
+    // For root path "/", we want "/en", "/pt", "/pl"
+    // For other paths like "/about", we want "/en/about", "/pt/about", "/pl/about"
+    if (currentPath === "/") {
+      return `/${targetLocale}`;
+    }
+    return `/${targetLocale}${currentPath}`;
+  };
+
+  const handleLanguageChange = (locale: string) => {
+    setLanguageCookie(locale);
+    // Navigation will be handled by the Link component
   };
 
 
@@ -78,8 +90,8 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
-                <DropdownMenuItem key={lang.code} asChild>
-                  <Link href={getLocalizedPath(lang.code, pathname)}>
+                <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
+                  <Link href={getLocalizedPath(lang.code, pathnameWithoutLocale)}>
                     {lang.nativeLabel}
                   </Link>
                 </DropdownMenuItem>
@@ -122,8 +134,8 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
-                        <DropdownMenuItem key={lang.code} asChild>
-                           <Link href={getLocalizedPath(lang.code, pathname)}>
+                        <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
+                           <Link href={getLocalizedPath(lang.code, pathnameWithoutLocale)}>
                             {lang.nativeLabel}
                           </Link>
                         </DropdownMenuItem>
