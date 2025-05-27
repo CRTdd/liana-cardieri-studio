@@ -64,7 +64,7 @@
     "headline": "[TRANSLATE] Get in Touch",
     "description": "[TRANSLATE] We're here to answer your questions and help you schedule your visit.",
     "contactInfoTitle": "[TRANSLATE] Contact Information",
-    "address": "[TRANSLATE] 123 Dental Street,<br />Kitchener, ON N2A 1B3",
+    "address": "[TRANSLATE] 322 Lawrence Ave,<br />Kitchener, ON N2M 1Y4",
     "officeHoursTitle": "[TRANSLATE] Office Hours",
     "hoursMF": "[TRANSLATE] Monday - Friday: 9 AM - 5 PM",
     "hoursSat": "[TRANSLATE] Saturday: By Appointment",
@@ -96,7 +96,7 @@
     "description": "[TRANSLATE] Providing gentle, expert dental care for the whole family. We speak English, Portuguese, and Polish.",
     "quickLinksTitle": "[TRANSLATE] Quick Links",
     "contactUsTitle": "[TRANSLATE] Contact Us",
-    "address": "[TRANSLATE] 123 Dental St, Kitchener, ON N2A 1B3",
+    "address": "[TRANSLATE] 322 Lawrence Ave, Kitchener, ON N2M 1Y4",
     "phoneNumber": "[TRANSLATE] 519-578-5717",
     "email": "[TRANSLATE] info@kitchenersmiles.ca",
     "followUsFacebook": "[TRANSLATE] Follow us on Facebook",
@@ -363,3 +363,5 @@
     ]
   }
 }
+
+    
