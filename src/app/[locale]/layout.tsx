@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '../globals.css'; // Adjusted path
@@ -35,7 +36,7 @@ export default function RootLayout({
 
   return (
     <html lang={locale} className={montserrat.variable}>
-      <body className="font-sans antialiased flex flex-col min-h-screen">
+      <body className="font-sans antialiased flex flex-col min-h-screen" suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
             <Header />
