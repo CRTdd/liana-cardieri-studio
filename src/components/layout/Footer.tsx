@@ -1,42 +1,46 @@
 import Link from "next/link";
 import { Facebook, Phone, Mail, MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Navigation");
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-foreground text-background/80 py-12">
       <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         <div>
-          <h3 className="text-xl font-bold text-primary-foreground mb-4">Kitchener Smiles</h3>
-          <p className="text-sm">Dr. Liana Cardieri Family & Cosmetic Dentistry</p>
-          <p className="text-sm mt-2">Providing gentle, expert dental care for the whole family. We speak English, Portuguese, and Polish.</p>
+          <h3 className="text-xl font-bold text-primary-foreground mb-4">{t('brandName')}</h3>
+          <p className="text-sm">{t('tagline')}</p>
+          <p className="text-sm mt-2">{t('description')}</p>
         </div>
         <div>
-          <h3 className="text-xl font-bold text-primary-foreground mb-4">Quick Links</h3>
+          <h3 className="text-xl font-bold text-primary-foreground mb-4">{t('quickLinksTitle')}</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/about" className="hover:text-primary-foreground/60 transition-colors">About Us</Link></li>
-            <li><Link href="/services" className="hover:text-primary-foreground/60 transition-colors">Our Services</Link></li>
-            <li><Link href="/#contact" className="hover:text-primary-foreground/60 transition-colors">Contact & Directions</Link></li>
-            <li><Link href="/financial-info" className="hover:text-primary-foreground/60 transition-colors">Financial Info</Link></li>
+            <li><Link href="/about" className="hover:text-primary-foreground/60 transition-colors">{tNav('about')}</Link></li>
+            <li><Link href="/services" className="hover:text-primary-foreground/60 transition-colors">{tNav('services')}</Link></li>
+            <li><Link href="/#contact" className="hover:text-primary-foreground/60 transition-colors">{tNav('contact')}</Link></li>
+            <li><Link href="/financial-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('financialInfo')}</Link></li>
           </ul>
         </div>
         <div>
-          <h3 className="text-xl font-bold text-primary-foreground mb-4">Contact Us</h3>
+          <h3 className="text-xl font-bold text-primary-foreground mb-4">{t('contactUsTitle')}</h3>
           <ul className="space-y-2 text-sm">
-            <li className="flex items-center space-x-2">
-              <MapPin size={16} />
-              <span>123 Dental St, Kitchener, ON N2A 1B3</span>
+            <li className="flex items-start space-x-3"> {/* Changed items-center to items-start for address alignment */}
+              <MapPin size={16} className="mt-1 shrink-0" /> {/* Added mt-1 and shrink-0 */}
+              <span dangerouslySetInnerHTML={{ __html: t.raw('address') }} />
             </li>
             <li className="flex items-center space-x-2">
               <Phone size={16} />
-              <a href="tel:519-578-5717" className="hover:text-primary-foreground/60 transition-colors">519-578-5717</a>
+              <a href={`tel:${t('phoneNumber')}`} className="hover:text-primary-foreground/60 transition-colors">{t('phoneNumber')}</a>
             </li>
             <li className="flex items-center space-x-2">
               <Mail size={16} />
-              <a href="mailto:info@kitchenersmiles.ca" className="hover:text-primary-foreground/60 transition-colors">info@kitchenersmiles.ca</a>
+              <a href={`mailto:${t('email')}`} className="hover:text-primary-foreground/60 transition-colors">{t('email')}</a>
             </li>
             <li className="flex items-center space-x-2 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-primary-foreground/60 transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label={t('followUsFacebook')} className="hover:text-primary-foreground/60 transition-colors">
                 <Facebook size={20} />
               </a>
             </li>
@@ -44,8 +48,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-12 border-t border-border/20 pt-8 text-center text-sm">
-        <p>&copy; {currentYear} Kitchener Smiles. All rights reserved.</p>
-        <p className="mt-1">Website by Firebase Studio</p>
+        <p>&copy; {currentYear} {t('brandName')}. {t('allRightsReserved')}</p>
+        <p className="mt-1">{t('websiteBy')}</p>
       </div>
     </footer>
   );

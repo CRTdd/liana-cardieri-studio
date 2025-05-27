@@ -4,10 +4,362 @@
     "about": "Sobre Nós",
     "services": "Serviços",
     "testimonials": "Depoimentos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "financialInfo": "[TRANSLATE] Financial Info",
+    "healthInfo": "[TRANSLATE] Health Info"
   },
   "Header": {
     "callNow": "Ligue Já: 519-578-5717",
     "selectedLanguage": "Português"
+  },
+  "HeroSection": {
+    "headline": "[TRANSLATE] Smile Confidently with Gentle, Expert Care from Dr. Liana Cardieri.",
+    "subheading": "[TRANSLATE] Family and cosmetic dentistry in Kitchener, ON, tailored to you.",
+    "ctaButton": "[TRANSLATE] Call Now: 519-578-5717",
+    "trustBadgeExperience": "[TRANSLATE] 20+ Years Experience",
+    "trustBadgeODA": "[TRANSLATE] ODA Member",
+    "tagline": "[TRANSLATE] Care in Your Language: English, Portuguese, Polish."
+  },
+  "ServicesSection": {
+    "headline": "[TRANSLATE] Your Perfect Smile Starts Here",
+    "description": "[TRANSLATE] We offer a comprehensive range of dental services to meet all your needs. Explore some of our popular treatments below.",
+    "exploreAllButton": "[TRANSLATE] Explore All Services",
+    "serviceCard": {
+      "learnMoreButton": "[TRANSLATE] Learn More",
+      "callToDiscussButton": "[TRANSLATE] Call to Discuss",
+      "callToDiscussTooltip": "[TRANSLATE] Speak to our friendly team today!"
+    }
+  },
+  "AboutSection": {
+    "headline": "[TRANSLATE] Meet Dr. Liana Cardieri",
+    "description": "[TRANSLATE] Dr. Liana Cardieri, a passionate dentist with over 20 years of experience, brings warmth and expertise to every patient, inspired by her multicultural roots. We’re proud to serve our community in English, Portuguese, and Polish, ensuring you feel at home. Meet the team dedicated to your smile.",
+    "videoCta": "[TRANSLATE] Call Now",
+    "learnMoreButton": "[TRANSLATE] Learn More About Our Team"
+  },
+  "WhyChooseUsSection": {
+    "headline": "[TRANSLATE] Why Choose Dr. Cardieri's Practice?",
+    "description": "[TRANSLATE] Experience dental care that's centered around you, in a welcoming and professional environment.",
+    "tagline": "[TRANSLATE] Care in Your Language: English, Portuguese, Polish."
+  },
+  "TestimonialsSection": {
+    "headline": "[TRANSLATE] Hear From Our Happy Patients",
+    "description": "[TRANSLATE] Discover why our patients trust us with their smiles.",
+    "seeAllReviewsButton": "[TRANSLATE] See All Reviews",
+    "leaveReviewButton": "[TRANSLATE] Leave a Review"
+  },
+  "BookingSection": {
+    "headline": "[TRANSLATE] Your Perfect Smile is Just a Call Away!",
+    "description": "[TRANSLATE] Online booking is coming soon – for now, please call <telLink>519-578-5717</telLink> or use our contact form to secure your appointment with our caring team. We’ll make scheduling easy and stress-free.",
+    "formTitle": "[TRANSLATE] Book an Appointment (Coming Soon)",
+    "formDescription": "[TRANSLATE] This form is currently for demonstration only.",
+    "formLabelName": "[TRANSLATE] Full Name",
+    "formPlaceholderName": "[TRANSLATE] Your Name",
+    "formLabelEmail": "[TRANSLATE] Email Address",
+    "formPlaceholderEmail": "[TRANSLATE] your@email.com",
+    "formLabelDate": "[TRANSLATE] Preferred Date",
+    "bookVisitButton": "[TRANSLATE] Book Your Visit",
+    "bookVisitAriaLabel": "[TRANSLATE] Book Your Visit - links to contact form"
+  },
+  "ContactSection": {
+    "headline": "[TRANSLATE] Get in Touch",
+    "description": "[TRANSLATE] We're here to answer your questions and help you schedule your visit.",
+    "contactInfoTitle": "[TRANSLATE] Contact Information",
+    "address": "[TRANSLATE] 123 Dental Street,<br />Kitchener, ON N2A 1B3",
+    "officeHoursTitle": "[TRANSLATE] Office Hours",
+    "hoursMF": "[TRANSLATE] Monday - Friday: 9 AM - 5 PM",
+    "hoursSat": "[TRANSLATE] Saturday: By Appointment",
+    "hoursSun": "[TRANSLATE] Sunday: Closed",
+    "followFacebook": "[TRANSLATE] Follow us on Facebook",
+    "formTrustBadgeExperience": "[TRANSLATE] 20+ Years Experience",
+    "formTrustBadgeODA": "[TRANSLATE] ODA Member",
+    "formThankYouTitle": "[TRANSLATE] Thank You!",
+    "formThankYouMessage": "[TRANSLATE] Your message has been sent successfully. We'll reply within 24 hours.",
+    "formDownloadGuideButton": "[TRANSLATE] Download Your Free Dental Care Guide",
+    "formSendAnotherMessageButton": "[TRANSLATE] Send another message",
+    "formFreeGuidePitch": "[TRANSLATE] Get our <bold>Free Dental Care Guide</bold> to keep your smile healthy – yours when you contact us!",
+    "formLabelName": "[TRANSLATE] Full Name",
+    "formPlaceholderName": "[TRANSLATE] John Doe",
+    "formLabelEmail": "[TRANSLATE] Email Address",
+    "formPlaceholderEmail": "[TRANSLATE] you@example.com",
+    "formLabelPhone": "[TRANSLATE] Phone Number (Optional)",
+    "formPlaceholderPhone": "[TRANSLATE] 555-123-4567",
+    "formLabelMessage": "[TRANSLATE] Your Message",
+    "formPlaceholderMessage": "[TRANSLATE] How can we help you today?",
+    "formGdprConsent": "[TRANSLATE] I consent to Kitchener Smiles collecting my details through this form.",
+    "formSubmitButton": "[TRANSLATE] Send Message & Get Guide",
+    "formSubmittingButton": "[TRANSLATE] Sending...",
+    "formReplyPromise": "[TRANSLATE] Let’s start your smile journey – we’ll reply within 24 hours."
+  },
+  "Footer": {
+    "brandName": "[TRANSLATE] Kitchener Smiles",
+    "tagline": "[TRANSLATE] Dr. Liana Cardieri Family & Cosmetic Dentistry",
+    "description": "[TRANSLATE] Providing gentle, expert dental care for the whole family. We speak English, Portuguese, and Polish.",
+    "quickLinksTitle": "[TRANSLATE] Quick Links",
+    "contactUsTitle": "[TRANSLATE] Contact Us",
+    "address": "[TRANSLATE] 123 Dental St, Kitchener, ON N2A 1B3",
+    "phoneNumber": "[TRANSLATE] 519-578-5717",
+    "email": "[TRANSLATE] info@kitchenersmiles.ca",
+    "followUsFacebook": "[TRANSLATE] Follow us on Facebook",
+    "allRightsReserved": "[TRANSLATE] All rights reserved.",
+    "websiteBy": "[TRANSLATE] Website by Firebase Studio"
+  },
+  "StickyMobileCTA": {
+    "callNow": "[TRANSLATE] Call Now",
+    "contactUs": "[TRANSLATE] Contact Us"
+  },
+  "AiAssistantWidget": {
+    "buttonLabel": "[TRANSLATE] Ask AI Assistant",
+    "dialogTitle": "[TRANSLATE] Ask Our AI Assistant",
+    "dialogDescription": "[TRANSLATE] Have a question about our services or practice? Get a quick answer from our AI.",
+    "textareaPlaceholder": "[TRANSLATE] Type your question here... e.g., 'Do you offer teeth whitening?'",
+    "errorMissingQuestion": "[TRANSLATE] Please enter a question.",
+    "errorFetchAnswer": "[TRANSLATE] Sorry, I couldn't fetch an answer. Please try again or contact us directly.",
+    "loadingMessage": "[TRANSLATE] Fetching your answer...",
+    "answerTitle": "[TRANSLATE] Answer:",
+    "buttonClose": "[TRANSLATE] Close",
+    "buttonAsk": "[TRANSLATE] Ask Question",
+    "buttonThinking": "[TRANSLATE] Thinking..."
+  },
+  "ServicesPage": {
+    "headline": "[TRANSLATE] Comprehensive Dental Services",
+    "description": "[TRANSLATE] At Kitchener Smiles, we offer a wide array of dental treatments to cater to your individual needs and help you achieve optimal oral health and a beautiful smile.",
+    "readyToImprove": "[TRANSLATE] Ready to Improve Your Smile?",
+    "readyDescription": "[TRANSLATE] Contact us today to discuss your dental needs or to schedule an appointment with Dr. Liana Cardieri.",
+    "bookAppointmentButton": "[TRANSLATE] Book Your Appointment",
+    "serviceCard": {
+      "learnMoreButton": "[TRANSLATE] Learn More",
+      "callToDiscussButton": "[TRANSLATE] Call to Discuss"
+    },
+    "service": {
+      "implants": {
+        "title": "[TRANSLATE] Dental Implants",
+        "description": "[TRANSLATE] Regain confidence with our expert dental implants, designed for lasting comfort and a natural look."
+      },
+      "family-dentistry": {
+        "title": "[TRANSLATE] Family Dentistry",
+        "description": "[TRANSLATE] Comprehensive dental care for all ages, from routine check-ups to advanced treatments."
+      },
+      "cosmetic-dentistry": {
+        "title": "[TRANSLATE] Cosmetic Dentistry",
+        "description": "[TRANSLATE] Enhance your smile with our range of cosmetic treatments, including veneers, bonding, and more."
+      }
+    }
+  },
+  "ServiceDetailPage": {
+    "serviceNotFound": "[TRANSLATE] Service not found.",
+    "moreDetailsComing": "[TRANSLATE] More details for this service are coming soon!",
+    "backToServicesButton": "[TRANSLATE] Back to Services",
+    "whatIsTitle": "[TRANSLATE] What is {serviceName}?",
+    "keyBenefitsTitle": "[TRANSLATE] Key Benefits",
+    "faqTitle": "[TRANSLATE] Frequently Asked Questions",
+    "interestedTitle": "[TRANSLATE] Interested in {serviceName}?",
+    "interestedDescription": "[TRANSLATE] Contact us today to learn more or to schedule a consultation with Dr. Liana Cardieri.",
+    "bookConsultationButton": "[TRANSLATE] Book Your Consultation",
+    "services": {
+      "zoom-whitening": {
+        "title": "[TRANSLATE] Zoom Whitening",
+        "tagline": "[TRANSLATE] Achieve a Dazzling Smile in Just One Visit",
+        "introduction": "[TRANSLATE] Our Zoom Whitening treatment is a fast, safe, and effective way to brighten your teeth by several shades. Get a radiant, confident smile with professional results you can trust.",
+        "benefits": [
+          "[TRANSLATE] Noticeably whiter teeth in about an hour.",
+          "[TRANSLATE] Safe procedure performed by dental professionals.",
+          "[TRANSLATE] Long-lasting results with proper care.",
+          "[TRANSLATE] Boosts confidence and enhances your smile."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] Is Zoom Whitening painful?", "answer": "[TRANSLATE] Most patients experience little to no discomfort. Some may have temporary sensitivity, which usually subsides quickly. We take measures to ensure your comfort throughout the procedure." },
+          { "question": "[TRANSLATE] How long do the results last?", "answer": "[TRANSLATE] With good oral hygiene and avoiding staining foods/drinks, results can last for a year or more. Touch-up treatments can help maintain your bright smile." },
+          { "question": "[TRANSLATE] Is it safe for my teeth?", "answer": "[TRANSLATE] Yes, Zoom Whitening is a safe procedure when performed by a qualified dental professional. It does not damage tooth enamel." }
+        ]
+      },
+      "dental-implants": {
+        "title": "[TRANSLATE] Dental Implants",
+        "tagline": "[TRANSLATE] Restore Your Smile with Lasting Confidence",
+        "introduction": "[TRANSLATE] Regain confidence and full dental function with our expert dental implants. Designed for lasting comfort and a natural appearance, implants are the gold standard for replacing missing teeth.",
+        "benefits": [
+          "[TRANSLATE] Permanent solution for missing teeth.",
+          "[TRANSLATE] Looks, feels, and functions like natural teeth.",
+          "[TRANSLATE] Prevents bone loss in the jaw.",
+          "[TRANSLATE] Improves speech and chewing ability."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] Am I a candidate for dental implants?", "answer": "[TRANSLATE] Most people with good general and oral health are candidates. A consultation with Dr. Cardieri will determine if implants are right for you." },
+          { "question": "[TRANSLATE] Is the implant procedure painful?", "answer": "[TRANSLATE] We use local anesthesia and offer sedation options to ensure your comfort. Post-procedure discomfort is typically manageable with over-the-counter pain relievers." },
+          { "question": "[TRANSLATE] How long does the process take?", "answer": "[TRANSLATE] The entire process can take several months, allowing for healing and integration of the implant with the jawbone. Each case is unique." }
+        ]
+      },
+      "fillings": {
+        "title": "[TRANSLATE] Dental Fillings",
+        "tagline": "[TRANSLATE] Restore and Protect Your Teeth",
+        "introduction": "[TRANSLATE] We offer both silver (amalgam) and tooth-colored (resin composite) fillings to repair cavities and restore the strength and integrity of your teeth.",
+        "benefits": [
+          "[TRANSLATE] Stops the progression of tooth decay.",
+          "[TRANSLATE] Restores tooth structure and function.",
+          "[TRANSLATE] Tooth-colored fillings offer a natural appearance.",
+          "[TRANSLATE] Durable and long-lasting solutions."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] Which type of filling is best for me?", "answer": "[TRANSLATE] Dr. Cardieri will discuss the pros and cons of each material and recommend the best option based on the location and extent of the decay, cost considerations, and your aesthetic preferences." },
+          { "question": "[TRANSLATE] Do fillings hurt?", "answer": "[TRANSLATE] The area will be numbed with local anesthesia before the procedure, so you should not feel any pain during the filling process." }
+        ]
+      },
+      "crowns-bridges": {
+        "title": "[TRANSLATE] Crowns & Bridges",
+        "tagline": "[TRANSLATE] Strengthen and Replace Teeth with Precision",
+        "introduction": "[TRANSLATE] Dental crowns protect and strengthen damaged teeth, while bridges replace one or more missing teeth. We offer high-quality, custom-fitted restorations, including same-day crown options.",
+        "benefits": [
+          "[TRANSLATE] Restores the shape, size, and strength of a tooth (crowns).",
+          "[TRANSLATE] Replaces missing teeth, restoring your smile and chewing ability (bridges).",
+          "[TRANSLATE] Prevents adjacent teeth from shifting.",
+          "[TRANSLATE] Durable and aesthetically pleasing options available."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] What are same-day crowns?", "answer": "[TRANSLATE] Using advanced CEREC technology, we can design, create, and place a custom ceramic crown in a single appointment, saving you time and multiple visits." },
+          { "question": "[TRANSLATE] How do I care for my crown or bridge?", "answer": "[TRANSLATE] Good oral hygiene, including brushing, flossing, and regular dental check-ups, is essential to maintain the longevity of your crown or bridge." }
+        ]
+      },
+      "family-dentistry": {
+        "title": "[TRANSLATE] Family Dentistry",
+        "tagline": "[TRANSLATE] Comprehensive Dental Care for All Ages",
+        "introduction": "[TRANSLATE] From your child's first visit to grandparent's routine care, we provide a full range of dental services for the entire family in a comfortable and friendly environment.",
+        "benefits": [
+          "[TRANSLATE] Convenient care for the whole family in one location.",
+          "[TRANSLATE] Focus on preventative care and education.",
+          "[TRANSLATE] Early detection and treatment of dental issues.",
+          "[TRANSLATE] Building lifelong healthy oral habits."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] When should my child first see a dentist?", "answer": "[TRANSLATE] The Canadian Dental Association recommends a child's first dental visit by age one, or within six months of their first tooth erupting." },
+          { "question": "[TRANSLATE] What services are included in family dentistry?", "answer": "[TRANSLATE] This includes regular check-ups, cleanings, fluoride treatments, sealants, fillings, and guidance on oral hygiene specific to different age groups." }
+        ]
+      },
+      "cosmetic-dentistry": {
+        "title": "[TRANSLATE] Cosmetic Dentistry",
+        "tagline": "[TRANSLATE] Transform Your Smile, Boost Your Confidence",
+        "introduction": "[TRANSLATE] Enhance the appearance of your smile with our wide range of cosmetic dental treatments. Dr. Cardieri will work with you to create a personalized plan to achieve your dream smile.",
+        "benefits": [
+          "[TRANSLATE] Improve tooth color, shape, size, and alignment.",
+          "[TRANSLATE] Boost self-esteem and confidence.",
+          "[TRANSLATE] Treatments tailored to your specific aesthetic goals.",
+          "[TRANSLATE] Utilizes modern techniques and materials for natural-looking results."
+        ],
+        "faqs": [
+          { "question": "[TRANSLATE] What cosmetic procedures do you offer?", "answer": "[TRANSLATE] We offer teeth whitening, veneers, dental bonding, gum contouring, and smile makeovers, among other services." },
+          { "question": "[TRANSLATE] How do I know which cosmetic treatment is right for me?", "answer": "[TRANSLATE] A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options." }
+        ]
+      }
+    }
+  },
+  "AboutPage": {
+    "pageTitle": "[TRANSLATE] Meet the Team at Kitchener Smiles",
+    "pageDescription": "[TRANSLATE] Our dedicated professionals are committed to providing you with exceptional dental care in a friendly and comfortable environment.",
+    "drCardieriTitle": "[TRANSLATE] Dr. Liana Cardieri",
+    "drCardieriBio1": "[TRANSLATE] Dr. Liana Cardieri is a highly experienced and compassionate dentist dedicated to providing top-quality dental care. With over 20 years in the field, she combines her extensive knowledge with a gentle touch, ensuring every patient feels comfortable and well-cared for.",
+    "drCardieriBio2": "[TRANSLATE] Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believes in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.",
+    "drCardieriBio3": "[TRANSLATE] Her philosophy is centered on patient education and preventive care, empowering individuals to maintain optimal oral health for life. Dr. Cardieri is an active member of the Ontario Dental Association (ODA) and is passionate about serving the Kitchener community.",
+    "experienceBadge": "[TRANSLATE] 20+ Years Experience",
+    "odaMemberBadge": "[TRANSLATE] ODA Member",
+    "hygienistsTitle": "[TRANSLATE] Our Expert Hygienists",
+    "sofiaName": "[TRANSLATE] Sofia Alves",
+    "sofiaTitle": "[TRANSLATE] Registered Dental Hygienist",
+    "sofiaBio": "[TRANSLATE] Sofia is dedicated to providing thorough cleanings and educating patients on aural hygiene. She speaks Portuguese and English.",
+    "marekName": "[TRANSLATE] Marek Kowalski",
+    "marekTitle": "[TRANSLATE] Registered Dental Hygienist",
+    "marekBio": "[TRANSLATE] Marek is passionate about preventive care and enjoys helping patients achieve healthy smiles. He is fluent in Polish and English.",
+    "emilyName": "[TRANSLATE] Emily Chen",
+    "emilyTitle": "[TRANSLATE] Dental Assistant",
+    "emilyBio": "[TRANSLATE] Emily ensures every visit runs smoothly and assists Dr. Cardieri with various procedures, always with a smile.",
+    "officeTitle": "[TRANSLATE] Our Modern & Welcoming Office",
+    "officeDescription": "[TRANSLATE] Step into a calm and inviting atmosphere where your comfort is our priority. Our state-of-the-art facility is equipped with the latest dental technology to ensure you receive the highest standard of care.",
+    "contactToVisitButton": "[TRANSLATE] Contact Us to Schedule Your Visit"
+  },
+  "FinancialInfoPage": {
+    "headline": "[TRANSLATE] Financial Information & FAQs",
+    "subheadline": "[TRANSLATE] Understanding your treatment costs and payment options.",
+    "commitmentTitle": "[TRANSLATE] Our Commitment to You",
+    "commitmentPara1": "[TRANSLATE] At Kitchener Smiles, we believe that everyone deserves access to high-quality dental care. We strive to make our services affordable and transparent. Our team is here to help you navigate payment options, insurance claims, and any financial questions you may have.",
+    "commitmentPara2": "[TRANSLATE] We will always provide you with a detailed treatment plan and cost estimate before any procedure begins. Your oral health is our priority, and we're committed to working with you to achieve your smile goals within your budget.",
+    "faqTitle": "[TRANSLATE] Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "[TRANSLATE] What payment methods do you accept?",
+        "answer": "[TRANSLATE] We accept various payment methods including cash, debit, Visa, MasterCard, and American Express. We also work with most dental insurance plans."
+      },
+      {
+        "question": "[TRANSLATE] Do you offer financing options?",
+        "answer": "[TRANSLATE] Yes, we understand that dental treatments can be a significant investment. We offer flexible financing plans through third-party providers to help make your care more affordable. Please speak to our administrative team for more details."
+      },
+      {
+        "question": "[TRANSLATE] How does dental insurance work at your office?",
+        "answer": "[TRANSLATE] We will gladly assist you in understanding your insurance coverage and will submit claims on your behalf. However, please remember that your insurance policy is a contract between you and your insurance company. You are responsible for any portion of the fees not covered by your plan."
+      },
+      {
+        "question": "[TRANSLATE] Will my treatment hurt?",
+        "answer": "[TRANSLATE] Our gentle techniques and caring approach ensure maximum comfort. We offer various pain management options, including local anesthesia and sedation if needed. We’re here to put you at ease and make your experience as comfortable as possible."
+      },
+      {
+        "question": "[TRANSLATE] What if I need to cancel or reschedule my appointment?",
+        "answer": "[TRANSLATE] We understand that unforeseen circumstances can arise. We kindly request at least 24-48 hours notice if you need to change your appointment. This allows us to offer the time to another patient in need of care."
+      }
+    ],
+    "moreQuestionsTitle": "[TRANSLATE] Have More Questions?",
+    "moreQuestionsDescription": "[TRANSLATE] Our friendly administrative team is happy to assist you with any financial inquiries or to discuss your specific situation.",
+    "contactOfficeButton": "[TRANSLATE] Contact Our Office"
+  },
+  "HealthInfoPage": {
+    "headline": "[TRANSLATE] Important Oral Health Topics",
+    "subheadline": "[TRANSLATE] Empowering you with knowledge for a healthier smile.",
+    "gingivitisTitle": "[TRANSLATE] Understanding Gingivitis (Gum Disease)",
+    "gingivitisDescription": "[TRANSLATE] Gingivitis is the early stage of gum disease, caused by plaque buildup. Symptoms include red, swollen, or bleeding gums. If left untreated, it can progress to more serious periodontitis. Regular dental check-ups and good oral hygiene are key to prevention and treatment.",
+    "gingivitisLinkText": "[TRANSLATE] Learn More from CDA",
+    "oralCancerTitle": "[TRANSLATE] Oral Cancer Awareness & Screening",
+    "oralCancerDescription": "[TRANSLATE] Oral cancer can affect any part of the mouth or throat. Early detection significantly improves treatment outcomes. Risk factors include tobacco use, excessive alcohol consumption, and HPV infection. Regular dental exams include screening for signs of oral cancer.",
+    "oralCancerLinkText": "[TRANSLATE] Oral Cancer Foundation",
+    "priorityTitle": "[TRANSLATE] Your Health is Our Priority",
+    "priorityDescription": "[TRANSLATE] Regular dental check-ups are crucial for maintaining not only your oral health but also your overall well-being. Dr. Cardieri and her team are committed to providing comprehensive examinations and personalized advice.",
+    "scheduleCheckupButton": "[TRANSLATE] Schedule Your Check-up Today"
+  },
+  "TestimonialsPage": {
+    "headline": "[TRANSLATE] What Our Patients Are Saying",
+    "description": "[TRANSLATE] We are proud of the positive feedback we receive from our valued patients. Your trust and satisfaction are our greatest rewards.",
+    "shareExperienceTitle": "[TRANSLATE] Share Your Experience",
+    "shareExperienceDescription": "[TRANSLATE] If you've had a positive experience at Kitchener Smiles, we'd love to hear from you! Your feedback helps us continue to provide the best possible care.",
+    "leaveReviewOnlineButton": "[TRANSLATE] Leave a Review Online",
+    "contactUsDirectlyButton": "[TRANSLATE] Contact Us Directly"
+  },
+  "data": {
+    "services": {
+      "whitening": {
+        "title": "[TRANSLATE] Zoom Whitening",
+        "description": "[TRANSLATE] Get a radiant, confident smile in just one visit with our safe, professional whitening."
+      },
+      "fillings": {
+        "title": "[TRANSLATE] Silver/Resin Fillings",
+        "description": "[TRANSLATE] Restore decayed teeth with durable and aesthetic silver or tooth-colored resin fillings.",
+        "trustBadge": "[TRANSLATE] Pain-Free Options"
+      },
+      "crowns-bridges": {
+        "title": "[TRANSLATE] Crowns & Bridges",
+        "description": "[TRANSLATE] Strengthen damaged teeth or replace missing ones with our custom-made crowns and bridges.",
+        "trustBadge": "[TRANSLATE] Same-Day Crowns"
+      }
+    },
+    "testimonials": [
+      { "quote": "[TRANSLATE] Painless and professional! Dr. Cardieri and her team are fantastic. I highly recommend them.", "author": "J.S." },
+      { "quote": "[TRANSLATE] The best dental experience I've ever had. Everyone is so friendly and caring. My smile has never looked better!", "author": "M.B." },
+      { "quote": "[TRANSLATE] I was nervous about my procedure, but they made me feel comfortable and at ease. Truly exceptional service.", "author": "A.K." },
+      { "quote": "[TRANSLATE] Multilingual staff was a huge plus for my family. They explained everything clearly in Portuguese.", "author": "C.O." },
+      { "quote": "[TRANSLATE] Efficient, modern, and very skilled. The same-day crown service is amazing!", "author": "L.P." }
+    ],
+    "whyChooseUs": [
+      { "title": "[TRANSLATE] Gentle Care", "description": "[TRANSLATE] We prioritize your comfort with gentle techniques and a compassionate approach." },
+      { "title": "[TRANSLATE] Same-Day Crowns", "description": "[TRANSLATE] Advanced technology allows us to create and place crowns in a single visit." },
+      { "title": "[TRANSLATE] Multilingual Staff", "description": "[TRANSLATE] Our team is fluent in English, Portuguese, and Polish to serve you better." },
+      { "title": "[TRANSLATE] Experienced Team", "description": "[TRANSLATE] With over 20 years of experience, Dr. Cardieri leads a skilled and dedicated team." }
+    ],
+    "trustBadges": [
+      { "text": "[TRANSLATE] 20+ Years Experience" },
+      { "text": "[TRANSLATE] ODA Member" }
+    ]
   }
 }
