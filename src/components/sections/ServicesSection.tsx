@@ -1,12 +1,14 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { servicesData, type Service } from '@/lib/data';
 import { ArrowRight, Phone } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const ServiceCard = ({ service }: { service: Service }) => (
-  <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-102 bg-background rounded-xl border-border">
+  <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-102 bg-background rounded-xl border-border group">
     <div className="relative h-56 w-full">
       <Image
         src={service.image}
@@ -30,16 +32,25 @@ const ServiceCard = ({ service }: { service: Service }) => (
       <p className="text-foreground/80 text-base font-light">{service.description}</p>
     </CardContent>
     <CardFooter className="p-6 bg-secondary/30 flex flex-col sm:flex-row sm:justify-between items-center space-y-3 sm:space-y-0">
-      <Button asChild variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white w-full sm:w-auto transition-colors duration-300 group">
+      <Button asChild variant="outline" className="text-base border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white w-full sm:w-auto transition-colors duration-300 group">
         <Link href={service.learnMoreLink}>
           Learn More <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </Link>
       </Button>
-      <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white w-full sm:w-auto transition-colors duration-300 group">
-        <a href="tel:519-578-5717">
-          <Phone className="mr-2 h-4 w-4" /> Call to Discuss
-        </a>
-      </Button>
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button asChild className="text-base bg-brand-blue hover:bg-brand-pink text-white w-full sm:w-auto transition-colors duration-300 group">
+              <a href="tel:519-578-5717">
+                <Phone className="mr-2 h-4 w-4" /> Call to Discuss
+              </a>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Speak to our friendly team today!</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </CardFooter>
   </Card>
 );
@@ -62,7 +73,7 @@ export default function ServicesSection() {
           ))}
         </div>
          <div className="text-center mt-16">
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105">
+          <Button asChild size="lg" className="text-base bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105">
             <Link href="/services">
               Explore All Services <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

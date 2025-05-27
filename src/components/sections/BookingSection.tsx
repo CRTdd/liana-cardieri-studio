@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -44,7 +45,7 @@ export default function BookingSection() {
             <Button 
               type="button" // Important: not submit
               size="lg" 
-              className="w-full bg-brand-blue hover:bg-brand-pink text-white text-lg py-3 px-6 rounded-md shadow-md transition-all duration-300 transform hover:scale-105"
+              className="w-full bg-brand-blue hover:bg-brand-pink text-white text-base py-3 px-6 rounded-md shadow-md transition-all duration-300 transform hover:scale-105" // Added text-base
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               aria-label="Book Your Visit - links to contact form"
             >

@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +14,7 @@ import { Star, Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
-  <Card className="h-full bg-white/80 backdrop-blur-sm shadow-lg rounded-xl border-border/50 p-6 md:p-8 flex flex-col justify-between items-center text-center mx-auto max-w-sm">
+  <Card className="h-full bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl border-border/50 p-6 md:p-8 flex flex-col justify-between items-center text-center mx-auto max-w-sm">
     <div>
       <Quote className="h-8 w-8 text-brand-pink mb-4 opacity-50 transform -scale-x-100" />
       <div className="flex justify-center mb-3">
@@ -89,10 +90,10 @@ export default function TestimonialsSection() {
         </Swiper>
 
         <div className="mt-12 text-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button asChild variant="outline" size="lg" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-colors duration-300">
+          <Button asChild variant="outline" size="lg" className="text-base border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-colors duration-300">
             <Link href="/testimonials">See All Reviews</Link>
           </Button>
-          <Button asChild size="lg" className="bg-brand-blue hover:bg-brand-pink text-white transition-colors duration-300">
+          <Button asChild size="lg" className="text-base bg-brand-blue hover:bg-brand-pink text-white transition-colors duration-300">
             {/* Placeholder link for Demandforce */}
             <a href="https://www.demandforce.com/b/kitchener-smiles-example" target="_blank" rel="noopener noreferrer">Leave a Review</a>
           </Button>

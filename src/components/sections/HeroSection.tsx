@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -7,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm p-3 rounded-lg shadow-md">
-    <Icon className="h-8 w-8 text-brand-blue" />
+    <Icon className="h-10 w-10 text-brand-blue" /> {/* Updated size from h-8 w-8 */}
     <span className="text-sm font-medium text-foreground">{text}</span>
   </div>
 );

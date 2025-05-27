@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -82,7 +83,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">Contact Information</h3>
-              <ul className="space-y-3 text-foreground/80">
+              <ul className="space-y-3 text-foreground/80 font-light"> {/* Added font-light */}
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-6 w-6 text-brand-blue mt-1 shrink-0" />
                   <span>123 Dental Street,<br />Kitchener, ON N2A 1B3</span>
@@ -100,7 +101,7 @@ export default function ContactSection() {
 
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">Office Hours</h3>
-              <ul className="space-y-2 text-foreground/80">
+              <ul className="space-y-2 text-foreground/80 font-light"> {/* Added font-light */}
                 <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>Monday - Friday: 9 AM - 5 PM</span></li>
                 <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>Saturday: By Appointment</span></li>
                 <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>Sunday: Closed</span></li>
@@ -145,7 +146,7 @@ export default function ContactSection() {
               <div className="text-center py-8">
                 <h3 className="text-2xl font-semibold text-primary mb-4">Thank You!</h3>
                 <p className="text-foreground/80 mb-6">Your message has been sent successfully. We'll reply within 24 hours.</p>
-                <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white">
+                <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
                   <a href="/documents/FreeDentalCareGuide.pdf" download>
                     <Download className="mr-2 h-4 w-4" />
                     Download Your Free Dental Care Guide
@@ -235,7 +236,7 @@ export default function ContactSection() {
                         </FormItem>
                       )}
                     />
-                    <Button type="submit" size="lg" className="w-full bg-brand-blue hover:bg-brand-pink text-white text-lg" disabled={form.formState.isSubmitting}>
+                    <Button type="submit" size="lg" className="w-full bg-brand-blue hover:bg-brand-pink text-white text-lg transition-all duration-300 transform hover:scale-105" disabled={form.formState.isSubmitting}>
                       {form.formState.isSubmitting ? "Sending..." : "Send Message & Get Guide"}
                     </Button>
                   </form>

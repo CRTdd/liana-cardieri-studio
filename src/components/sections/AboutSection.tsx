@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone } from 'lucide-react';
@@ -59,10 +60,10 @@ export default function AboutSection() {
         <Button 
           asChild 
           variant="link" 
-          className="mt-10 text-brand-blue hover:text-brand-pink text-lg group transition-colors duration-300"
+          className="mt-10 text-brand-blue hover:text-brand-pink text-base group transition-colors duration-300 hover:underline" // Updated text size and hover
         >
           <Link href="/about">
-            Learn More About Our Team <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            Learn More About Our Team <ArrowRight className="ml-2 h-5 w-5 transition-transform" /> {/* Removed group-hover translate */}
           </Link>
         </Button>
       </div>

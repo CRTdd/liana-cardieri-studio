@@ -1,3 +1,4 @@
+
 "use client";
 
 import { whyChooseUsData, type WhyChooseUsPoint } from '@/lib/data';
@@ -8,7 +9,7 @@ const ChoicePoint = ({ point, isVisible }: { point: WhyChooseUsPoint, isVisible:
   <Card className={`text-center bg-background shadow-lg rounded-xl border-border transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
     <CardHeader className="flex flex-col items-center pb-4">
       <div className="p-4 bg-brand-blue/10 rounded-full mb-4 inline-block">
-        <point.Icon className="h-10 w-10 text-brand-blue" />
+        <point.Icon className="h-12 w-12 text-brand-blue" /> {/* Updated icon size from h-10 w-10 */}
       </div>
       <CardTitle className="text-xl font-bold text-primary">{point.title}</CardTitle>
     </CardHeader>
