@@ -1,8 +1,8 @@
 
 "use client";
 
-import Link from 'next/link'; // Use Next.js's default Link
-import { usePathname } from 'next/navigation'; // Use Next.js's usePathname
+import Link from 'next/link'; // Using Next.js's default Link
+import { usePathname } from 'next/navigation'; // Using Next.js's usePathname
 import { useLocale, useTranslations } from 'next-intl'; // Attempt to use root import for these
 
 import { Button } from '@/components/ui/button';
@@ -32,7 +32,9 @@ export default function Header() {
   const t = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const currentLocale = useLocale();
-  const pathnameWithoutLocale = usePathname(); // Gets the path *without* the current locale prefix
+  const currentFullPath = usePathname(); // Gets the full path, potentially including locale
+
+  const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
   const navItems = [
     { href: '/', labelKey: 'home' },
@@ -42,22 +44,31 @@ export default function Header() {
     { href: '/#contact', labelKey: 'contact' },
   ];
   
-  const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
+  const getLocalizedPath = (targetLocale: string) => {
+    let pathSegment = currentFullPath;
 
-  const getLocalizedPath = (targetLocale: string, currentPath: string) => {
-    // currentPath from usePathname (next/navigation) is already without locale prefix
-    // e.g. /about for /en/about or /pt/about
-    // For root path "/", we want "/en", "/pt", "/pl"
-    // For other paths like "/about", we want "/en/about", "/pt/about", "/pl/about"
-    if (currentPath === "/") {
+    // Remove current locale prefix if present
+    // Handles cases like /en/about -> /about or /en -> /
+    const localePrefix = `/${currentLocale}`;
+    if (pathSegment.startsWith(localePrefix)) {
+      pathSegment = pathSegment.substring(localePrefix.length);
+      if (pathSegment === "") { // If original was just /en, after stripping it's "", should be /
+        pathSegment = "/";
+      }
+    }
+    // At this point, pathSegment should be like '/about' or '/' (unlocalized)
+
+    if (pathSegment === "/") {
+      // For the root path, just return the target locale prefix
       return `/${targetLocale}`;
     }
-    return `/${targetLocale}${currentPath}`;
+    // For other paths, prepend the target locale to the unlocalized segment
+    return `/${targetLocale}${pathSegment}`;
   };
 
   const handleLanguageChange = (locale: string) => {
     setLanguageCookie(locale);
-    // Navigation will be handled by the Link component
+    // Navigation will be handled by the Link component's href
   };
 
 
@@ -73,7 +84,7 @@ export default function Header() {
           {navItems.map((item) => (
             <Link
               key={item.labelKey}
-              href={item.href}
+              href={item.href} // These links are relative to the current locale handled by middleware
               className="transition-colors hover:text-primary text-foreground/80"
             >
               {t(item.labelKey as any)}
@@ -91,7 +102,7 @@ export default function Header() {
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
                 <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
-                  <Link href={getLocalizedPath(lang.code, pathnameWithoutLocale)}>
+                  <Link href={getLocalizedPath(lang.code)}>
                     {lang.nativeLabel}
                   </Link>
                 </DropdownMenuItem>
@@ -135,7 +146,7 @@ export default function Header() {
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
                         <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
-                           <Link href={getLocalizedPath(lang.code, pathnameWithoutLocale)}>
+                           <Link href={getLocalizedPath(lang.code)}>
                             {lang.nativeLabel}
                           </Link>
                         </DropdownMenuItem>
