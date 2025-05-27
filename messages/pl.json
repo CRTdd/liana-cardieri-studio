@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Strona Główna",
+    "about": "O nas",
+    "services": "Usługi",
+    "testimonials": "Opinie",
+    "contact": "Kontakt"
+  },
+  "Header": {
+    "callNow": "Zadzwoń Teraz: 519-578-5717",
+    "selectedLanguage": "Polski"
+  }
+}

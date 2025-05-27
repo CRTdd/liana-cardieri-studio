@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "services": "Serviços",
+    "testimonials": "Depoimentos",
+    "contact": "Contato"
+  },
+  "Header": {
+    "callNow": "Ligue Já: 519-578-5717",
+    "selectedLanguage": "Português"
+  }
+}

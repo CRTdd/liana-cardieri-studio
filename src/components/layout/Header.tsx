@@ -1,7 +1,6 @@
-
 "use client";
 
-import Link from 'next/link';
+import Link from 'next-intl/link'; // Changed to next-intl Link
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Smile, Languages, ChevronDown } from 'lucide-react';
@@ -11,39 +10,36 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
+import { usePathname } from 'next-intl/client';
 
-const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
-  { href: '/services', label: 'Services' },
-  { href: '/testimonials', label: 'Testimonials' },
-  { href: '/#contact', label: 'Contact' }, // Link to contact section on homepage
-];
 
-const languages = [
-  { code: 'en', label: 'English' },
-  { code: 'pt', label: 'Português' },
-  { code: 'pl', label: 'Polski' },
+const appLanguages = [
+  { code: 'en', labelKey: 'english', nativeLabel: 'English' },
+  { code: 'pt', labelKey: 'portuguese', nativeLabel: 'Português' },
+  { code: 'pl', labelKey: 'polish', nativeLabel: 'Polski' },
 ];
 
 export default function Header() {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const t = useTranslations('Navigation');
+  const tHeader = useTranslations('Header');
+  const locale = useLocale();
+  const pathname = usePathname();
 
-  // Placeholder function for language change
-  const handleLanguageChange = (langCode: string) => {
-    const lang = languages.find(l => l.code === langCode);
-    if (lang) {
-      setSelectedLanguage(lang);
-      // Here you would typically integrate with Next.js i18n to change the actual site language
-      console.log(`Language changed to: ${lang.label}`);
-    }
-  };
+  const navItems = [
+    { href: '/', labelKey: 'home' },
+    { href: '/about', labelKey: 'about' },
+    { href: '/services', labelKey: 'services' },
+    { href: '/testimonials', labelKey: 'testimonials' },
+    { href: '/#contact', labelKey: 'contact' },
+  ];
+  
+  const currentSelectedLanguage = appLanguages.find(lang => lang.code === locale) || appLanguages[0];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
+        <Link href="/" locale={locale} className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
           <Smile className="h-8 w-8" />
           <span className="font-bold text-xl">Kitchener Smiles</span>
         </Link>
@@ -51,11 +47,12 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navItems.map((item) => (
             <Link
-              key={item.label}
+              key={item.labelKey}
               href={item.href}
+              locale={locale} // Keep current locale for internal links unless it's a language switch
               className="transition-colors hover:text-primary text-foreground/80"
             >
-              {item.label}
+              {t(item.labelKey as any)}
             </Link>
           ))}
 
@@ -63,21 +60,23 @@ export default function Header() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary">
                 <Languages className="h-5 w-5" />
-                <span>{selectedLanguage.label}</span>
+                <span>{currentSelectedLanguage.nativeLabel}</span>
                 <ChevronDown className="h-4 w-4 opacity-50" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              {languages.map((lang) => (
-                <DropdownMenuItem key={lang.code} onClick={() => handleLanguageChange(lang.code)}>
-                  {lang.label}
+              {appLanguages.map((lang) => (
+                <DropdownMenuItem key={lang.code} asChild>
+                  <Link href={pathname} locale={lang.code} className="w-full">
+                    {lang.nativeLabel}
+                  </Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
 
            <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
-            <a href="tel:519-578-5717">Call Now: 519-578-5717</a>
+            <a href="tel:519-578-5717">{tHeader('callNow')}</a>
           </Button>
         </nav>
 
@@ -93,11 +92,12 @@ export default function Header() {
               <nav className="flex flex-col space-y-4 pt-8">
                 {navItems.map((item) => (
                   <Link
-                    key={item.label}
+                    key={item.labelKey}
                     href={item.href}
+                    locale={locale}
                     className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
                   >
-                    {item.label}
+                    {t(item.labelKey as any)}
                   </Link>
                 ))}
                 <div className="px-2">
@@ -105,14 +105,16 @@ export default function Header() {
                     <DropdownMenuTrigger asChild>
                       <Button variant="outline" className="w-full justify-start flex items-center space-x-2 text-foreground/80 hover:text-primary">
                         <Languages className="h-5 w-5" />
-                        <span>{selectedLanguage.label}</span>
+                        <span>{currentSelectedLanguage.nativeLabel}</span>
                         <ChevronDown className="h-4 w-4 opacity-50 ml-auto" />
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
-                      {languages.map((lang) => (
-                        <DropdownMenuItem key={lang.code} onClick={() => handleLanguageChange(lang.code)}>
-                          {lang.label}
+                      {appLanguages.map((lang) => (
+                        <DropdownMenuItem key={lang.code} asChild>
+                           <Link href={pathname} locale={lang.code} className="w-full">
+                            {lang.nativeLabel}
+                          </Link>
                         </DropdownMenuItem>
                       ))}
                     </DropdownMenuContent>
@@ -120,7 +122,7 @@ export default function Header() {
                 </div>
                 <div className="px-2">
                   <Button asChild size="lg" className="w-full bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
-                    <a href="tel:519-578-5717">Call Now: 519-578-5717</a>
+                    <a href="tel:519-578-5717">{tHeader('callNow')}</a>
                   </Button>
                 </div>
               </nav>
