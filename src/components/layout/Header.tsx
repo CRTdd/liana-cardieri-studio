@@ -1,6 +1,10 @@
+
 "use client";
 
-import Link from 'next-intl/link'; // Changed to next-intl Link
+import Link from 'next/link'; // Use Next.js's default Link
+import { usePathname } from 'next/navigation'; // Use Next.js's usePathname
+import { useLocale, useTranslations } from 'next-intl'; // Attempt to use root import for these
+
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Smile, Languages, ChevronDown } from 'lucide-react';
@@ -10,9 +14,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useTranslations, useLocale } from 'next-intl';
-import { usePathname } from 'next-intl/client';
-
 
 const appLanguages = [
   { code: 'en', labelKey: 'english', nativeLabel: 'English' },
@@ -23,8 +24,8 @@ const appLanguages = [
 export default function Header() {
   const t = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
-  const locale = useLocale();
-  const pathname = usePathname();
+  const currentLocale = useLocale();
+  const pathname = usePathname(); // Gets the path *without* the current locale prefix
 
   const navItems = [
     { href: '/', labelKey: 'home' },
@@ -34,12 +35,24 @@ export default function Header() {
     { href: '/#contact', labelKey: 'contact' },
   ];
   
-  const currentSelectedLanguage = appLanguages.find(lang => lang.code === locale) || appLanguages[0];
+  const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
+
+  const getLocalizedPath = (targetLocale: string, currentPath: string) => {
+    // Ensure currentPath doesn't already start with a known locale (it shouldn't from next/navigation's usePathname)
+    const pathWithoutKnownLocale = appLanguages.reduce((path, lang) => {
+        if (path.startsWith(`/${lang.code}`)) {
+            return path.substring(`/${lang.code}`.length) || "/";
+        }
+        return path;
+    }, currentPath);
+    return `/${targetLocale}${pathWithoutKnownLocale === "/" && targetLocale !== "en" ? "" : pathWithoutKnownLocale}`;
+  };
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" locale={locale} className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
+        <Link href="/" className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
           <Smile className="h-8 w-8" />
           <span className="font-bold text-xl">Kitchener Smiles</span>
         </Link>
@@ -49,7 +62,6 @@ export default function Header() {
             <Link
               key={item.labelKey}
               href={item.href}
-              locale={locale} // Keep current locale for internal links unless it's a language switch
               className="transition-colors hover:text-primary text-foreground/80"
             >
               {t(item.labelKey as any)}
@@ -67,7 +79,7 @@ export default function Header() {
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
                 <DropdownMenuItem key={lang.code} asChild>
-                  <Link href={pathname} locale={lang.code} className="w-full">
+                  <Link href={getLocalizedPath(lang.code, pathname)}>
                     {lang.nativeLabel}
                   </Link>
                 </DropdownMenuItem>
@@ -94,7 +106,6 @@ export default function Header() {
                   <Link
                     key={item.labelKey}
                     href={item.href}
-                    locale={locale}
                     className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
                   >
                     {t(item.labelKey as any)}
@@ -112,7 +123,7 @@ export default function Header() {
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
                         <DropdownMenuItem key={lang.code} asChild>
-                           <Link href={pathname} locale={lang.code} className="w-full">
+                           <Link href={getLocalizedPath(lang.code, pathname)}>
                             {lang.nativeLabel}
                           </Link>
                         </DropdownMenuItem>
