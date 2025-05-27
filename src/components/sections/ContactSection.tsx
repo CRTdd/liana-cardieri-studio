@@ -68,6 +68,9 @@ export default function ContactSection() {
     form.reset(); 
   }
 
+  const phoneNumber = t('phoneNumber');
+  const email = t('email');
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="container max-w-5xl mx-auto px-4">
@@ -90,11 +93,11 @@ export default function ContactSection() {
                 </li>
                 <li className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-brand-blue shrink-0" />
-                  <a href={`tel:${t('phoneNumber')}`} className="hover:text-brand-blue transition-colors">{t("phoneNumber")}</a>
+                  <a href={`tel:${phoneNumber}`} className="hover:text-brand-blue transition-colors">{phoneNumber}</a>
                 </li>
                 <li className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-brand-blue shrink-0" />
-                  <a href={`mailto:${t('email')}`} className="hover:text-brand-blue transition-colors">{t("email")}</a>
+                  <a href={`mailto:${email}`} className="hover:text-brand-blue transition-colors">{email}</a>
                 </li>
               </ul>
             </div>
@@ -249,4 +252,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
