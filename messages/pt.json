@@ -1,3 +1,4 @@
+
 {
   "Navigation": {
     "home": "Início",
@@ -9,6 +10,7 @@
     "healthInfo": "Informações de Saúde"
   },
   "Header": {
+    "brandName": "Dra. Liana Cardieri",
     "callNow": "Ligue Já: 519-578-5717",
     "selectedLanguage": "Português"
   },
@@ -374,5 +376,3 @@
     ]
   }
 }
-
-    

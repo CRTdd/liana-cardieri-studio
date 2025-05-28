@@ -2,12 +2,13 @@
 "use client";
 
 import Link from 'next/link'; // Using Next.js's default Link
+import Image from 'next/image'; // Added for the logo
 import { usePathname } from 'next/navigation'; // Using Next.js's usePathname for non-locale path
 import { useLocale, useTranslations } from 'next-intl'; // For translations and current locale
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Smile, Languages, ChevronDown } from 'lucide-react';
+import { Menu, Languages, ChevronDown } from 'lucide-react'; // Removed Smile icon
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,7 +33,7 @@ export default function Header() {
   const t = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const currentLocale = useLocale();
-  const currentFullPath = usePathname(); // Gets the full path, potentially including locale
+  const currentFullPath = usePathname() || '/'; // Full path including current locale if prefixed
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
@@ -45,23 +46,26 @@ export default function Header() {
   ];
   
   const getLocalizedPath = (targetLocale: string) => {
-    let pathSegment = currentFullPath; // e.g., /en/about or /about if /en is default and hidden
+    let pathSegment = currentFullPath;
 
-    // Check if the current path starts with any of the known locale prefixes
-    const knownLocalePrefix = appLanguages.find(lang => pathSegment.startsWith(`/${lang.code}`));
-
-    if (knownLocalePrefix) {
-        pathSegment = pathSegment.substring(knownLocalePrefix.code.length + 1); // Remove /<locale> part
-        if (pathSegment === "") { // If original was just /<locale>, after stripping it's "", should be /
-             pathSegment = "/";
-        }
+    // Remove current locale prefix if it exists
+    if (pathSegment.startsWith(`/${currentLocale}`)) {
+      pathSegment = pathSegment.substring(currentLocale.length + 1);
+      if (pathSegment === "") {
+        pathSegment = "/";
+      }
+    } else if (currentFullPath === "/") { // Handle case where currentFullPath is already "/"
+        pathSegment = "/";
     }
-    // At this point, pathSegment should be like '/about' or '/' (unlocalized)
-    // Or it was already unlocalized if no known prefix was found (e.g. default locale is not prefixed)
 
+
+    // Ensure pathSegment starts with a slash if it's not just "/"
+    if (pathSegment !== "/" && !pathSegment.startsWith("/")) {
+      pathSegment = `/${pathSegment}`;
+    }
+    
+    // For the root path, just return the target locale prefix
     if (pathSegment === "/") {
-      // For the root path, just return the target locale prefix unless it's the default and shouldn't be prefixed
-      // This logic depends on how next-intl is configured for default locale prefixing
       return `/${targetLocale}`;
     }
     // For other paths, prepend the target locale to the unlocalized segment
@@ -78,8 +82,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
-          <Smile className="h-8 w-8" />
-          <span className="font-bold text-xl">Dr. Liana Cardieri</span>
+          <Image
+            src="https://placehold.co/40x40.png"
+            alt="Dr. Liana Cardieri Logo"
+            width={40}
+            height={40}
+            className="h-10 w-10" // Explicit size for consistency
+            data-ai-hint="dental logo"
+          />
+          <span className="font-bold text-xl">{tHeader('brandName')}</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -103,8 +114,8 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
-                <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
-                  <Link href={getLocalizedPath(lang.code)} locale={lang.code}>
+                <DropdownMenuItem key={lang.code} asChild>
+                  <Link href={getLocalizedPath(lang.code)} locale={lang.code} onClick={() => handleLanguageChange(lang.code)}>
                     {lang.nativeLabel}
                   </Link>
                 </DropdownMenuItem>
@@ -147,8 +158,8 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
-                        <DropdownMenuItem key={lang.code} asChild onClick={() => handleLanguageChange(lang.code)}>
-                           <Link href={getLocalizedPath(lang.code)} locale={lang.code}>
+                        <DropdownMenuItem key={lang.code} asChild>
+                           <Link href={getLocalizedPath(lang.code)} locale={lang.code} onClick={() => handleLanguageChange(lang.code)}>
                             {lang.nativeLabel}
                           </Link>
                         </DropdownMenuItem>
@@ -169,5 +180,3 @@ export default function Header() {
     </header>
   );
 }
-
-    
