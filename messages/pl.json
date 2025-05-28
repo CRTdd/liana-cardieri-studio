@@ -70,9 +70,13 @@
     "phoneNumber": "519-578-5717",
     "email": "info@kitchenersmiles.ca",
     "officeHoursTitle": "Godziny Otwarcia",
-    "hoursMF": "Poniedziałek - Piątek: 9:00 - 17:00",
-    "hoursSat": "Sobota: Na Umówienie",
-    "hoursSun": "Niedziela: Zamknięte",
+    "hoursMonday": "[TRANSLATE] Mondays: 9:00 am to 6:00 pm",
+    "hoursTuesday": "[TRANSLATE] Tuesdays: 8:00 am to 6:00 pm",
+    "hoursWednesday": "[TRANSLATE] Wednesdays: 8:00 am to 6:00 pm",
+    "hoursThursday": "[TRANSLATE] Thursdays: 9:00 am to 6:00 pm",
+    "hoursFriday": "[TRANSLATE] Fridays: 9:00 am to 2:00 pm",
+    "hoursSaturday": "[TRANSLATE] Saturdays: By Appointment Only",
+    "hoursSundayHolidays": "[TRANSLATE] Sundays and Holidays: Closed",
     "followFacebook": "Śledź nas na Facebooku",
     "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
@@ -266,7 +270,7 @@
     "pageDescription": "[TRANSLATE] Our dedicated professionals are committed to providing you with exceptional dental care in a friendly and comfortable environment.",
     "drCardieriTitle": "[TRANSLATE] Dr. Liana Cardieri",
     "drCardieriBio1": "[TRANSLATE] Dr. Liana Cardieri is a highly experienced and compassionate dentist dedicated to providing top-quality dental care. With over 20 years in the field, she combines her extensive knowledge with a gentle touch, ensuring every patient feels comfortable and well-cared for.",
-    "drCardieriBio2": "[TRANSLATE] Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believes in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.",
+    "drCardieriBio2": "[TRANSLATE] Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believe in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.",
     "drCardieriBio3": "[TRANSLATE] Her philosophy is centered on patient education and preventive care, empowering individuals to maintain optimal oral health for life. Dr. Cardieri is an active member of the Ontario Dental Association (ODA) and is passionate about serving the Kitchener community.",
     "experienceBadge": "[TRANSLATE] 20+ Years Experience",
     "odaMemberBadge": "[TRANSLATE] ODA Member",
@@ -374,3 +378,5 @@
     ]
   }
 }
+
+    

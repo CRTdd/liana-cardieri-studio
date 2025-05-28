@@ -17,10 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Clock, Award, Users } from "lucide-react"; // Removed Download icon
+import { Phone, Mail, MapPin, Clock, Award, Users, Facebook } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Facebook } from "lucide-react"; // Corrected import
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-secondary/50 p-2 rounded-md">
@@ -107,9 +106,13 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">{t("officeHoursTitle")}</h3>
               <ul className="space-y-2 text-foreground/80 font-light">
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursMF")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSat")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSun")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursMonday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursTuesday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursWednesday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursThursday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursFriday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSaturday")}</span></li>
+                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSundayHolidays")}</span></li>
               </ul>
             </div>
              <div className="mt-6">
@@ -157,7 +160,6 @@ export default function ContactSection() {
               </div>
             ) : (
               <>
-                {/* Removed formFreeGuidePitch */}
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <FormField
@@ -249,3 +251,5 @@ export default function ContactSection() {
     </section>
   );
 }
+
+    

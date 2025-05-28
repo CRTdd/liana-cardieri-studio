@@ -70,9 +70,13 @@
     "phoneNumber": "519-578-5717",
     "email": "info@kitchenersmiles.ca",
     "officeHoursTitle": "Horário de Funcionamento",
-    "hoursMF": "Segunda - Sexta: 9h - 17h",
-    "hoursSat": "Sábado: Com Hora Marcada",
-    "hoursSun": "Domingo: Fechado",
+    "hoursMonday": "[TRANSLATE] Mondays: 9:00 am to 6:00 pm",
+    "hoursTuesday": "[TRANSLATE] Tuesdays: 8:00 am to 6:00 pm",
+    "hoursWednesday": "[TRANSLATE] Wednesdays: 8:00 am to 6:00 pm",
+    "hoursThursday": "[TRANSLATE] Thursdays: 9:00 am to 6:00 pm",
+    "hoursFriday": "[TRANSLATE] Fridays: 9:00 am to 2:00 pm",
+    "hoursSaturday": "[TRANSLATE] Saturdays: By Appointment Only",
+    "hoursSundayHolidays": "[TRANSLATE] Sundays and Holidays: Closed",
     "followFacebook": "Siga-nos no Facebook",
     "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
@@ -374,3 +378,5 @@
     ]
   }
 }
+
+    
