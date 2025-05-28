@@ -116,10 +116,12 @@ export default function ContactSection() {
                   href="https://www.facebook.com/cardieridentaloffice" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center text-brand-blue hover:text-brand-pink transition-colors"
+                  className="inline-flex items-center text-brand-blue hover:text-brand-pink group transition-colors"
                   aria-label={t("followFacebookAria")}
                 >
-                  <Facebook className="h-6 w-6 mr-2" />
+                  <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-full inline-flex items-center justify-center mr-2 transition-colors">
+                    <Facebook className="h-5 w-5 text-white" />
+                  </span>
                   {t("followFacebook")}
                 </a>
               </div>
@@ -253,3 +255,4 @@ export default function ContactSection() {
     </section>
   );
 }
+
