@@ -119,7 +119,7 @@ export default function ContactSection() {
                   className="inline-flex items-center text-brand-blue hover:text-brand-pink group transition-colors"
                   aria-label={t("followFacebookAria")}
                 >
-                  <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-full inline-flex items-center justify-center mr-2 transition-colors">
+                  <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-md inline-flex items-center justify-center mr-2 transition-colors">
                     <Facebook className="h-5 w-5 text-white" />
                   </span>
                   {t("followFacebook")}

@@ -1,7 +1,7 @@
 
 "use client";
 
-import Link from 'next/link';
+import Link from 'next/link'; // Using Next.js's default Link
 import { Facebook, Phone, Mail, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -25,6 +25,8 @@ export default function Footer() {
             <li><Link href="/services" className="hover:text-primary-foreground/60 transition-colors">{tNav('services')}</Link></li>
             <li><Link href="/#contact" className="hover:text-primary-foreground/60 transition-colors">{tNav('contact')}</Link></li>
             <li><Link href="/financial-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('financialInfo')}</Link></li>
+             <li><Link href="/health-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('healthInfo')}</Link></li>
+             <li><Link href="/testimonials" className="hover:text-primary-foreground/60 transition-colors">{tNav('testimonials')}</Link></li>
           </ul>
         </div>
         <div>
@@ -50,7 +52,7 @@ export default function Footer() {
                 aria-label={t('followUsFacebook')} 
                 className="hover:opacity-80 transition-opacity group"
               >
-                <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-full inline-flex items-center justify-center transition-colors">
+                <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-md inline-flex items-center justify-center transition-colors">
                   <Facebook size={18} className="text-white" />
                 </span>
               </a>
@@ -65,4 +67,3 @@ export default function Footer() {
     </footer>
   );
 }
-
