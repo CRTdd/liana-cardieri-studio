@@ -5,107 +5,118 @@
     "services": "Usługi",
     "testimonials": "Opinie",
     "contact": "Kontakt",
-    "financialInfo": "[TRANSLATE] Financial Info",
-    "healthInfo": "[TRANSLATE] Health Info"
+    "financialInfo": "Informacje Finansowe",
+    "healthInfo": "Informacje o Zdrowiu"
   },
   "Header": {
     "callNow": "Zadzwoń Teraz: 519-578-5717",
     "selectedLanguage": "Polski"
   },
   "HeroSection": {
-    "headline": "[TRANSLATE] Smile Confidently with Gentle, Expert Care from Dr. Liana Cardieri.",
-    "subheading": "[TRANSLATE] Family and cosmetic dentistry in Kitchener, ON, tailored to you.",
-    "ctaButton": "[TRANSLATE] Call Now: 519-578-5717",
-    "trustBadgeExperience": "[TRANSLATE] 20+ Years Experience",
-    "trustBadgeODA": "[TRANSLATE] ODA Member",
-    "tagline": "[TRANSLATE] Care in Your Language: English, Portuguese, Polish."
+    "headline": "Uśmiechaj się Pewnie dzięki Delikatnej, Eksperckiej Opiece Dr Liany Cardieri.",
+    "subheading": "Stomatologia rodzinna i kosmetyczna w Kitchener, ON, dostosowana do Ciebie.",
+    "ctaButton": "Zadzwoń Teraz: 519-578-5717",
+    "trustBadgeExperience": "Ponad 20 Lat Doświadczenia",
+    "trustBadgeODA": "Członek ODA",
+    "tagline": "Opieka w Twoim Języku: Angielski, Portugalski, Polski."
   },
   "ServicesSection": {
-    "headline": "[TRANSLATE] Your Perfect Smile Starts Here",
-    "description": "[TRANSLATE] We offer a comprehensive range of dental services to meet all your needs. Explore some of our popular treatments below.",
-    "exploreAllButton": "[TRANSLATE] Explore All Services",
+    "headline": "Twój Idealny Uśmiech Zaczyna Się Tutaj",
+    "description": "Oferujemy kompleksowy zakres usług stomatologicznych, aby zaspokoić wszystkie Twoje potrzeby. Zapoznaj się z niektórymi z naszych popularnych zabiegów poniżej.",
+    "exploreAllButton": "Odkryj Wszystkie Usługi",
     "serviceCard": {
-      "learnMoreButton": "[TRANSLATE] Learn More",
-      "callToDiscussButton": "[TRANSLATE] Call to Discuss",
-      "callToDiscussTooltip": "[TRANSLATE] Speak to our friendly team today!"
+      "learnMoreButton": "Dowiedz się Więcej",
+      "callToDiscussButton": "Zadzwoń, aby Omówić",
+      "callToDiscussTooltip": "Porozmawiaj z naszym przyjaznym zespołem już dziś!"
     }
   },
   "AboutSection": {
-    "headline": "[TRANSLATE] Meet Dr. Liana Cardieri",
-    "description": "[TRANSLATE] Dr. Liana Cardieri, a passionate dentist with over 20 years of experience, brings warmth and expertise to every patient, inspired by her multicultural roots. We’re proud to serve our community in English, Portuguese, and Polish, ensuring you feel at home. Meet the team dedicated to your smile.",
-    "videoCta": "[TRANSLATE] Call Now",
-    "learnMoreButton": "[TRANSLATE] Learn More About Our Team"
+    "headline": "Poznaj Dr Lianę Cardieri",
+    "description": "Dr Liana Cardieri, dentystka z pasją i ponad 20-letnim doświadczeniem, wnosi ciepło i fachowość do każdego pacjenta, czerpiąc inspirację ze swoich wielokulturowych korzeni. Jesteśmy dumni, że możemy służyć naszej społeczności w języku angielskim, portugalskim i polskim, zapewniając, że poczujesz się jak w domu. Poznaj zespół oddany Twojemu uśmiechowi.",
+    "videoCta": "Zadzwoń Teraz",
+    "learnMoreButton": "Dowiedz się Więcej o Naszym Zespole"
   },
   "WhyChooseUsSection": {
-    "headline": "[TRANSLATE] Why Choose Dr. Cardieri's Practice?",
-    "description": "[TRANSLATE] Experience dental care that's centered around you, in a welcoming and professional environment.",
-    "tagline": "[TRANSLATE] Care in Your Language: English, Portuguese, Polish."
+    "headline": "Dlaczego Wybrać Praktykę Dr Cardieri?",
+    "description": "Doświadcz opieki stomatologicznej skoncentrowanej na Tobie, w przyjaznym i profesjonalnym otoczeniu.",
+    "tagline": "Opieka w Twoim Języku: Angielski, Portugalski, Polski."
   },
   "TestimonialsSection": {
-    "headline": "[TRANSLATE] Hear From Our Happy Patients",
-    "description": "[TRANSLATE] Discover why our patients trust us with their smiles.",
-    "seeAllReviewsButton": "[TRANSLATE] See All Reviews",
-    "leaveReviewButton": "[TRANSLATE] Leave a Review"
+    "headline": "Posłuchaj Naszych Zadowolonych Pacjentów",
+    "description": "Odkryj, dlaczego nasi pacjenci ufają nam swoje uśmiechy.",
+    "seeAllReviewsButton": "Zobacz Wszystkie Opinie",
+    "leaveReviewButton": "Zostaw Opinię"
   },
   "BookingSection": {
-    "headline": "[TRANSLATE] Your Perfect Smile is Just a Call Away!",
-    "description": "[TRANSLATE] Online booking is coming soon – for now, please call <telLink>519-578-5717</telLink> or use our contact form to secure your appointment with our caring team. We’ll make scheduling easy and stress-free.",
-    "formTitle": "[TRANSLATE] Book an Appointment (Coming Soon)",
-    "formDescription": "[TRANSLATE] This form is currently for demonstration only.",
-    "formLabelName": "[TRANSLATE] Full Name",
-    "formPlaceholderName": "[TRANSLATE] Your Name",
-    "formLabelEmail": "[TRANSLATE] Email Address",
-    "formPlaceholderEmail": "[TRANSLATE] your@email.com",
-    "formLabelDate": "[TRANSLATE] Preferred Date",
-    "bookVisitButton": "[TRANSLATE] Book Your Visit",
-    "bookVisitAriaLabel": "[TRANSLATE] Book Your Visit - links to contact form"
+    "headline": "Twój Idealny Uśmiech jest na Wyciągnięcie Ręki!",
+    "description": "Rezerwacja online już wkrótce – na razie zadzwoń pod numer <telLink>519-578-5717</telLink> lub skorzystaj z naszego formularza kontaktowego, aby umówić się na wizytę z naszym troskliwym zespołem. Uczynimy planowanie łatwym i bezstresowym.",
+    "formTitle": "Umów Wizytę (Wkrótce)",
+    "formDescription": "Ten formularz służy obecnie wyłącznie do celów demonstracyjnych.",
+    "formLabelName": "Imię i Nazwisko",
+    "formPlaceholderName": "Twoje Imię",
+    "formLabelEmail": "Adres Email",
+    "formPlaceholderEmail": "twoj@email.com",
+    "formLabelDate": "Preferowana Data",
+    "bookVisitButton": "Zarezerwuj Wizytę",
+    "bookVisitAriaLabel": "Zarezerwuj Wizytę - linki do formularza kontaktowego"
   },
   "ContactSection": {
-    "headline": "[TRANSLATE] Get in Touch",
-    "description": "[TRANSLATE] We're here to answer your questions and help you schedule your visit.",
-    "contactInfoTitle": "[TRANSLATE] Contact Information",
-    "address": "[TRANSLATE] 322 Lawrence Ave,<br />Kitchener, ON N2M 1Y4",
-    "officeHoursTitle": "[TRANSLATE] Office Hours",
-    "hoursMF": "[TRANSLATE] Monday - Friday: 9 AM - 5 PM",
-    "hoursSat": "[TRANSLATE] Saturday: By Appointment",
-    "hoursSun": "[TRANSLATE] Sunday: Closed",
-    "followFacebook": "[TRANSLATE] Follow us on Facebook",
-    "formTrustBadgeExperience": "[TRANSLATE] 20+ Years Experience",
-    "formTrustBadgeODA": "[TRANSLATE] ODA Member",
-    "formThankYouTitle": "[TRANSLATE] Thank You!",
-    "formThankYouMessage": "[TRANSLATE] Your message has been sent successfully. We'll reply within 24 hours.",
-    "formDownloadGuideButton": "[TRANSLATE] Download Your Free Dental Care Guide",
-    "formSendAnotherMessageButton": "[TRANSLATE] Send another message",
-    "formFreeGuidePitch": "[TRANSLATE] Get our <bold>Free Dental Care Guide</bold> to keep your smile healthy – yours when you contact us!",
-    "formLabelName": "[TRANSLATE] Full Name",
-    "formPlaceholderName": "[TRANSLATE] John Doe",
-    "formLabelEmail": "[TRANSLATE] Email Address",
-    "formPlaceholderEmail": "[TRANSLATE] you@example.com",
-    "formLabelPhone": "[TRANSLATE] Phone Number (Optional)",
-    "formPlaceholderPhone": "[TRANSLATE] 555-123-4567",
-    "formLabelMessage": "[TRANSLATE] Your Message",
-    "formPlaceholderMessage": "[TRANSLATE] How can we help you today?",
-    "formGdprConsent": "[TRANSLATE] I consent to Kitchener Smiles collecting my details through this form.",
-    "formSubmitButton": "[TRANSLATE] Send Message & Get Guide",
-    "formSubmittingButton": "[TRANSLATE] Sending...",
-    "formReplyPromise": "[TRANSLATE] Let’s start your smile journey – we’ll reply within 24 hours."
+    "headline": "Skontaktuj Się z Nami",
+    "description": "Jesteśmy tutaj, aby odpowiedzieć na Twoje pytania i pomóc Ci umówić wizytę.",
+    "contactInfoTitle": "Informacje Kontaktowe",
+    "address": "322 Lawrence Ave,<br />Kitchener, ON - N2M 1Y4",
+    "phoneNumber": "519-578-5717",
+    "email": "info@kitchenersmiles.ca",
+    "officeHoursTitle": "Godziny Otwarcia",
+    "hoursMF": "Poniedziałek - Piątek: 9:00 - 17:00",
+    "hoursSat": "Sobota: Na Umówienie",
+    "hoursSun": "Niedziela: Zamknięte",
+    "followFacebook": "Śledź nas na Facebooku",
+    "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
+    "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
+    "formTrustBadgeExperience": "Ponad 20 Lat Doświadczenia",
+    "formTrustBadgeODA": "Członek ODA",
+    "formThankYouTitle": "Dziękujemy!",
+    "formThankYouMessage": "Twoja wiadomość została wysłana pomyślnie. Odpowiemy w ciągu 24 godzin.",
+    "formDownloadGuideButton": "Pobierz Swój Darmowy Poradnik Pielęgnacji Jamy Ustnej",
+    "formSendAnotherMessageButton": "Wyślij kolejną wiadomość",
+    "formFreeGuidePitch": "Zdobądź nasz <bold>Darmowy Poradnik Pielęgnacji Jamy Ustnej</bold>, aby Twój uśmiech był zdrowy – Twój, gdy się z nami skontaktujesz!",
+    "formLabelName": "Imię i Nazwisko",
+    "formPlaceholderName": "Jan Kowalski",
+    "formLabelEmail": "Adres Email",
+    "formPlaceholderEmail": "ty@przyklad.com",
+    "formLabelPhone": "Numer Telefonu (Opcjonalnie)",
+    "formPlaceholderPhone": "555-123-4567",
+    "formLabelMessage": "Twoja Wiadomość",
+    "formPlaceholderMessage": "Jak możemy Ci dzisiaj pomóc?",
+    "formGdprConsent": "Wyrażam zgodę na zbieranie moich danych przez Dr. Lianę Cardieri za pośrednictwem tego formularza.",
+    "formSubmitButton": "Wyślij Wiadomość i Odbierz Poradnik",
+    "formSubmittingButton": "Wysyłanie...",
+    "formReplyPromise": "Zacznijmy Twoją podróż do uśmiechu – odpowiemy w ciągu 24 godzin.",
+    "formValidation": {
+      "nameMin": "[TRANSLATE] Name must be at least 2 characters.",
+      "emailValid": "[TRANSLATE] Please enter a valid email address.",
+      "messageMin": "[TRANSLATE] Message must be at least 10 characters.",
+      "messageMax": "[TRANSLATE] Message cannot exceed 500 characters.",
+      "gdprRequired": "[TRANSLATE] You must consent to data collection."
+    }
   },
   "Footer": {
-    "brandName": "[TRANSLATE] Kitchener Smiles",
-    "tagline": "[TRANSLATE] Dr. Liana Cardieri Family & Cosmetic Dentistry",
-    "description": "[TRANSLATE] Providing gentle, expert dental care for the whole family. We speak English, Portuguese, and Polish.",
-    "quickLinksTitle": "[TRANSLATE] Quick Links",
-    "contactUsTitle": "[TRANSLATE] Contact Us",
-    "address": "[TRANSLATE] 322 Lawrence Ave, Kitchener, ON N2M 1Y4",
-    "phoneNumber": "[TRANSLATE] 519-578-5717",
-    "email": "[TRANSLATE] info@kitchenersmiles.ca",
-    "followUsFacebook": "[TRANSLATE] Follow us on Facebook",
-    "allRightsReserved": "[TRANSLATE] All rights reserved.",
-    "websiteBy": "[TRANSLATE] Website by Firebase Studio"
+    "brandName": "Dr. Liana Cardieri",
+    "tagline": "Stomatologia Rodzinna i Kosmetyczna",
+    "description": "Zapewniamy delikatną, ekspercką opiekę stomatologiczną dla całej rodziny. Mówimy po angielsku, portugalsku i polsku.",
+    "quickLinksTitle": "Szybkie Linki",
+    "contactUsTitle": "Skontaktuj Się z Nami",
+    "address": "322 Lawrence Ave, Kitchener, ON - N2M 1Y4",
+    "phoneNumber": "519-578-5717",
+    "email": "info@kitchenersmiles.ca",
+    "followUsFacebook": "Śledź nas na Facebooku",
+    "allRightsReserved": "Wszelkie prawa zastrzeżone.",
+    "websiteBy": "Strona wykonana przez Firebase Studio"
   },
   "StickyMobileCTA": {
-    "callNow": "[TRANSLATE] Call Now",
-    "contactUs": "[TRANSLATE] Contact Us"
+    "callNow": "Zadzwoń Teraz",
+    "contactUs": "Skontaktuj się"
   },
   "AiAssistantWidget": {
     "buttonLabel": "[TRANSLATE] Ask AI Assistant",
@@ -121,27 +132,27 @@
     "buttonThinking": "[TRANSLATE] Thinking..."
   },
   "ServicesPage": {
-    "headline": "[TRANSLATE] Comprehensive Dental Services",
-    "description": "[TRANSLATE] At Kitchener Smiles, we offer a wide array of dental treatments to cater to your individual needs and help you achieve optimal oral health and a beautiful smile.",
-    "readyToImprove": "[TRANSLATE] Ready to Improve Your Smile?",
-    "readyDescription": "[TRANSLATE] Contact us today to discuss your dental needs or to schedule an appointment with Dr. Liana Cardieri.",
-    "bookAppointmentButton": "[TRANSLATE] Book Your Appointment",
+    "headline": "Kompleksowe Usługi Stomatologiczne",
+    "description": "W gabinecie Dr. Liany Cardieri oferujemy szeroki wachlarz zabiegów stomatologicznych, aby zaspokoić Twoje indywidualne potrzeby i pomóc Ci osiągnąć optymalne zdrowie jamy ustnej oraz piękny uśmiech.",
+    "readyToImprove": "Gotowy Poprawić Swój Uśmiech?",
+    "readyDescription": "Skontaktuj się z nami już dziś, aby omówić swoje potrzeby stomatologiczne lub umówić się na wizytę u Dr Liany Cardieri.",
+    "bookAppointmentButton": "Umów Wizytę",
     "serviceCard": {
-      "learnMoreButton": "[TRANSLATE] Learn More",
-      "callToDiscussButton": "[TRANSLATE] Call to Discuss"
+      "learnMoreButton": "Dowiedz się Więcej",
+      "callToDiscussButton": "Zadzwoń, aby Omówić"
     },
     "service": {
       "implants": {
-        "title": "[TRANSLATE] Dental Implants",
-        "description": "[TRANSLATE] Regain confidence with our expert dental implants, designed for lasting comfort and a natural look."
+        "title": "Implanty Stomatologiczne",
+        "description": "Odzyskaj pewność siebie dzięki naszym specjalistycznym implantom stomatologicznym, zaprojektowanym z myślą o trwałym komforcie i naturalnym wyglądzie."
       },
       "family-dentistry": {
-        "title": "[TRANSLATE] Family Dentistry",
-        "description": "[TRANSLATE] Comprehensive dental care for all ages, from routine check-ups to advanced treatments."
+        "title": "Stomatologia Rodzinna",
+        "description": "Kompleksowa opieka stomatologiczna dla wszystkich grup wiekowych, od rutynowych przeglądów po zaawansowane zabiegi."
       },
       "cosmetic-dentistry": {
-        "title": "[TRANSLATE] Cosmetic Dentistry",
-        "description": "[TRANSLATE] Enhance your smile with our range of cosmetic treatments, including veneers, bonding, and more."
+        "title": "Stomatologia Kosmetyczna",
+        "description": "Popraw wygląd swojego uśmiechu dzięki naszej ofercie zabiegów kosmetycznych, w tym licówek, bondingu i innych."
       }
     }
   },
@@ -251,7 +262,7 @@
     }
   },
   "AboutPage": {
-    "pageTitle": "[TRANSLATE] Meet the Team at Kitchener Smiles",
+    "pageTitle": "[TRANSLATE] Meet the Team at Dr. Liana Cardieri's Practice",
     "pageDescription": "[TRANSLATE] Our dedicated professionals are committed to providing you with exceptional dental care in a friendly and comfortable environment.",
     "drCardieriTitle": "[TRANSLATE] Dr. Liana Cardieri",
     "drCardieriBio1": "[TRANSLATE] Dr. Liana Cardieri is a highly experienced and compassionate dentist dedicated to providing top-quality dental care. With over 20 years in the field, she combines her extensive knowledge with a gentle touch, ensuring every patient feels comfortable and well-cared for.",
@@ -274,92 +285,92 @@
     "contactToVisitButton": "[TRANSLATE] Contact Us to Schedule Your Visit"
   },
   "FinancialInfoPage": {
-    "headline": "[TRANSLATE] Financial Information & FAQs",
-    "subheadline": "[TRANSLATE] Understanding your treatment costs and payment options.",
-    "commitmentTitle": "[TRANSLATE] Our Commitment to You",
-    "commitmentPara1": "[TRANSLATE] At Kitchener Smiles, we believe that everyone deserves access to high-quality dental care. We strive to make our services affordable and transparent. Our team is here to help you navigate payment options, insurance claims, and any financial questions you may have.",
-    "commitmentPara2": "[TRANSLATE] We will always provide you with a detailed treatment plan and cost estimate before any procedure begins. Your oral health is our priority, and we're committed to working with you to achieve your smile goals within your budget.",
-    "faqTitle": "[TRANSLATE] Frequently Asked Questions",
+    "headline": "Informacje Finansowe i FAQ",
+    "subheadline": "Zrozumienie kosztów leczenia i opcji płatności.",
+    "commitmentTitle": "Nasze Zobowiązanie Wobec Ciebie",
+    "commitmentPara1": "W gabinecie Dr. Liany Cardieri wierzymy, że każdy zasługuje na dostęp do wysokiej jakości opieki stomatologicznej. Staramy się, aby nasze usługi były przystępne cenowo i przejrzyste. Nasz zespół jest tutaj, aby pomóc Ci w nawigacji opcji płatności, roszczeń ubezpieczeniowych i wszelkich pytań finansowych, jakie możesz mieć.",
+    "commitmentPara2": "Zawsze przedstawimy Ci szczegółowy plan leczenia i kosztorys przed rozpoczęciem jakiegokolwiek zabiegu. Twoje zdrowie jamy ustnej jest naszym priorytetem i jesteśmy zobowiązani do współpracy z Tobą, aby osiągnąć cele związane z Twoim uśmiechem w ramach Twojego budżetu.",
+    "faqTitle": "Często Zadawane Pytania",
     "faqs": [
       {
-        "question": "[TRANSLATE] What payment methods do you accept?",
-        "answer": "[TRANSLATE] We accept various payment methods including cash, debit, Visa, MasterCard, and American Express. We also work with most dental insurance plans."
+        "question": "Jakie metody płatności akceptujecie?",
+        "answer": "Akceptujemy różne metody płatności, w tym gotówkę, karty debetowe, Visa, MasterCard i American Express. Współpracujemy również z większością planów ubezpieczeń stomatologicznych."
       },
       {
-        "question": "[TRANSLATE] Do you offer financing options?",
-        "answer": "[TRANSLATE] Yes, we understand that dental treatments can be a significant investment. We offer flexible financing plans through third-party providers to help make your care more affordable. Please speak to our administrative team for more details."
+        "question": "Czy oferujecie opcje finansowania?",
+        "answer": "Tak, rozumiemy, że leczenie stomatologiczne może być znaczącą inwestycją. Oferujemy elastyczne plany finansowania za pośrednictwem zewnętrznych dostawców, aby uczynić opiekę bardziej przystępną cenowo. Prosimy o kontakt z naszym zespołem administracyjnym w celu uzyskania szczegółowych informacji."
       },
       {
-        "question": "[TRANSLATE] How does dental insurance work at your office?",
-        "answer": "[TRANSLATE] We will gladly assist you in understanding your insurance coverage and will submit claims on your behalf. However, please remember that your insurance policy is a contract between you and your insurance company. You are responsible for any portion of the fees not covered by your plan."
+        "question": "Jak działa ubezpieczenie stomatologiczne w waszym gabinecie?",
+        "answer": "Chętnie pomożemy Ci zrozumieć zakres Twojego ubezpieczenia i złożymy roszczenia w Twoim imieniu. Pamiętaj jednak, że Twoja polisa ubezpieczeniowa jest umową między Tobą a Twoją firmą ubezpieczeniową. Jesteś odpowiedzialny za każdą część opłat niepokrytą przez Twój plan."
       },
       {
-        "question": "[TRANSLATE] Will my treatment hurt?",
-        "answer": "[TRANSLATE] Our gentle techniques and caring approach ensure maximum comfort. We offer various pain management options, including local anesthesia and sedation if needed. We’re here to put you at ease and make your experience as comfortable as possible."
+        "question": "Czy moje leczenie będzie bolesne?",
+        "answer": "Nasze delikatne techniki i troskliwe podejście zapewniają maksymalny komfort. Oferujemy różne opcje znieczulenia, w tym znieczulenie miejscowe i sedację w razie potrzeby. Jesteśmy tutaj, aby Cię uspokoić i sprawić, by Twoje doświadczenie było jak najbardziej komfortowe."
       },
       {
-        "question": "[TRANSLATE] What if I need to cancel or reschedule my appointment?",
-        "answer": "[TRANSLATE] We understand that unforeseen circumstances can arise. We kindly request at least 24-48 hours notice if you need to change your appointment. This allows us to offer the time to another patient in need of care."
+        "question": "Co jeśli muszę odwołać lub przełożyć wizytę?",
+        "answer": "Rozumiemy, że mogą wystąpić nieprzewidziane okoliczności. Uprzejmie prosimy o powiadomienie nas co najmniej 24-48 godzin wcześniej, jeśli musisz zmienić termin wizyty. Pozwala nam to zaoferować ten czas innemu pacjentowi potrzebującemu opieki."
       }
     ],
-    "moreQuestionsTitle": "[TRANSLATE] Have More Questions?",
-    "moreQuestionsDescription": "[TRANSLATE] Our friendly administrative team is happy to assist you with any financial inquiries or to discuss your specific situation.",
-    "contactOfficeButton": "[TRANSLATE] Contact Our Office"
+    "moreQuestionsTitle": "Masz Więcej Pytań?",
+    "moreQuestionsDescription": "Nasz przyjazny zespół administracyjny chętnie pomoże Ci w przypadku wszelkich pytań finansowych lub omówi Twoją konkretną sytuację.",
+    "contactOfficeButton": "Skontaktuj się z Naszym Gabinetem"
   },
   "HealthInfoPage": {
-    "headline": "[TRANSLATE] Important Oral Health Topics",
-    "subheadline": "[TRANSLATE] Empowering you with knowledge for a healthier smile.",
-    "gingivitisTitle": "[TRANSLATE] Understanding Gingivitis (Gum Disease)",
-    "gingivitisDescription": "[TRANSLATE] Gingivitis is the early stage of gum disease, caused by plaque buildup. Symptoms include red, swollen, or bleeding gums. If left untreated, it can progress to more serious periodontitis. Regular dental check-ups and good oral hygiene are key to prevention and treatment.",
-    "gingivitisLinkText": "[TRANSLATE] Learn More from CDA",
-    "oralCancerTitle": "[TRANSLATE] Oral Cancer Awareness & Screening",
-    "oralCancerDescription": "[TRANSLATE] Oral cancer can affect any part of the mouth or throat. Early detection significantly improves treatment outcomes. Risk factors include tobacco use, excessive alcohol consumption, and HPV infection. Regular dental exams include screening for signs of oral cancer.",
-    "oralCancerLinkText": "[TRANSLATE] Oral Cancer Foundation",
-    "priorityTitle": "[TRANSLATE] Your Health is Our Priority",
-    "priorityDescription": "[TRANSLATE] Regular dental check-ups are crucial for maintaining not only your oral health but also your overall well-being. Dr. Cardieri and her team are committed to providing comprehensive examinations and personalized advice.",
-    "scheduleCheckupButton": "[TRANSLATE] Schedule Your Check-up Today"
+    "headline": "Ważne Tematy Dotyczące Zdrowia Jamy Ustnej",
+    "subheadline": "Wzmacniamy Cię wiedzą dla zdrowszego uśmiechu.",
+    "gingivitisTitle": "Zrozumienie Zapalenia Dziąseł (Choroby Dziąseł)",
+    "gingivitisDescription": "Zapalenie dziąseł to wczesny etap choroby dziąseł, spowodowany nagromadzeniem płytki bakteryjnej. Objawy obejmują czerwone, opuchnięte lub krwawiące dziąsła. Nieleczone może prowadzić do poważniejszego zapalenia przyzębia. Regularne wizyty kontrolne u dentysty i dobra higiena jamy ustnej są kluczem do zapobiegania i leczenia.",
+    "gingivitisLinkText": "Dowiedz się Więcej od CDA",
+    "oralCancerTitle": "Świadomość i Badania Przesiewowe Raka Jamy Ustnej",
+    "oralCancerDescription": "Rak jamy ustnej może dotyczyć dowolnej części jamy ustnej lub gardła. Wczesne wykrycie znacznie poprawia wyniki leczenia. Czynniki ryzyka obejmują palenie tytoniu, nadmierne spożycie alkoholu i zakażenie wirusem HPV. Regularne badania stomatologiczne obejmują badania przesiewowe w kierunku objawów raka jamy ustnej.",
+    "oralCancerLinkText": "Fundacja Raka Jamy Ustnej",
+    "priorityTitle": "Twoje Zdrowie jest Naszym Priorytetem",
+    "priorityDescription": "Regularne wizyty kontrolne u dentysty są kluczowe dla utrzymania nie tylko zdrowia jamy ustnej, ale także ogólnego samopoczucia. Dr Cardieri i jej zespół są zaangażowani w zapewnianie kompleksowych badań i spersonalizowanych porad.",
+    "scheduleCheckupButton": "Umów Się na Wizytę Kontrolną Już Dziś"
   },
   "TestimonialsPage": {
     "headline": "[TRANSLATE] What Our Patients Are Saying",
     "description": "[TRANSLATE] We are proud of the positive feedback we receive from our valued patients. Your trust and satisfaction are our greatest rewards.",
     "shareExperienceTitle": "[TRANSLATE] Share Your Experience",
-    "shareExperienceDescription": "[TRANSLATE] If you've had a positive experience at Kitchener Smiles, we'd love to hear from you! Your feedback helps us continue to provide the best possible care.",
+    "shareExperienceDescription": "[TRANSLATE] If you've had a positive experience with Dr. Liana Cardieri, we'd love to hear from you! Your feedback helps us continue to provide the best possible care.",
     "leaveReviewOnlineButton": "[TRANSLATE] Leave a Review Online",
     "contactUsDirectlyButton": "[TRANSLATE] Contact Us Directly"
   },
   "data": {
     "services": {
       "whitening": {
-        "title": "[TRANSLATE] Zoom Whitening",
-        "description": "[TRANSLATE] Get a radiant, confident smile in just one visit with our safe, professional whitening."
+        "title": "Wybielanie Zoom",
+        "description": "Zyskaj promienny, pewny uśmiech w ciągu jednej wizyty dzięki naszemu bezpiecznemu, profesjonalnemu wybielaniu."
       },
       "fillings": {
-        "title": "[TRANSLATE] Silver/Resin Fillings",
-        "description": "[TRANSLATE] Restore decayed teeth with durable and aesthetic silver or tooth-colored resin fillings.",
-        "trustBadge": "[TRANSLATE] Pain-Free Options"
+        "title": "Wypełnienia Srebrne/Żywiczne",
+        "description": "Odbuduj zęby z próchnicą za pomocą trwałych i estetycznych wypełnień srebrnych lub żywicznych w kolorze zęba.",
+        "trustBadge": "Opcje Bezbolesne"
       },
       "crowns-bridges": {
-        "title": "[TRANSLATE] Crowns & Bridges",
-        "description": "[TRANSLATE] Strengthen damaged teeth or replace missing ones with our custom-made crowns and bridges.",
-        "trustBadge": "[TRANSLATE] Same-Day Crowns"
+        "title": "Korony i Mosty",
+        "description": "Wzmocnij uszkodzone zęby lub zastąp brakujące naszymi indywidualnie wykonanymi koronami i mostami.",
+        "trustBadge": "Korony Tego Samego Dnia"
       }
     },
     "testimonials": [
-      { "quote": "[TRANSLATE] Painless and professional! Dr. Cardieri and her team are fantastic. I highly recommend them.", "author": "J.S." },
-      { "quote": "[TRANSLATE] The best dental experience I've ever had. Everyone is so friendly and caring. My smile has never looked better!", "author": "M.B." },
-      { "quote": "[TRANSLATE] I was nervous about my procedure, but they made me feel comfortable and at ease. Truly exceptional service.", "author": "A.K." },
-      { "quote": "[TRANSLATE] Multilingual staff was a huge plus for my family. They explained everything clearly in Portuguese.", "author": "C.O." },
-      { "quote": "[TRANSLATE] Efficient, modern, and very skilled. The same-day crown service is amazing!", "author": "L.P." }
+      { "quote": "Bezboleśnie i profesjonalnie! Dr Cardieri i jej zespół są fantastyczni. Gorąco polecam.", "author": "J.S." },
+      { "quote": "Najlepsze doświadczenie stomatologiczne, jakie kiedykolwiek miałem. Wszyscy są tak przyjaźni i troskliwi. Mój uśmiech nigdy nie wyglądał lepiej!", "author": "M.B." },
+      { "quote": "Byłem zdenerwowany moim zabiegiem, ale sprawili, że czułem się komfortowo i swobodnie. Naprawdę wyjątkowa obsługa.", "author": "A.K." },
+      { "quote": "Wielojęzyczny personel był ogromnym plusem dla mojej rodziny. Wszystko jasno wyjaśnili po portugalsku.", "author": "C.O." },
+      { "quote": "Sprawnie, nowocześnie i bardzo fachowo. Usługa korony tego samego dnia jest niesamowita!", "author": "L.P." }
     ],
     "whyChooseUs": [
-      { "title": "[TRANSLATE] Gentle Care", "description": "[TRANSLATE] We prioritize your comfort with gentle techniques and a compassionate approach." },
-      { "title": "[TRANSLATE] Same-Day Crowns", "description": "[TRANSLATE] Advanced technology allows us to create and place crowns in a single visit." },
-      { "title": "[TRANSLATE] Multilingual Staff", "description": "[TRANSLATE] Our team is fluent in English, Portuguese, and Polish to serve you better." },
-      { "title": "[TRANSLATE] Experienced Team", "description": "[TRANSLATE] With over 20 years of experience, Dr. Cardieri leads a skilled and dedicated team." }
+      { "title": "Delikatna Opieka", "description": "Priorytetem jest dla nas Twój komfort dzięki delikatnym technikom i współczującemu podejściu." },
+      { "title": "Korony Tego Samego Dnia", "description": "Zaawansowana technologia pozwala nam tworzyć i zakładać korony podczas jednej wizyty." },
+      { "title": "Wielojęzyczny Personel", "description": "Nasz zespół biegle włada językiem angielskim, portugalskim i polskim, aby lepiej Ci służyć." },
+      { "title": "Doświadczony Zespół", "description": "Z ponad 20-letnim doświadczeniem, Dr Cardieri kieruje wykwalifikowanym i oddanym zespołem." }
     ],
     "trustBadges": [
-      { "text": "[TRANSLATE] 20+ Years Experience" },
-      { "text": "[TRANSLATE] ODA Member" }
+      { "text": "Ponad 20 Lat Doświadczenia" },
+      { "text": "Członek ODA" }
     ]
   }
 }

@@ -16,10 +16,9 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-// Metadata can also be generated dynamically if needed
 export const metadata: Metadata = {
-  title: 'Kitchener Smiles - Dr. Liana Cardieri Family & Cosmetic Dentistry',
-  description: 'Gentle, expert family and cosmetic dentistry in Kitchener, ON. Services in English, Portuguese, and Polish. Call 519-578-5717.',
+  title: 'Dr. Liana Cardieri - Family & Cosmetic Dentistry',
+  description: 'Gentle, expert family and cosmetic dentistry in Kitchener, ON, under the care of Dr. Liana Cardieri. Services in English, Portuguese, and Polish. Call 519-578-5717.',
   keywords: 'dentist Kitchener, cosmetic dentistry, family dentistry, Dr. Liana Cardieri, Kitchener dentist, Portuguese dentist, Polish dentist',
 };
 
@@ -53,3 +52,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+    
