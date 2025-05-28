@@ -70,6 +70,7 @@ export default function ContactSection() {
 
   const phoneNumber = t('phoneNumber');
   const email = t('email');
+  const address = t.raw('address'); // Use t.raw for HTML content
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
@@ -89,7 +90,7 @@ export default function ContactSection() {
               <ul className="space-y-3 text-foreground/80 font-light">
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-6 w-6 text-brand-blue mt-1 shrink-0" />
-                  <span dangerouslySetInnerHTML={{ __html: t.raw('address') }} />
+                  <span dangerouslySetInnerHTML={{ __html: address }} />
                 </li>
                 <li className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-brand-blue shrink-0" />
@@ -112,7 +113,7 @@ export default function ContactSection() {
             </div>
              <div className="mt-6">
                 <a 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/cardieridentaloffice" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center text-brand-blue hover:text-brand-pink transition-colors"

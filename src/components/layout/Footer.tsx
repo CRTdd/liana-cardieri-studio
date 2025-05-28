@@ -1,4 +1,7 @@
-import Link from "next/link";
+
+"use client";
+
+import Link from 'next/link'; // Using Next.js's default Link
 import { Facebook, Phone, Mail, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -27,8 +30,8 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold text-primary-foreground mb-4">{t('contactUsTitle')}</h3>
           <ul className="space-y-2 text-sm">
-            <li className="flex items-start space-x-3"> {/* Changed items-center to items-start for address alignment */}
-              <MapPin size={16} className="mt-1 shrink-0" /> {/* Added mt-1 and shrink-0 */}
+            <li className="flex items-start space-x-3"> 
+              <MapPin size={16} className="mt-1 shrink-0" /> 
               <span dangerouslySetInnerHTML={{ __html: t.raw('address') }} />
             </li>
             <li className="flex items-center space-x-2">
@@ -40,7 +43,13 @@ export default function Footer() {
               <a href={`mailto:${t('email')}`} className="hover:text-primary-foreground/60 transition-colors">{t('email')}</a>
             </li>
             <li className="flex items-center space-x-2 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label={t('followUsFacebook')} className="hover:text-primary-foreground/60 transition-colors">
+              <a 
+                href="https://www.facebook.com/cardieridentaloffice" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label={t('followUsFacebook')} 
+                className="hover:text-primary-foreground/60 transition-colors"
+              >
                 <Facebook size={20} />
               </a>
             </li>
