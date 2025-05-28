@@ -17,9 +17,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Facebook, Clock, Download, Award, Users } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Award, Users } from "lucide-react"; // Removed Download icon
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Facebook } from "lucide-react"; // Corrected import
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-secondary/50 p-2 rounded-md">
@@ -70,7 +71,7 @@ export default function ContactSection() {
 
   const phoneNumber = t('phoneNumber');
   const email = t('email');
-  const address = t.raw('address'); // Use t.raw for HTML content
+  const address = t.raw('address');
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
@@ -150,20 +151,13 @@ export default function ContactSection() {
               <div className="text-center py-8">
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t("formThankYouTitle")}</h3>
                 <p className="text-foreground/80 mb-6">{t("formThankYouMessage")}</p>
-                <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
-                  <a href="/documents/FreeDentalCareGuide.pdf" download>
-                    <Download className="mr-2 h-4 w-4" />
-                    {t("formDownloadGuideButton")}
-                  </a>
-                </Button>
                  <Button variant="link" onClick={() => setFormSubmitted(false)} className="mt-4 text-brand-blue">
                   {t("formSendAnotherMessageButton")}
                 </Button>
               </div>
             ) : (
               <>
-                <p className="text-sm text-foreground/70 mb-2 text-center bg-primary/10 p-3 rounded-md border border-primary/20"
-                   dangerouslySetInnerHTML={{ __html: t.raw('formFreeGuidePitch') }} />
+                {/* Removed formFreeGuidePitch */}
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <FormField
@@ -255,4 +249,3 @@ export default function ContactSection() {
     </section>
   );
 }
-

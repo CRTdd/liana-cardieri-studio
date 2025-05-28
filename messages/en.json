@@ -80,9 +80,7 @@
     "formTrustBadgeODA": "ODA Member",
     "formThankYouTitle": "Thank You!",
     "formThankYouMessage": "Your message has been sent successfully. We'll reply within 24 hours.",
-    "formDownloadGuideButton": "Download Your Free Dental Care Guide",
     "formSendAnotherMessageButton": "Send another message",
-    "formFreeGuidePitch": "Get our <bold>Free Dental Care Guide</bold> to keep your smile healthy – yours when you contact us!",
     "formLabelName": "Full Name",
     "formPlaceholderName": "John Doe",
     "formLabelEmail": "Email Address",
@@ -92,7 +90,7 @@
     "formLabelMessage": "Your Message",
     "formPlaceholderMessage": "How can we help you today?",
     "formGdprConsent": "I consent to Dr. Liana Cardieri collecting my details through this form.",
-    "formSubmitButton": "Send Message & Get Guide",
+    "formSubmitButton": "Send Message",
     "formSubmittingButton": "Sending...",
     "formReplyPromise": "Let’s start your smile journey – we’ll reply within 24 hours.",
     "formValidation": {
