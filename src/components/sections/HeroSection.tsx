@@ -3,8 +3,9 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Award, Users } from 'lucide-react'; // Placeholder icons
+import { Award } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm p-3 rounded-lg shadow-md">
@@ -14,6 +15,7 @@ const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) =
 );
 
 export default function HeroSection() {
+  const t = useTranslations('HeroSection');
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -24,13 +26,13 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-[70vh] flex flex-col justify-center items-center bg-brand-light-blue text-foreground px-4 overflow-hidden">
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
           src="https://placehold.co/1200x800.png"
-          alt="Bright and modern dental office interior"
+          alt={t('headline')} // Alt text can be the headline or a descriptive one
           data-ai-hint="dental office bright"
           layout="fill"
           objectFit="cover"
@@ -43,27 +45,28 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto py-20">
         <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight text-foreground">
-          Smile Confidently with Gentle, Expert Care from Dr. Liana Cardieri.
+          {t('headline')}
         </h1>
         <p className="mt-6 text-lg sm:text-xl font-light text-foreground/90">
-          Family and cosmetic dentistry in Kitchener, ON, tailored to you.
+          {t('subheading')}
         </p>
-        <Button 
-          asChild 
-          size="lg" 
+        <Button
+          asChild
+          size="lg"
           className="mt-10 bg-brand-blue hover:bg-brand-pink text-white text-lg py-4 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-brand-pink/50"
-          aria-label="Call to book appointment: 519-578-5717"
+          aria-label={t('ctaButton')}
         >
-          <a href="tel:519-578-5717">Call Now: 519-578-5717</a>
+          <a href="tel:519-578-5717">{t('ctaButton')}</a>
         </Button>
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <TrustBadge Icon={Award} text="20+ Years Experience" />
-          <TrustBadge Icon={Users} text="ODA Member" />
+          <TrustBadge Icon={Award} text={t('trustBadgeExperience')} />
         </div>
         <p className="mt-8 text-sm font-light text-foreground/80 tracking-wide">
-          Care in Your Language: English, Portuguese, Polish.
+          {t('tagline')}
         </p>
       </div>
     </section>
   );
 }
+
+    

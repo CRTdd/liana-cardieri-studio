@@ -1,22 +1,23 @@
+
 import type { LucideIcon } from 'lucide-react';
 import { Award, Users, Smile, Crown, Zap, Languages, HeartHandshake, Star, UserCircle } from 'lucide-react';
 
 export interface Service {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string; // Changed from title to titleKey
+  descriptionKey: string; // Changed from description to descriptionKey
   image: string;
   imageHint: string;
   learnMoreLink: string;
-  trustBadge?: string;
+  trustBadgeKey?: string; // Changed from trustBadge to trustBadgeKey
   Icon?: LucideIcon;
 }
 
 export const servicesData: Service[] = [
   {
     id: 'whitening',
-    title: 'Zoom Whitening',
-    description: 'Get a radiant, confident smile in just one visit with our safe, professional whitening.',
+    titleKey: 'data.services.whitening.title',
+    descriptionKey: 'data.services.whitening.description',
     image: 'https://placehold.co/400x300.png',
     imageHint: 'teeth whitening',
     learnMoreLink: '/services/zoom-whitening',
@@ -24,67 +25,67 @@ export const servicesData: Service[] = [
   },
   {
     id: 'fillings',
-    title: 'Silver/Resin Fillings',
-    description: 'Restore decayed teeth with durable and aesthetic silver or tooth-colored resin fillings.',
+    titleKey: 'data.services.fillings.title',
+    descriptionKey: 'data.services.fillings.description',
     image: 'https://placehold.co/400x300.png',
     imageHint: 'dental filling',
     learnMoreLink: '/services/fillings',
-    trustBadge: 'Pain-Free Options',
+    trustBadgeKey: 'data.services.fillings.trustBadge',
     Icon: Smile,
   },
   {
     id: 'crowns-bridges',
-    title: 'Crowns & Bridges',
-    description: 'Strengthen damaged teeth or replace missing ones with our custom-made crowns and bridges.',
+    titleKey: 'data.services.crowns-bridges.title',
+    descriptionKey: 'data.services.crowns-bridges.description',
     image: 'https://placehold.co/400x300.png',
     imageHint: 'dental crown bridge',
     learnMoreLink: '/services/crowns-bridges',
-    trustBadge: 'Same-Day Crowns',
+    trustBadgeKey: 'data.services.crowns-bridges.trustBadge',
     Icon: Crown,
   },
 ];
 
 export interface Testimonial {
   id: string;
-  quote: string;
-  author: string;
-  initials: string;
+  quoteKey: string; // Changed from quote to quoteKey
+  authorKey: string; // Changed from author to authorKey
+  initials: string; // Initials likely remain static
   rating: number;
 }
 
 export const testimonialsData: Testimonial[] = [
   {
     id: '1',
-    quote: 'Painless and professional! Dr. Cardieri and her team are fantastic. I highly recommend them.',
-    author: 'J.S.',
+    quoteKey: 'data.testimonials.0.quote',
+    authorKey: 'data.testimonials.0.author',
     initials: 'JS',
     rating: 5,
   },
   {
     id: '2',
-    quote: 'The best dental experience I\'ve ever had. Everyone is so friendly and caring. My smile has never looked better!',
-    author: 'M.B.',
+    quoteKey: 'data.testimonials.1.quote',
+    authorKey: 'data.testimonials.1.author',
     initials: 'MB',
     rating: 5,
   },
   {
     id: '3',
-    quote: 'I was nervous about my procedure, but they made me feel comfortable and at ease. Truly exceptional service.',
-    author: 'A.K.',
+    quoteKey: 'data.testimonials.2.quote',
+    authorKey: 'data.testimonials.2.author',
     initials: 'AK',
     rating: 5,
   },
   {
     id: '4',
-    quote: 'Multilingual staff was a huge plus for my family. They explained everything clearly in Portuguese.',
-    author: 'C.O.',
+    quoteKey: 'data.testimonials.3.quote',
+    authorKey: 'data.testimonials.3.author',
     initials: 'CO',
     rating: 5,
   },
   {
     id: '5',
-    quote: 'Efficient, modern, and very skilled. The same-day crown service is amazing!',
-    author: 'L.P.',
+    quoteKey: 'data.testimonials.4.quote',
+    authorKey: 'data.testimonials.4.author',
     initials: 'LP',
     rating: 5,
   },
@@ -92,39 +93,46 @@ export const testimonialsData: Testimonial[] = [
 
 export interface WhyChooseUsPoint {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string; // Changed from title to titleKey
+  descriptionKey: string; // Changed from description to descriptionKey
   Icon: LucideIcon;
 }
 
 export const whyChooseUsData: WhyChooseUsPoint[] = [
   {
     id: 'gentle-care',
-    title: 'Gentle Care',
-    description: 'We prioritize your comfort with gentle techniques and a compassionate approach.',
+    titleKey: 'data.whyChooseUs.0.title',
+    descriptionKey: 'data.whyChooseUs.0.description',
     Icon: HeartHandshake,
   },
   {
     id: 'same-day-crowns',
-    title: 'Same-Day Crowns',
-    description: 'Advanced technology allows us to create and place crowns in a single visit.',
+    titleKey: 'data.whyChooseUs.1.title',
+    descriptionKey: 'data.whyChooseUs.1.description',
     Icon: Crown,
   },
   {
     id: 'multilingual-staff',
-    title: 'Multilingual Staff',
-    description: 'Our team is fluent in English, Portuguese, and Polish to serve you better.',
+    titleKey: 'data.whyChooseUs.2.title',
+    descriptionKey: 'data.whyChooseUs.2.description',
     Icon: Languages,
   },
     {
     id: 'experienced-team',
-    title: 'Experienced Team',
-    description: 'With over 20 years of experience, Dr. Cardieri leads a skilled and dedicated team.',
+    titleKey: 'data.whyChooseUs.3.title',
+    descriptionKey: 'data.whyChooseUs.3.description',
     Icon: Award,
   },
 ];
 
-export const trustBadges = [
-    { id: 'experience', text: '20+ Years Experience', Icon: Award },
-    { id: 'oda', text: 'ODA Member', Icon: Users }, // Using Users as a placeholder for ODA Member
+export interface TrustBadgeItem {
+    id: string;
+    textKey: string; // Changed from text to textKey
+    Icon: LucideIcon;
+}
+
+export const trustBadges: TrustBadgeItem[] = [
+    { id: 'experience', textKey: 'data.trustBadges.0.text', Icon: Award },
 ];
+
+    

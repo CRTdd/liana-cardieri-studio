@@ -19,7 +19,6 @@
     "subheading": "Family and cosmetic dentistry in Kitchener, ON, tailored to you.",
     "ctaButton": "Call Now: 519-578-5717",
     "trustBadgeExperience": "20+ Years Experience",
-    "trustBadgeODA": "ODA Member",
     "tagline": "Care in Your Language: English, Portuguese, Polish."
   },
   "ServicesSection": {
@@ -81,7 +80,6 @@
     "followFacebookAria": "Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "Map to Dr. Liana Cardieri's Dental Office",
     "formTrustBadgeExperience": "20+ Years Experience",
-    "formTrustBadgeODA": "ODA Member",
     "formThankYouTitle": "Thank You!",
     "formThankYouMessage": "Your message has been sent successfully. We'll reply within 24 hours.",
     "formSendAnotherMessageButton": "Send another message",
@@ -273,7 +271,6 @@
     "drCardieriBio2": "Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believes in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.",
     "drCardieriBio3": "Her philosophy is centered on patient education and preventive care, empowering individuals to maintain optimal oral health for life. Dr. Cardieri is an active member of the Ontario Dental Association (ODA) and is passionate about serving the Kitchener community.",
     "experienceBadge": "20+ Years Experience",
-    "odaMemberBadge": "ODA Member",
     "hygienistsTitle": "Our Expert Hygienists",
     "sofiaName": "Sofia Alves",
     "sofiaTitle": "Registered Dental Hygienist",
@@ -373,8 +370,7 @@
       { "title": "Experienced Team", "description": "With over 20 years of experience, Dr. Cardieri leads a skilled and dedicated team." }
     ],
     "trustBadges": [
-      { "text": "20+ Years Experience" },
-      { "text": "ODA Member" }
+      { "text": "20+ Years Experience" }
     ]
   }
 }

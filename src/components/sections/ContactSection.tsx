@@ -56,7 +56,7 @@ export default function ContactSection() {
 
   async function onSubmit(data: ContactFormValues) {
     console.log(data);
-    
+
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     setFormSubmitted(true);
@@ -65,12 +65,13 @@ export default function ContactSection() {
       description: t("formThankYouMessage"),
       variant: "default",
     });
-    form.reset(); 
+    form.reset();
   }
 
-  const phoneNumber = t('phoneNumber');
-  const email = t('email');
-  const address = t.raw('address');
+  const translatedPhoneNumber = t('phoneNumber');
+  const translatedEmail = t('email');
+  const translatedAddress = t.raw('address');
+
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
@@ -90,15 +91,15 @@ export default function ContactSection() {
               <ul className="space-y-3 text-foreground/80 font-light">
                 <li className="flex items-start space-x-3">
                   <MapPin className="h-6 w-6 text-brand-blue mt-1 shrink-0" />
-                  <span dangerouslySetInnerHTML={{ __html: address }} />
+                  <span dangerouslySetInnerHTML={{ __html: translatedAddress }} />
                 </li>
                 <li className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-brand-blue shrink-0" />
-                  <a href={`tel:${phoneNumber}`} className="hover:text-brand-blue transition-colors">{phoneNumber}</a>
+                  <a href={`tel:${translatedPhoneNumber}`} className="hover:text-brand-blue transition-colors">{translatedPhoneNumber}</a>
                 </li>
                 <li className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-brand-blue shrink-0" />
-                  <a href={`mailto:${email}`} className="hover:text-brand-blue transition-colors">{email}</a>
+                  <a href={`mailto:${translatedEmail}`} className="hover:text-brand-blue transition-colors">{translatedEmail}</a>
                 </li>
               </ul>
             </div>
@@ -116,10 +117,10 @@ export default function ContactSection() {
               </ul>
             </div>
              <div className="mt-6">
-                <a 
-                  href="https://www.facebook.com/cardieridentaloffice" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.facebook.com/cardieridentaloffice"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-brand-blue hover:text-brand-pink group transition-colors"
                   aria-label={t("followFacebookAria")}
                 >
@@ -129,7 +130,7 @@ export default function ContactSection() {
                   {t("followFacebook")}
                 </a>
               </div>
-            
+
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border border-border">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.8000000000005!2d-80.4924!3d43.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf40000000001%3A0x0!2sKitchener%2C%20ON!5e0!3m2!1sen!2sca!4v1622000000000!5m2!1sen!2sca"
@@ -148,7 +149,6 @@ export default function ContactSection() {
           <div className="bg-secondary/30 p-6 sm:p-8 rounded-xl shadow-xl border border-border">
             <div className="flex flex-col sm:flex-row gap-2 items-center mb-6">
                 <TrustBadge Icon={Award} text={t("formTrustBadgeExperience")} />
-                <TrustBadge Icon={Users} text={t("formTrustBadgeODA")} />
             </div>
             {formSubmitted ? (
               <div className="text-center py-8">

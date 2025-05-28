@@ -19,7 +19,6 @@
     "subheading": "Stomatologia rodzinna i kosmetyczna w Kitchener, ON, dostosowana do Ciebie.",
     "ctaButton": "Zadzwoń Teraz: 519-578-5717",
     "trustBadgeExperience": "Ponad 20 Lat Doświadczenia",
-    "trustBadgeODA": "Członek ODA",
     "tagline": "Opieka w Twoim Języku: Angielski, Portugalski, Polski."
   },
   "ServicesSection": {
@@ -81,7 +80,6 @@
     "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
     "formTrustBadgeExperience": "Ponad 20 Lat Doświadczenia",
-    "formTrustBadgeODA": "Członek ODA",
     "formThankYouTitle": "Dziękujemy!",
     "formThankYouMessage": "Twoja wiadomość została wysłana pomyślnie. Odpowiemy w ciągu 24 godzin.",
     "formSendAnotherMessageButton": "[TRANSLATE] Send another message",
@@ -273,7 +271,6 @@
     "drCardieriBio2": "[TRANSLATE] Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believe in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.",
     "drCardieriBio3": "[TRANSLATE] Her philosophy is centered on patient education and preventive care, empowering individuals to maintain optimal oral health for life. Dr. Cardieri is an active member of the Ontario Dental Association (ODA) and is passionate about serving the Kitchener community.",
     "experienceBadge": "[TRANSLATE] 20+ Years Experience",
-    "odaMemberBadge": "[TRANSLATE] ODA Member",
     "hygienistsTitle": "[TRANSLATE] Our Expert Hygienists",
     "sofiaName": "[TRANSLATE] Sofia Alves",
     "sofiaTitle": "[TRANSLATE] Registered Dental Hygienist",
@@ -373,8 +370,7 @@
       { "title": "Doświadczony Zespół", "description": "Z ponad 20-letnim doświadczeniem, Dr Cardieri kieruje wykwalifikowanym i oddanym zespołem." }
     ],
     "trustBadges": [
-      { "text": "Ponad 20 Lat Doświadczenia" },
-      { "text": "Członek ODA" }
+      { "text": "Ponad 20 Lat Doświadczenia" }
     ]
   }
 }
