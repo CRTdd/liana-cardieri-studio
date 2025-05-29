@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,39 +11,46 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Star, Quote } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { useTranslations } from 'next-intl';
 
-const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
-  <Card className="h-full bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl border-border/50 p-6 md:p-8 flex flex-col justify-between items-center text-center mx-auto max-w-sm">
-    <div>
-      <Quote className="h-8 w-8 text-brand-pink mb-4 opacity-50 transform -scale-x-100" />
-      <div className="flex justify-center mb-3">
-        {[...Array(5)].map((_, i) => (
-          <Star
-            key={i}
-            className={`h-5 w-5 ${i < testimonial.rating ? 'text-brand-pink fill-brand-pink' : 'text-muted-foreground/50'}`}
-          />
-        ))}
+const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
+  const t = useTranslations();
+  
+  return (
+    <Card className="h-full bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl border-border/50 p-6 md:p-8 flex flex-col justify-between items-center text-center mx-auto max-w-sm">
+      <div>
+        <Quote className="h-8 w-8 text-brand-pink mb-4 opacity-50 transform -scale-x-100" />
+        <div className="flex justify-center mb-3">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              className={`h-5 w-5 ${i < testimonial.rating ? 'text-brand-pink fill-brand-pink' : 'text-muted-foreground/50'}`}
+            />
+          ))}
+        </div>
+        <p className="text-base font-light text-foreground/80 italic mb-6">
+          "{t(testimonial.quoteKey)}"
+        </p>
       </div>
-      <p className="text-base font-light text-foreground/80 italic mb-6">
-        "{testimonial.quote}"
+      <p className="font-bold text-lg text-primary">
+        – {t(testimonial.authorKey)} ({testimonial.initials})
       </p>
-    </div>
-    <p className="font-bold text-lg text-primary">
-      – {testimonial.author} ({testimonial.initials})
-    </p>
-  </Card>
-);
+    </Card>
+  );
+};
 
 export default function TestimonialsSection() {
+  const t = useTranslations('TestimonialsSection');
+  
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-brand-light-blue">
       <div className="container max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Hear From Our Happy Patients
+            {t('headline')}
           </h2>
           <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
-            Discover why our patients trust us with their smiles.
+            {t('description')}
           </p>
         </div>
         
@@ -89,14 +95,26 @@ export default function TestimonialsSection() {
           ))}
         </Swiper>
 
-        <div className="mt-12 text-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button asChild variant="outline" size="lg" className="text-base border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-colors duration-300">
-            <Link href="/testimonials">See All Reviews</Link>
-          </Button>
-          <Button asChild size="lg" className="text-base bg-brand-blue hover:bg-brand-pink text-white transition-colors duration-300">
-            {/* Placeholder link for Demandforce */}
-            <a href="https://www.demandforce.com/b/kitchener-smiles-example" target="_blank" rel="noopener noreferrer">Leave a Review</a>
-          </Button>
+        <div className="mt-8 text-center">
+          <Link 
+            href="/testimonials" 
+            className="inline-flex items-center text-brand-blue hover:text-brand-pink transition-colors duration-300 group"
+          >
+            <span className="text-lg font-medium">{t('seeAllReviewsButton')}</span>
+            <svg 
+              className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>
