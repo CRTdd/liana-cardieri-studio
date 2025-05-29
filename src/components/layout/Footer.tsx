@@ -62,7 +62,6 @@ export default function Footer() {
       </div>
       <div className="mt-12 border-t border-border/20 pt-8 text-center text-sm">
         <p>&copy; {currentYear} {t('brandName')}. {t('allRightsReserved')}</p>
-        <p className="mt-1">{t('websiteBy')}</p>
       </div>
     </footer>
   );

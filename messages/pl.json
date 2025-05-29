@@ -1,4 +1,3 @@
-
 {
   "Navigation": {
     "home": "Strona Główna",
@@ -19,10 +18,10 @@
     "subheading": "Stomatologia rodzinna i kosmetyczna w Kitchener, ON, dostosowana do Ciebie.",
     "ctaButton": "Zadzwoń Teraz: 519-578-5717",
     "trustBadgeExperience": "Ponad 20 Lat Doświadczenia",
-    "taglineIntro": "[TRANSLATE] Care in Your Language:",
-    "languageEnglish": "[TRANSLATE] English",
-    "languagePortuguese": "[TRANSLATE] Portuguese",
-    "languagePolish": "[TRANSLATE] Polish"
+    "taglineIntro": "Opieka w Twoim Języku:",
+    "languageEnglish": "Angielski",
+    "languagePortuguese": "Portugalski",
+    "languagePolish": "Polski"
   },
   "ServicesSection": {
     "headline": "Twój Idealny Uśmiech Zaczyna Się Tutaj",
@@ -72,13 +71,11 @@
     "phoneNumber": "519-578-5717",
     "email": "reception@cardieridental.ca",
     "officeHoursTitle": "Godziny Otwarcia",
-    "hoursMonday": "[TRANSLATE] Mondays: 9:00 am to 6:00 pm",
-    "hoursTuesday": "[TRANSLATE] Tuesdays: 8:00 am to 6:00 pm",
-    "hoursWednesday": "[TRANSLATE] Wednesdays: 8:00 am to 6:00 pm",
-    "hoursThursday": "[TRANSLATE] Thursdays: 9:00 am to 6:00 pm",
-    "hoursFriday": "[TRANSLATE] Fridays: 9:00 am to 2:00 pm",
-    "hoursSaturday": "[TRANSLATE] Saturdays: By Appointment Only",
-    "hoursSundayHolidays": "[TRANSLATE] Sundays and Holidays: Closed",
+    "hoursMondayThursday": "Poniedziałek & Czwartek: 9:00 - 18:00",
+    "hoursTuesdayWednesday": "Wtorek & Środa: 8:00 - 18:00",
+    "hoursFriday": "Piątek: 9:00 - 14:00",
+    "hoursSaturday": "Sobota: Tylko po Uprzednim Umówieniu",
+    "hoursSundayHolidays": "Niedziela i Święta: Zamknięte",
     "followFacebook": "Śledź nas na Facebooku",
     "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
@@ -95,8 +92,8 @@
     "formLabelMessage": "Twoja Wiadomość",
     "formPlaceholderMessage": "Jak możemy Ci dzisiaj pomóc?",
     "formGdprConsent": "Wyrażam zgodę na zbieranie moich danych przez Dr. Lianę Cardieri za pośrednictwem tego formularza.",
-    "formSubmitButton": "[TRANSLATE] Send Message",
-    "formSubmittingButton": "[TRANSLATE] Sending...",
+    "formSubmitButton": "Wyślij Wiadomość",
+    "formSubmittingButton": "Wysyłanie...",
     "formReplyPromise": "Zacznijmy Twoją podróż do uśmiechu – odpowiemy w ciągu 24 godzin.",
     "formValidation": {
       "nameMin": "[TRANSLATE] Name must be at least 2 characters.",

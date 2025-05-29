@@ -1,4 +1,3 @@
-
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -107,13 +106,26 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">{t("officeHoursTitle")}</h3>
               <ul className="space-y-2 text-foreground/80 font-light">
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursMonday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursTuesday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursWednesday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursThursday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursFriday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSaturday")}</span></li>
-                <li className="flex items-center space-x-3"><Clock className="h-5 w-5 text-brand-blue shrink-0" /><span>{t("hoursSundayHolidays")}</span></li>
+                <li className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-brand-blue shrink-0" />
+                  <span>{t("hoursMondayThursday")}</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-brand-blue shrink-0" />
+                  <span>{t("hoursTuesdayWednesday")}</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-brand-blue shrink-0" />
+                  <span>{t("hoursFriday")}</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-brand-blue shrink-0" />
+                  <span>{t("hoursSaturday")}</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <Clock className="h-5 w-5 text-brand-blue shrink-0" />
+                  <span>{t("hoursSundayHolidays")}</span>
+                </li>
               </ul>
             </div>
              <div className="mt-6">
@@ -133,7 +145,7 @@ export default function ContactSection() {
 
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border border-border">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.8000000000005!2d-80.4924!3d43.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf40000000001%3A0x0!2sKitchener%2C%20ON!5e0!3m2!1sen!2sca!4v1622000000000!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5793.801502348399!2d-80.51630912246563!3d43.441788771113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf44ee53599ff%3A0xd64d31f3b4bc82c8!2sDr.%20Liana%20Cardieri%20Family%20and%20Cosmetic%20Dentistry!5e0!3m2!1sen!2sca!4v1748527385298!5m2!1sen!2sca"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
@@ -147,9 +159,6 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-secondary/30 p-6 sm:p-8 rounded-xl shadow-xl border border-border">
-            <div className="flex flex-col sm:flex-row gap-2 items-center mb-6">
-                <TrustBadge Icon={Award} text={t("formTrustBadgeExperience")} />
-            </div>
             {formSubmitted ? (
               <div className="text-center py-8">
                 <h3 className="text-2xl font-semibold text-primary mb-4">{t("formThankYouTitle")}</h3>

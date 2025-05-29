@@ -1,4 +1,3 @@
-
 {
   "Navigation": {
     "home": "Início",
@@ -19,10 +18,10 @@
     "subheading": "Odontologia familiar e cosmética em Kitchener, ON, personalizada para você.",
     "ctaButton": "Ligue Já: 519-578-5717",
     "trustBadgeExperience": "Mais de 20 Anos de Experiência",
-    "taglineIntro": "[TRANSLATE] Care in Your Language:",
-    "languageEnglish": "[TRANSLATE] English",
-    "languagePortuguese": "[TRANSLATE] Portuguese",
-    "languagePolish": "[TRANSLATE] Polish"
+    "taglineIntro": "Atendimento no Seu Idioma:",
+    "languageEnglish": "Inglês",
+    "languagePortuguese": "Português",
+    "languagePolish": "Polonês"
   },
   "ServicesSection": {
     "headline": "Seu Sorriso Perfeito Começa Aqui",
@@ -72,13 +71,11 @@
     "phoneNumber": "519-578-5717",
     "email": "reception@cardieridental.ca",
     "officeHoursTitle": "Horário de Funcionamento",
-    "hoursMonday": "[TRANSLATE] Mondays: 9:00 am to 6:00 pm",
-    "hoursTuesday": "[TRANSLATE] Tuesdays: 8:00 am to 6:00 pm",
-    "hoursWednesday": "[TRANSLATE] Wednesdays: 8:00 am to 6:00 pm",
-    "hoursThursday": "[TRANSLATE] Thursdays: 9:00 am to 6:00 pm",
-    "hoursFriday": "[TRANSLATE] Fridays: 9:00 am to 2:00 pm",
-    "hoursSaturday": "[TRANSLATE] Saturdays: By Appointment Only",
-    "hoursSundayHolidays": "[TRANSLATE] Sundays and Holidays: Closed",
+    "hoursMondayThursday": "Segunda & Quinta: 9:00 às 18:00",
+    "hoursTuesdayWednesday": "Terça & Quarta: 8:00 às 18:00",
+    "hoursFriday": "Sexta: 9:00 às 14:00",
+    "hoursSaturday": "Sábado: Apenas com Agendamento",
+    "hoursSundayHolidays": "Domingo e Feriados: Fechado",
     "followFacebook": "Siga-nos no Facebook",
     "followFacebookAria": "[TRANSLATE] Follow Dr. Liana Cardieri on Facebook",
     "mapTitle": "[TRANSLATE] Map to Dr. Liana Cardieri's Dental Office",
@@ -95,8 +92,8 @@
     "formLabelMessage": "Sua Mensagem",
     "formPlaceholderMessage": "Como podemos ajudá-lo hoje?",
     "formGdprConsent": "Eu concordo que a Dra. Liana Cardieri colete meus dados através deste formulário.",
-    "formSubmitButton": "[TRANSLATE] Send Message",
-    "formSubmittingButton": "[TRANSLATE] Sending...",
+    "formSubmitButton": "Enviar Mensagem",
+    "formSubmittingButton": "Enviando...",
     "formReplyPromise": "Vamos começar sua jornada do sorriso – responderemos em até 24 horas.",
     "formValidation": {
       "nameMin": "[TRANSLATE] Name must be at least 2 characters.",

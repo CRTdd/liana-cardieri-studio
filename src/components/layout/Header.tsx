@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link'; // Using Next.js's default Link
@@ -80,25 +79,25 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
+      <div className="container flex min-h-[64px] max-w-screen-2xl items-center justify-between px-6 sm:px-10 lg:px-16">
+        <Link href="/" className="flex items-center gap-x-3 text-primary hover:text-brand-blue transition-colors">
           <Image
-            src="https://placehold.co/40x40.png" 
-            alt={tHeader('brandName')} // Use translated brand name for alt text
-            width={40}
-            height={40}
-            className="h-10 w-10"
+            src="https://placehold.co/48x48.png" 
+            alt={tHeader('brandName')}
+            width={48}
+            height={48}
+            className="h-10 w-10 block"
             data-ai-hint="dental logo"
           />
-          <span className="font-bold text-xl">{tHeader('brandName')}</span>
+          <span className="font-bold text-2xl flex items-center leading-none">{tHeader('brandName')}</span>
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-x-8 text-sm font-medium">
           {navItems.map((item) => (
             <Link
               key={item.labelKey}
               href={item.href} 
-              className="transition-colors hover:text-primary text-foreground/80"
+              className="transition-colors hover:text-primary text-foreground/80 flex items-center h-10 leading-none"
             >
               {t(item.labelKey as any)}
             </Link>
@@ -106,7 +105,7 @@ export default function Header() {
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary">
+              <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary h-10 leading-none">
                 <Languages className="h-5 w-5" />
                 <span>{currentSelectedLanguage.nativeLabel}</span>
                 <ChevronDown className="h-4 w-4 opacity-50" />
@@ -121,8 +120,8 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-           <Button asChild className="bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105">
-            <a href="tel:519-578-5717">{tHeader('callNow')}</a>
+           <Button asChild className="bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105 h-10 flex items-center px-5 leading-none">
+            <a href="tel:519-578-5717" className="flex items-center h-10 leading-none">{tHeader('callNow')}</a>
           </Button>
         </nav>
 

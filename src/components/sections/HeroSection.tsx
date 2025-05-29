@@ -14,7 +14,7 @@ const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) =
 );
 
 const LanguagePill = ({ flag, name }: { flag: string; name: string }) => (
-  <span className="inline-flex items-center bg-accent/20 text-primary text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+  <span className="inline-flex items-center bg-accent/20 text-primary text-sm font-medium px-4 py-2 rounded-full shadow-lg">
     <span className="mr-2">{flag}</span>
     {name}
   </span>
@@ -41,11 +41,11 @@ export default function HeroSection() {
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
-          src="https://www.cardieridental.ca/wp-content/uploads/2022/02/IMG_0713-scaled-e1644433296118-1140x417.jpg"
+          src="/images/dental-office-2.jpg"
           alt={t('headline')}
           data-ai-hint="dental office bright"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           quality={85}
           priority
           className="opacity-20 md:opacity-30"
@@ -90,8 +90,8 @@ export default function HeroSection() {
           <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
-                src="https://placehold.co/600x450.png"
-                alt={t('headline')} // Alt text can be same as main headline or more specific to this image's purpose
+                src="/images/dental-office.jpg"
+                alt={t('headline')}
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
