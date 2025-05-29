@@ -15,6 +15,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.cardieridental.ca',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

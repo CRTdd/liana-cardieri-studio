@@ -42,7 +42,7 @@ export default function HeroSection() {
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
-          src="https://placehold.co/1200x800.png"
+          src="https://www.cardieridental.ca/wp-content/uploads/2022/02/IMG_0713-scaled-e1644433296118-1140x417.jpg"
           alt={t('headline')}
           data-ai-hint="dental office bright"
           layout="fill"
@@ -88,7 +88,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Column: Image Placeholder */}
-          <div className="hidden md:flex justify-center items-center md:pl-8">
+          <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
                 src="https://placehold.co/600x450.png"
