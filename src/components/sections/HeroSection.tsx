@@ -42,7 +42,7 @@ export default function HeroSection() {
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
-          src="https://www.cardieridental.ca/wp-content/uploads/2022/02/IMG_0713-scaled-e1644433296118-1140x417.jpg"
+          src="https://www.cardieridental.ca/wp-content/uploads/2014/11/slider1.png"
           alt={t('headline')}
           data-ai-hint="dental office bright"
           layout="fill"
