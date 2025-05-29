@@ -42,7 +42,7 @@ export default function HeroSection() {
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
-          src="https://placehold.co/1200x800.png" // Placeholder for background
+          src="https://www.cardieridental.ca/wp-content/uploads/2022/02/IMG_0713-scaled-e1644433296118-1140x417.jpg"
           alt={t('headline')}
           data-ai-hint="dental office bright"
           fill
@@ -77,12 +77,12 @@ export default function HeroSection() {
             </div>
             <div className="mt-8 text-center md:text-left">
               <p className="text-base font-light text-foreground/80 tracking-wide mb-3">
-                {t('HeroSection.taglineIntro')}
+                {t('taglineIntro')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                <LanguagePill flag="🇺🇸" name={t('HeroSection.languageEnglish')} />
-                <LanguagePill flag="🇵🇹" name={t('HeroSection.languagePortuguese')} />
-                <LanguagePill flag="🇵🇱" name={t('HeroSection.languagePolish')} />
+                <LanguagePill flag="🇺🇸" name={t('languageEnglish')} />
+                <LanguagePill flag="🇵🇹" name={t('languagePortuguese')} />
+                <LanguagePill flag="🇵🇱" name={t('languagePolish')} />
               </div>
             </div>
           </div>
@@ -91,8 +91,8 @@ export default function HeroSection() {
           <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
-                src="https://placehold.co/600x450.png" // Placeholder for foreground image
-                alt={t('headline')}
+                src="/images/dental-office.jpg" // Using local image
+                alt={t('subheading')} // Alt text related to hero content
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
