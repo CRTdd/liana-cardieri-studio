@@ -140,26 +140,79 @@
   },
   "ServicesPage": {
     "headline": "Kompleksowe Usługi Stomatologiczne",
-    "description": "W gabinecie Dr. Liany Cardieri oferujemy szeroki wachlarz zabiegów stomatologicznych, aby zaspokoić Twoje indywidualne potrzeby i pomóc Ci osiągnąć optymalne zdrowie jamy ustnej oraz piękny uśmiech.",
-    "readyToImprove": "Gotowy Poprawić Swój Uśmiech?",
-    "readyDescription": "Skontaktuj się z nami już dziś, aby omówić swoje potrzeby stomatologiczne lub umówić się na wizytę u Dr Liany Cardieri.",
+    "description": "W gabinecie dr Liany Cardieri oferujemy szeroki zakres zabiegów stomatologicznych, dostosowanych do Twoich indywidualnych potrzeb, pomagając osiągnąć optymalne zdrowie jamy ustnej i piękny uśmiech.",
+    "readyToImprove": "Gotowy/a na Poprawę Swojego Uśmiechu?",
+    "readyDescription": "Skontaktuj się z nami już dziś, aby omówić swoje potrzeby stomatologiczne lub umówić się na wizytę u dr Liany Cardieri.",
     "bookAppointmentButton": "Umów Wizytę",
+    "benefitsTitle": "Korzyści z Naszej Opieki",
+    "benefits": [
+      "Kompleksowa opieka dla wszystkich potrzeb stomatologicznych",
+      "Najnowsza technologia i materiały",
+      "Korony w tym samym dniu dla Twojej wygody",
+      "Doświadczony i troskliwy zespół",
+      "Skupienie na profilaktyce i edukacji pacjenta",
+      "Zmniejszona dawka promieniowania dzięki zdjęciom cyfrowym",
+      "Współpraca z najlepszymi specjalistami"
+    ],
+    "faqTitle": "Często Zadawane Pytania",
+    "faqs": [
+      {
+        "question": "Czym jest stomatologia zachowawcza?",
+        "answer": "Stomatologia zachowawcza koncentruje się na utrzymaniu zdrowych zębów i zapobieganiu problemom stomatologicznym, wykorzystując regularne kontrole, czyszczenie i zabiegi ochronne."
+      },
+      {
+        "question": "Czy oferujecie korony w tym samym dniu?",
+        "answer": "Tak! Większość koron można wykonać podczas jednej wizyty dla Twojej wygody."
+      },
+      {
+        "question": "Czy implanty stomatologiczne są odpowiednie dla mnie?",
+        "answer": "Implanty stomatologiczne są świetną opcją dla wielu pacjentów z brakującymi zębami. Skonsultuj się z dr Cardieri, aby uzyskać indywidualną ocenę."
+      },
+      {
+        "question": "Jak zdjęcia cyfrowe są dla mnie korzystne?",
+        "answer": "Zdjęcia cyfrowe zmniejszają ekspozycję na promieniowanie nawet o 80% i zapewniają natychmiastowe, dokładne obrazy dla lepszej diagnostyki."
+      }
+    ],
     "serviceCard": {
       "learnMoreButton": "Dowiedz się Więcej",
       "callToDiscussButton": "Zadzwoń, aby Omówić"
     },
     "service": {
+      "preventive": {
+        "title": "Leczenie Profilaktyczne",
+        "description": "Nowoczesna stomatologia skupia się na zapobieganiu chorobom i minimalnej interwencji. Pomagamy zachować naturalne zęby i zapobiec nawrotom problemów, oferując najnowsze reżimy higieny jamy ustnej, zabiegi fluoryzacji, uszczelnianie bruzd i ochraniacze na zęby do sportów kontaktowych."
+      },
+      "periodontal": {
+        "title": "Leczenie Periodontologiczne (Dziąseł)",
+        "description": "Oferujemy kompleksową profilaktykę i leczenie chorób dziąseł z naszymi zarejestrowanymi higienistkami stomatologicznymi i możemy skierować do najlepszych specjalistów od dziąseł, jeśli zajdzie taka potrzeba."
+      },
+      "restorative": {
+        "title": "Leczenie Odbudowujące (Wypełnienia)",
+        "description": "Używamy najnowszych materiałów do wypełnień, w tym żywic kompozytowych w kolorze zęba, cementów szklano-jonomerowych, specjalnych stopów i amalgamatu."
+      },
+      "crowns-bridges": {
+        "title": "Korony i Mosty Stałe",
+        "description": "Dla zębów wymagających większej wytrzymałości lub estetyki oferujemy korony porcelanowe, cyrkonowe lub złote. Mosty są dostępne do wypełnienia luk po brakujących zębach. Oferujemy również korony w tym samym dniu dla dodatkowej wygody."
+      },
       "implants": {
-        "title": "Implanty Stomatologiczne",
-        "description": "Odzyskaj pewność siebie dzięki naszym specjalistycznym implantom stomatologicznym, zaprojektowanym z myślą o trwałym komforcie i naturalnym wyglądzie."
+        "title": "Implanty Zębowe",
+        "description": "Implanty tytanowe zastępują brakujące zęby bez uszkadzania sąsiednich zębów. Wyglądają i funkcjonują jak naturalne zęby i mogą pomóc w przypadku luźnych protez."
       },
-      "family-dentistry": {
-        "title": "Stomatologia Rodzinna",
-        "description": "Kompleksowa opieka stomatologiczna dla wszystkich grup wiekowych, od rutynowych przeglądów po zaawansowane zabiegi."
+      "cosmetic": {
+        "title": "Stomatologia Estetyczna",
+        "description": "Oferujemy wybielanie, licówki kompozytowe lub porcelanowe oraz inne zabiegi kosmetyczne mające na celu zmianę kształtu i poprawę wyglądu zębów."
       },
-      "cosmetic-dentistry": {
-        "title": "Stomatologia Kosmetyczna",
-        "description": "Popraw wygląd swojego uśmiechu dzięki naszej ofercie zabiegów kosmetycznych, w tym licówek, bondingu i innych."
+      "endodontic": {
+        "title": "Leczenie Endodontyczne (Kanałowe)",
+        "description": "Naszym celem jest uratowanie zainfekowanych zębów poprzez leczenie kanałowe, usunięcie zainfekowanego nerwu, oczyszczenie i uszczelnienie kanałów, aby zapobiec ponownemu zakażeniu."
+      },
+      "prosthetic": {
+        "title": "Leczenie Protetyczne (Protezy)",
+        "description": "Oferujemy pełne i częściowe protezy, w tym naprawy w tym samym dniu."
+      },
+      "digital-xray": {
+        "title": "Kamery Wewnątrzustne i Cyfrowe RTG",
+        "description": "Wszystkie gabinety są wyposażone w kamery wewnątrzustne i cyfrowe aparaty RTG, co zmniejsza ekspozycję na promieniowanie nawet o 80% w porównaniu z tradycyjnym filmem."
       }
     }
   },

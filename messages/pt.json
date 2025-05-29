@@ -139,27 +139,80 @@
     "buttonThinking": "[TRANSLATE] Thinking..."
   },
   "ServicesPage": {
-    "headline": "Serviços Odontológicos Completos",
-    "description": "Na clínica da Dra. Liana Cardieri, oferecemos uma vasta gama de tratamentos odontológicos para atender às suas necessidades individuais e ajudá-lo a alcançar uma saúde oral ótima e um sorriso bonito.",
+    "headline": "Serviços Odontológicos Abrangentes",
+    "description": "No consultório da Dra. Liana Cardieri, oferecemos uma ampla gama de tratamentos odontológicos para atender às suas necessidades individuais e ajudar você a alcançar uma saúde bucal ideal e um sorriso bonito.",
     "readyToImprove": "Pronto para Melhorar Seu Sorriso?",
-    "readyDescription": "Entre em contato conosco hoje para discutir suas necessidades odontológicas ou para agendar uma consulta com a Dra. Liana Cardieri.",
+    "readyDescription": "Entre em contato hoje para discutir suas necessidades odontológicas ou agendar uma consulta com a Dra. Liana Cardieri.",
     "bookAppointmentButton": "Agende Sua Consulta",
+    "benefitsTitle": "Benefícios do Nosso Cuidado",
+    "benefits": [
+      "Cuidado abrangente para todas as necessidades odontológicas",
+      "Tecnologia e materiais mais recentes",
+      "Coroas no mesmo dia para sua conveniência",
+      "Equipe experiente e atenciosa",
+      "Foco na prevenção e educação do paciente",
+      "Radiação reduzida com radiografias digitais",
+      "Afiliados aos melhores especialistas"
+    ],
+    "faqTitle": "Perguntas Frequentes",
+    "faqs": [
+      {
+        "question": "O que é odontologia preventiva?",
+        "answer": "A odontologia preventiva se concentra em manter seus dentes saudáveis e evitar problemas odontológicos antes que comecem, usando check-ups regulares, limpezas e tratamentos protetores."
+      },
+      {
+        "question": "Vocês oferecem coroas no mesmo dia?",
+        "answer": "Sim! A maioria das coroas pode ser concluída em uma única visita para sua conveniência."
+      },
+      {
+        "question": "Os implantes dentários são adequados para mim?",
+        "answer": "Os implantes dentários são uma ótima opção para muitos pacientes com dentes ausentes. Consulte a Dra. Cardieri para uma avaliação personalizada."
+      },
+      {
+        "question": "Como as radiografias digitais me beneficiam?",
+        "answer": "As radiografias digitais reduzem a exposição à radiação em até 80% e fornecem imagens instantâneas e precisas para um melhor diagnóstico."
+      }
+    ],
     "serviceCard": {
       "learnMoreButton": "Saiba Mais",
       "callToDiscussButton": "Ligue para Discutir"
     },
     "service": {
+      "preventive": {
+        "title": "Tratamento Preventivo",
+        "description": "A odontologia moderna se concentra na prevenção de doenças e intervenção mínima. Ajudamos a conservar seus dentes naturais e prevenir problemas recorrentes, oferecendo os mais recentes regimes de higiene oral, tratamentos com flúor, selantes de fissura e protetores bucais para esportes de contato."
+      },
+      "periodontal": {
+        "title": "Tratamento Periodontal (Gengival)",
+        "description": "Oferecemos prevenção e tratamento abrangente de doenças gengivais com nossas higienistas dentais registradas, e podemos encaminhar para os melhores especialistas em gengiva, se necessário."
+      },
+      "restorative": {
+        "title": "Tratamento Restaurador (Obturações)",
+        "description": "Utilizamos os materiais mais recentes para obturações, incluindo resinas compostas da cor do dente, cimentos de ionômero de vidro, ligas especiais e amálgama."
+      },
+      "crowns-bridges": {
+        "title": "Coroas e Pontes Fixas",
+        "description": "Para dentes que necessitam de maior resistência ou estética, oferecemos coroas de porcelana, zircônia ou ouro. As pontes estão disponíveis para fechar espaços de dentes ausentes. Também oferecemos coroas no mesmo dia para maior conveniência."
+      },
       "implants": {
         "title": "Implantes Dentários",
-        "description": "Recupere a confiança com nossos implantes dentários especializados, projetados para conforto duradouro e aparência natural."
+        "description": "Os implantes de titânio substituem dentes ausentes sem danificar os dentes adjacentes. Eles se parecem e funcionam como dentes naturais e podem ajudar com dentaduras soltas."
       },
-      "family-dentistry": {
-        "title": "Odontologia Familiar",
-        "description": "Cuidado odontológico completo para todas as idades, desde exames de rotina até tratamentos avançados."
+      "cosmetic": {
+        "title": "Odontologia Estética",
+        "description": "Oferecemos clareamento, facetas de resina ou porcelana, e outros procedimentos cosméticos para remodelar e melhorar a aparência dos seus dentes."
       },
-      "cosmetic-dentistry": {
-        "title": "Odontologia Cosmética",
-        "description": "Realce seu sorriso com nossa gama de tratamentos cosméticos, incluindo facetas, bonding e mais."
+      "endodontic": {
+        "title": "Tratamento Endodôntico (Canal)",
+        "description": "Nosso objetivo é salvar dentes infectados com tratamento de canal, removendo o nervo infectado, limpando e selando os canais para prevenir reinfecção."
+      },
+      "prosthetic": {
+        "title": "Tratamento Protético (Dentaduras)",
+        "description": "Fornecemos dentaduras totais e parciais, incluindo reparos no mesmo dia."
+      },
+      "digital-xray": {
+        "title": "Câmeras Intra-Orais e Raios-X Digitais",
+        "description": "Todos os consultórios são equipados com câmeras intra-orais e raios-x digitais, reduzindo a exposição à radiação em até 80% em comparação com o filme tradicional."
       }
     }
   },

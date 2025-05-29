@@ -1,48 +1,99 @@
-
 import type { LucideIcon } from 'lucide-react';
-import { Award, Users, Smile, Crown, Zap, Languages, HeartHandshake, Star, UserCircle } from 'lucide-react';
+import { Award, Users, Smile, Crown, Zap, Languages, HeartHandshake, Star, UserCircle, Shield, Heart, Anchor, Sparkles, Drill, Camera } from 'lucide-react';
 
 export interface Service {
   id: string;
-  titleKey: string; // Changed from title to titleKey
-  descriptionKey: string; // Changed from description to descriptionKey
+  titleKey: string;
+  descriptionKey: string;
   image: string;
   imageHint: string;
   learnMoreLink: string;
-  trustBadgeKey?: string; // Changed from trustBadge to trustBadgeKey
+  highlightKey?: string;
   Icon?: LucideIcon;
 }
 
 export const servicesData: Service[] = [
   {
-    id: 'whitening',
-    titleKey: 'data.services.whitening.title',
-    descriptionKey: 'data.services.whitening.description',
-    image: 'https://placehold.co/400x300.png',
-    imageHint: 'teeth whitening',
-    learnMoreLink: '/services/zoom-whitening',
-    Icon: Zap,
+    id: 'preventive',
+    titleKey: 'ServicesPage.service.preventive.title',
+    descriptionKey: 'ServicesPage.service.preventive.description',
+    image: 'https://placehold.co/400x300?text=Preventive',
+    imageHint: 'preventive dental care',
+    learnMoreLink: '/services/preventive',
+    Icon: Shield,
   },
   {
-    id: 'fillings',
-    titleKey: 'data.services.fillings.title',
-    descriptionKey: 'data.services.fillings.description',
-    image: 'https://placehold.co/400x300.png',
-    imageHint: 'dental filling',
-    learnMoreLink: '/services/fillings',
-    trustBadgeKey: 'data.services.fillings.trustBadge',
+    id: 'periodontal',
+    titleKey: 'ServicesPage.service.periodontal.title',
+    descriptionKey: 'ServicesPage.service.periodontal.description',
+    image: 'https://placehold.co/400x300?text=Gum+Treatment',
+    imageHint: 'periodontal treatment',
+    learnMoreLink: '/services/periodontal',
+    Icon: Heart,
+  },
+  {
+    id: 'restorative',
+    titleKey: 'ServicesPage.service.restorative.title',
+    descriptionKey: 'ServicesPage.service.restorative.description',
+    image: 'https://placehold.co/400x300?text=Fillings',
+    imageHint: 'dental fillings',
+    learnMoreLink: '/services/restorative',
     Icon: Smile,
   },
   {
     id: 'crowns-bridges',
-    titleKey: 'data.services.crowns-bridges.title',
-    descriptionKey: 'data.services.crowns-bridges.description',
-    image: 'https://placehold.co/400x300.png',
-    imageHint: 'dental crown bridge',
+    titleKey: 'ServicesPage.service.crowns-bridges.title',
+    descriptionKey: 'ServicesPage.service.crowns-bridges.description',
+    image: 'https://placehold.co/400x300?text=Crowns+%26+Bridges',
+    imageHint: 'dental crowns and bridges',
     learnMoreLink: '/services/crowns-bridges',
-    trustBadgeKey: 'data.services.crowns-bridges.trustBadge',
     Icon: Crown,
   },
+  {
+    id: 'implants',
+    titleKey: 'ServicesPage.service.implants.title',
+    descriptionKey: 'ServicesPage.service.implants.description',
+    image: 'https://placehold.co/400x300?text=Implants',
+    imageHint: 'dental implants',
+    learnMoreLink: '/services/implants',
+    Icon: Anchor,
+  },
+  {
+    id: 'cosmetic',
+    titleKey: 'ServicesPage.service.cosmetic.title',
+    descriptionKey: 'ServicesPage.service.cosmetic.description',
+    image: 'https://placehold.co/400x300?text=Cosmetic',
+    imageHint: 'cosmetic dentistry',
+    learnMoreLink: '/services/cosmetic',
+    Icon: Sparkles,
+  },
+  {
+    id: 'endodontic',
+    titleKey: 'ServicesPage.service.endodontic.title',
+    descriptionKey: 'ServicesPage.service.endodontic.description',
+    image: 'https://placehold.co/400x300?text=Root+Canal',
+    imageHint: 'root canal treatment',
+    learnMoreLink: '/services/endodontic',
+    Icon: Drill,
+  },
+  {
+    id: 'prosthetic',
+    titleKey: 'ServicesPage.service.prosthetic.title',
+    descriptionKey: 'ServicesPage.service.prosthetic.description',
+    image: 'https://placehold.co/400x300?text=Dentures',
+    imageHint: 'denture treatment',
+    learnMoreLink: '/services/prosthetic',
+    Icon: UserCircle,
+  },
+  {
+    id: 'digital-xray',
+    titleKey: 'ServicesPage.service.digital-xray.title',
+    descriptionKey: 'ServicesPage.service.digital-xray.description',
+    image: 'https://placehold.co/400x300?text=Digital+X-Ray',
+    imageHint: 'digital x-ray',
+    learnMoreLink: '/services/digital-xray',
+    Icon: Camera,
+  }
 ];
 
 export interface Testimonial {

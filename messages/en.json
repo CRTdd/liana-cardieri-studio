@@ -144,22 +144,75 @@
     "readyToImprove": "Ready to Improve Your Smile?",
     "readyDescription": "Contact us today to discuss your dental needs or to schedule an appointment with Dr. Liana Cardieri.",
     "bookAppointmentButton": "Book Your Appointment",
+    "benefitsTitle": "Benefits of Our Care",
+    "benefits": [
+      "Comprehensive care for all dental needs",
+      "Latest technology and materials",
+      "Same-day crowns for convenience",
+      "Experienced and caring team",
+      "Focus on prevention and patient education",
+      "Reduced radiation with digital x-rays",
+      "Affiliations with top specialists"
+    ],
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is preventive dentistry?",
+        "answer": "Preventive dentistry focuses on keeping your teeth healthy and avoiding dental problems before they start, using regular checkups, cleanings, and protective treatments."
+      },
+      {
+        "question": "Do you offer same-day crowns?",
+        "answer": "Yes! Most crowns can be completed in a single visit for your convenience."
+      },
+      {
+        "question": "Are dental implants right for me?",
+        "answer": "Dental implants are a great option for many patients with missing teeth. Ask Dr. Cardieri for a personalized assessment."
+      },
+      {
+        "question": "How do digital x-rays benefit me?",
+        "answer": "Digital x-rays reduce radiation exposure by up to 80% and provide instant, accurate images for better diagnostics."
+      }
+    ],
     "serviceCard": {
       "learnMoreButton": "Learn More",
       "callToDiscussButton": "Call to Discuss"
     },
     "service": {
+      "preventive": {
+        "title": "Preventive Treatment",
+        "description": "Modern dentistry focuses on disease prevention and minimal intervention. We help conserve your natural teeth and prevent problems from recurring, offering the latest oral hygiene regimes, fluoride treatments, fissure sealants, and mouth guards for contact sports."
+      },
+      "periodontal": {
+        "title": "Periodontal (Gum) Treatment",
+        "description": "We offer comprehensive gum disease prevention and treatment with our registered dental hygienists, and can refer to top gum specialists if needed."
+      },
+      "restorative": {
+        "title": "Restorative Treatment (Fillings)",
+        "description": "We use the latest materials for fillings, including tooth-colored composite resins, glass ionomer cements, special alloys, and amalgam."
+      },
+      "crowns-bridges": {
+        "title": "Crowns and Fixed Bridges",
+        "description": "For teeth needing superior strength or aesthetics, we offer porcelain, zirconia, or gold crowns. Bridges are available to close gaps from missing teeth. We also offer same-day crowns for extra convenience."
+      },
       "implants": {
         "title": "Dental Implants",
-        "description": "Regain confidence with our expert dental implants, designed for lasting comfort and a natural look."
+        "description": "Titanium implants replace missing teeth without damaging surrounding teeth. They look and function like natural teeth and can help with loose dentures."
       },
-      "family-dentistry": {
-        "title": "Family Dentistry",
-        "description": "Comprehensive dental care for all ages, from routine check-ups to advanced treatments."
-      },
-      "cosmetic-dentistry": {
+      "cosmetic": {
         "title": "Cosmetic Dentistry",
-        "description": "Enhance your smile with our range of cosmetic treatments, including veneers, bonding, and more."
+        "description": "We offer whitening, composite or porcelain veneers, and other cosmetic procedures to reshape and improve the appearance of your teeth."
+      },
+      "endodontic": {
+        "title": "Endodontic Treatment (Root Canal)",
+        "description": "We aim to save infected teeth with root canal treatment, removing the infected nerve, cleaning, and sealing the canals to prevent re-infection."
+      },
+      "prosthetic": {
+        "title": "Prosthetic Treatment (Dentures)",
+        "description": "We provide full and partial dentures, including same-day repairs."
+      },
+      "digital-xray": {
+        "title": "Intra-Oral Cameras & Digital X-Rays",
+        "description": "All operatories are equipped with intra-oral cameras and digital x-rays, reducing radiation exposure by up to 80% compared to traditional film."
       }
     }
   },
