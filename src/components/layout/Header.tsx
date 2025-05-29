@@ -1,8 +1,9 @@
+
 "use client";
 
 import Link from 'next/link'; // Using Next.js's default Link
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation'; // Using Next.js's usePathname for non-locale path
+import { usePathname } from 'next/navigation'; // For non-locale path
 import { useLocale, useTranslations } from 'next-intl'; // For translations and current locale
 
 import { Button } from '@/components/ui/button';
@@ -16,9 +17,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const appLanguages = [
-  { code: 'en', labelKey: 'Header.selectedLanguage', nativeLabel: 'English' },
-  { code: 'pt', labelKey: 'Header.selectedLanguage', nativeLabel: 'Português' }, // Assuming a key for Portuguese if needed
-  { code: 'pl', labelKey: 'Header.selectedLanguage', nativeLabel: 'Polski' },   // Assuming a key for Polish if needed
+  { code: 'en', nativeLabel: 'English' },
+  { code: 'pt', nativeLabel: 'Português' },
+  { code: 'pl', nativeLabel: 'Polski' },
 ];
 
 // Function to set a cookie
@@ -29,11 +30,10 @@ const setLanguageCookie = (locale: string) => {
 };
 
 export default function Header() {
-  const t = useTranslations('Navigation');
+  const tNav = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const currentLocale = useLocale();
-  const currentFullPath = usePathname() || '/'; 
-  const router = useRouter();
+  const currentFullPath = usePathname() || '/'; // Fallback to '/'
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
@@ -46,34 +46,32 @@ export default function Header() {
   ];
   
   const getLocalizedPath = (targetLocale: string) => {
-    let pathSegment = currentFullPath;
+    let pathWithoutLocale = currentFullPath;
 
     // Remove current locale prefix if it exists
     const localePrefix = `/${currentLocale}`;
-    if (pathSegment.startsWith(localePrefix)) {
-      pathSegment = pathSegment.substring(localePrefix.length);
-      if (pathSegment === "") {
-        pathSegment = "/"; // Ensure root path is handled correctly
-      }
+    if (pathWithoutLocale.startsWith(localePrefix)) {
+      pathWithoutLocale = pathWithoutLocale.substring(localePrefix.length) || '/';
     }
     
-    // Ensure pathSegment starts with a slash if it's not just "/"
-    if (pathSegment !== "/" && !pathSegment.startsWith("/")) {
-      pathSegment = `/${pathSegment}`;
+    // Ensure pathWithoutLocale starts with a slash if it's not just "/"
+    if (pathWithoutLocale !== "/" && !pathWithoutLocale.startsWith("/")) {
+      pathWithoutLocale = `/${pathWithoutLocale}`;
     }
     
     // For the root path, just return the target locale prefix
-    if (pathSegment === "/") {
+    if (pathWithoutLocale === "/") {
       return `/${targetLocale}`;
     }
     // For other paths, prepend the target locale to the unlocalized segment
-    return `/${targetLocale}${pathSegment}`;
+    return `/${targetLocale}${pathWithoutLocale}`;
   };
   
   const handleLanguageChange = (newLocale: string) => {
     setLanguageCookie(newLocale);
     const newPath = getLocalizedPath(newLocale);
-    router.push(newPath);
+    // Standard Next.js router push, as Link component will handle full page reload for locale change
+    window.location.href = newPath;
   };
 
 
@@ -82,11 +80,11 @@ export default function Header() {
       <div className="container flex min-h-[64px] max-w-screen-2xl items-center justify-between px-6 sm:px-10 lg:px-16">
         <Link href="/" className="flex items-center gap-x-3 text-primary hover:text-brand-blue transition-colors">
           <Image
-            src="https://placehold.co/48x48.png" 
+            src="https://placehold.co/40x40.png" // Request a 40x40 image
             alt={tHeader('brandName')}
-            width={48}
-            height={48}
-            className="h-10 w-10 block"
+            width={40} // Render at 40px
+            height={40} // Render at 40px
+            className="block" // Removed h-10 w-10
             data-ai-hint="dental logo"
           />
           <span className="font-bold text-2xl flex items-center leading-none">{tHeader('brandName')}</span>
@@ -99,7 +97,7 @@ export default function Header() {
               href={item.href} 
               className="transition-colors hover:text-primary text-foreground/80 flex items-center h-10 leading-none"
             >
-              {t(item.labelKey as any)}
+              {tNav(item.labelKey as any)}
             </Link>
           ))}
 
@@ -141,7 +139,7 @@ export default function Header() {
                     href={item.href}
                     className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
                   >
-                    {t(item.labelKey as any)}
+                    {tNav(item.labelKey as any)}
                   </Link>
                 ))}
                 <div className="px-2">
