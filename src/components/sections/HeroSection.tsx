@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -42,7 +41,7 @@ export default function HeroSection() {
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
-          src="https://www.cardieridental.ca/wp-content/uploads/2014/11/slider1.png"
+          src="https://www.cardieridental.ca/wp-content/uploads/2022/02/IMG_0713-scaled-e1644433296118-1140x417.jpg"
           alt={t('headline')}
           data-ai-hint="dental office bright"
           layout="fill"
@@ -92,7 +91,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
                 src="https://placehold.co/600x450.png"
-                alt={t('headline')}
+                alt={t('headline')} // Alt text can be same as main headline or more specific to this image's purpose
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
