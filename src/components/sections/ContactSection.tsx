@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Clock, Award, Users, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -71,7 +71,6 @@ export default function ContactSection() {
   const translatedEmail = t('email');
   const translatedAddress = t.raw('address');
 
-
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
       <div className="container max-w-5xl mx-auto px-4">
@@ -82,9 +81,9 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start min-h-[600px]">
           {/* Contact Details & Map */}
-          <div className="space-y-8">
+          <div className="flex flex-col h-full space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">{t("contactInfoTitle")}</h3>
               <ul className="space-y-3 text-foreground/80 font-light">
@@ -128,33 +127,22 @@ export default function ContactSection() {
                 </li>
               </ul>
             </div>
-             <div className="mt-6">
-                <a
-                  href="https://www.facebook.com/cardieridentaloffice"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-brand-blue hover:text-brand-pink group transition-colors"
-                  aria-label={t("followFacebookAria")}
-                >
-                  <span className="bg-brand-blue group-hover:bg-brand-pink p-2 rounded-md inline-flex items-center justify-center mr-2 transition-colors">
-                    <Facebook className="h-5 w-5 text-white" />
-                  </span>
-                  {t("followFacebook")}
-                </a>
-              </div>
 
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg border border-border">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5793.801502348399!2d-80.51630912246563!3d43.441788771113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf44ee53599ff%3A0xd64d31f3b4bc82c8!2sDr.%20Liana%20Cardieri%20Family%20and%20Cosmetic%20Dentistry!5e0!3m2!1sen!2sca!4v1748527385298!5m2!1sen!2sca"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={t("mapTitle")}
-                className="w-full h-full"
-              ></iframe>
+            {/* Map fills remaining space */}
+            <div className="flex-1 min-h-[220px]">
+              <div className="w-full h-full rounded-lg overflow-hidden shadow-lg border border-border" style={{ minHeight: 220 }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5793.801502348399!2d-80.51630912246563!3d43.441788771113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf44ee53599ff%3A0xd64d31f3b4bc82c8!2sDr.%20Liana%20Cardieri%20Family%20and%20Cosmetic%20Dentistry!5e0!3m2!1sen!2sca!4v1748527385298!5m2!1sen!2sca"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, minHeight: 220, height: "100%" }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={t("mapTitle")}
+                  className="w-full h-full"
+                ></iframe>
+              </div>
             </div>
           </div>
 
@@ -260,5 +248,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
-    

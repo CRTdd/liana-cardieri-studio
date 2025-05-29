@@ -38,12 +38,23 @@ export default function Header() {
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
   const getLanguageName = (code: string) => {
+    let translated;
     switch(code) {
-      case 'en': return t('english');
-      case 'pt': return t('portuguese');
-      case 'pl': return t('polish');
+      case 'en': translated = t('english'); break;
+      case 'pt': translated = t('portuguese'); break;
+      case 'pl': translated = t('polish'); break;
       default: return code;
     }
+    // Fallback if translation returns the key or is missing
+    if (!translated || translated.startsWith('Languages.')) {
+      switch(code) {
+        case 'en': return 'English';
+        case 'pt': return 'Português';
+        case 'pl': return 'Polski';
+        default: return code;
+      }
+    }
+    return translated;
   };
 
   const navItems = [
@@ -182,3 +193,4 @@ export default function Header() {
     </header>
   );
 }
+
