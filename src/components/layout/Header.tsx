@@ -2,13 +2,13 @@
 "use client";
 
 import Link from 'next/link'; // Using Next.js's default Link
-import Image from 'next/image'; // Added for the logo
-import { usePathname } from 'next/navigation'; // Using Next.js's usePathname for non-locale path
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation'; // Using Next.js's usePathname for non-locale path
 import { useLocale, useTranslations } from 'next-intl'; // For translations and current locale
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Languages, ChevronDown } from 'lucide-react'; // Removed Smile icon
+import { Menu, Languages, ChevronDown } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,9 +17,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const appLanguages = [
-  { code: 'en', labelKey: 'english', nativeLabel: 'English' },
-  { code: 'pt', labelKey: 'portuguese', nativeLabel: 'Português' },
-  { code: 'pl', labelKey: 'polish', nativeLabel: 'Polski' },
+  { code: 'en', labelKey: 'Header.selectedLanguage', nativeLabel: 'English' },
+  { code: 'pt', labelKey: 'Header.selectedLanguage', nativeLabel: 'Português' }, // Assuming a key for Portuguese if needed
+  { code: 'pl', labelKey: 'Header.selectedLanguage', nativeLabel: 'Polski' },   // Assuming a key for Polish if needed
 ];
 
 // Function to set a cookie
@@ -33,7 +33,8 @@ export default function Header() {
   const t = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const currentLocale = useLocale();
-  const currentFullPath = usePathname() || '/'; // Full path including current locale if prefixed
+  const currentFullPath = usePathname() || '/'; 
+  const router = useRouter();
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
@@ -49,16 +50,14 @@ export default function Header() {
     let pathSegment = currentFullPath;
 
     // Remove current locale prefix if it exists
-    if (pathSegment.startsWith(`/${currentLocale}`)) {
-      pathSegment = pathSegment.substring(currentLocale.length + 1);
+    const localePrefix = `/${currentLocale}`;
+    if (pathSegment.startsWith(localePrefix)) {
+      pathSegment = pathSegment.substring(localePrefix.length);
       if (pathSegment === "") {
-        pathSegment = "/";
+        pathSegment = "/"; // Ensure root path is handled correctly
       }
-    } else if (currentFullPath === "/") { // Handle case where currentFullPath is already "/"
-        pathSegment = "/";
     }
-
-
+    
     // Ensure pathSegment starts with a slash if it's not just "/"
     if (pathSegment !== "/" && !pathSegment.startsWith("/")) {
       pathSegment = `/${pathSegment}`;
@@ -72,9 +71,10 @@ export default function Header() {
     return `/${targetLocale}${pathSegment}`;
   };
   
-  const handleLanguageChange = (locale: string) => {
-    setLanguageCookie(locale);
-    // Navigation will be handled by the Link component's href
+  const handleLanguageChange = (newLocale: string) => {
+    setLanguageCookie(newLocale);
+    const newPath = getLocalizedPath(newLocale);
+    router.push(newPath);
   };
 
 
@@ -83,11 +83,11 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2 text-primary hover:text-brand-blue transition-colors">
           <Image
-            src="https://placehold.co/40x40.png"
-            alt="Dr. Liana Cardieri Logo"
+            src="https://placehold.co/40x40.png" 
+            alt={tHeader('brandName')} // Use translated brand name for alt text
             width={40}
             height={40}
-            className="h-10 w-10" // Explicit size for consistency
+            className="h-10 w-10"
             data-ai-hint="dental logo"
           />
           <span className="font-bold text-xl">{tHeader('brandName')}</span>
@@ -114,16 +114,14 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
-                <DropdownMenuItem key={lang.code} asChild>
-                  <Link href={getLocalizedPath(lang.code)} locale={lang.code} onClick={() => handleLanguageChange(lang.code)}>
+                <DropdownMenuItem key={lang.code} onSelect={() => handleLanguageChange(lang.code)} className="cursor-pointer">
                     {lang.nativeLabel}
-                  </Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
 
-           <Button asChild className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
+           <Button asChild className="bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105">
             <a href="tel:519-578-5717">{tHeader('callNow')}</a>
           </Button>
         </nav>
@@ -158,17 +156,15 @@ export default function Header() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
-                        <DropdownMenuItem key={lang.code} asChild>
-                           <Link href={getLocalizedPath(lang.code)} locale={lang.code} onClick={() => handleLanguageChange(lang.code)}>
+                        <DropdownMenuItem key={lang.code} onSelect={() => handleLanguageChange(lang.code)} className="cursor-pointer">
                             {lang.nativeLabel}
-                          </Link>
                         </DropdownMenuItem>
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </div>
                 <div className="px-2">
-                  <Button asChild size="lg" className="w-full bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
+                  <Button asChild size="lg" className="w-full bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105">
                     <a href="tel:519-578-5717">{tHeader('callNow')}</a>
                   </Button>
                 </div>
