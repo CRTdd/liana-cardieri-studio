@@ -19,7 +19,10 @@
     "subheading": "Odontologia familiar e cosmética em Kitchener, ON, personalizada para você.",
     "ctaButton": "Ligue Já: 519-578-5717",
     "trustBadgeExperience": "Mais de 20 Anos de Experiência",
-    "tagline": "Atendimento no Seu Idioma: Inglês, Português, Polonês."
+    "taglineIntro": "[TRANSLATE] Care in Your Language:",
+    "languageEnglish": "[TRANSLATE] English",
+    "languagePortuguese": "[TRANSLATE] Portuguese",
+    "languagePolish": "[TRANSLATE] Polish"
   },
   "ServicesSection": {
     "headline": "Seu Sorriso Perfeito Começa Aqui",

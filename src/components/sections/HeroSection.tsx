@@ -42,7 +42,7 @@ export default function HeroSection() {
           objectFit="cover"
           quality={85}
           priority
-          className="opacity-20 md:opacity-30" // Slightly more subtle on mobile
+          className="opacity-20 md:opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light-blue via-brand-light-blue/70 to-transparent"></div>
       </div>
@@ -69,7 +69,12 @@ export default function HeroSection() {
               <TrustBadge Icon={Award} text={t('trustBadgeExperience')} />
             </div>
             <p className="mt-8 text-base font-light text-foreground/80 tracking-wide">
-              {t('tagline')}
+              {t('taglineIntro')}{' '}
+              <span className="inline-block mr-1">🇺🇸</span>{t('languageEnglish')}
+              <span className="mx-1">/</span>
+              <span className="inline-block mr-1">🇵🇹</span>{t('languagePortuguese')}
+              <span className="mx-1">/</span>
+              <span className="inline-block mr-1">🇵🇱</span>{t('languagePolish')}
             </p>
           </div>
 
@@ -78,7 +83,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
                 src="https://placehold.co/600x450.png"
-                alt="Dr. Liana Cardieri Dental Clinic"
+                alt={t('headline')} // Using headline as alt text for the clinic image
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
@@ -92,3 +97,5 @@ export default function HeroSection() {
     </section>
   );
 }
+
+    

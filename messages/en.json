@@ -19,7 +19,10 @@
     "subheading": "Family and cosmetic dentistry in Kitchener, ON, tailored to you.",
     "ctaButton": "Call Now: 519-578-5717",
     "trustBadgeExperience": "20+ Years Experience",
-    "tagline": "Care in Your Language: English, Portuguese, Polish."
+    "taglineIntro": "Care in Your Language:",
+    "languageEnglish": "English",
+    "languagePortuguese": "Portuguese",
+    "languagePolish": "Polish"
   },
   "ServicesSection": {
     "headline": "Your Perfect Smile Starts Here",

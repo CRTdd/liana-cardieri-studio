@@ -19,7 +19,10 @@
     "subheading": "Stomatologia rodzinna i kosmetyczna w Kitchener, ON, dostosowana do Ciebie.",
     "ctaButton": "Zadzwoń Teraz: 519-578-5717",
     "trustBadgeExperience": "Ponad 20 Lat Doświadczenia",
-    "tagline": "Opieka w Twoim Języku: Angielski, Portugalski, Polski."
+    "taglineIntro": "[TRANSLATE] Care in Your Language:",
+    "languageEnglish": "[TRANSLATE] English",
+    "languagePortuguese": "[TRANSLATE] Portuguese",
+    "languagePolish": "[TRANSLATE] Polish"
   },
   "ServicesSection": {
     "headline": "Twój Idealny Uśmiech Zaczyna Się Tutaj",
