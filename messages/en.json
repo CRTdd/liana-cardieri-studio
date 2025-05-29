@@ -13,6 +13,11 @@
     "callNow": "Call Now: 519-578-5717",
     "selectedLanguage": "English"
   },
+  "Languages": {
+    "english": "English",
+    "portuguese": "Portuguese",
+    "polish": "Polish"
+  },
   "HeroSection": {
     "headline": "Smile Confidently with Gentle, Expert Care from Dr. Liana Cardieri.",
     "subheading": "Family and cosmetic dentistry in Kitchener, ON, tailored to you.",

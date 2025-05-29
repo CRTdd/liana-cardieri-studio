@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link'; // Using Next.js's default Link
@@ -17,9 +16,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const appLanguages = [
-  { code: 'en', nativeLabel: 'English' },
-  { code: 'pt', nativeLabel: 'Português' },
-  { code: 'pl', nativeLabel: 'Polski' },
+  { code: 'en', nativeLabel: 'EN' },
+  { code: 'pt', nativeLabel: 'PT' },
+  { code: 'pl', nativeLabel: 'PL' },
 ];
 
 // Function to set a cookie
@@ -32,10 +31,20 @@ const setLanguageCookie = (locale: string) => {
 export default function Header() {
   const tNav = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
+  const t = useTranslations('Languages');
   const currentLocale = useLocale();
   const currentFullPath = usePathname() || '/'; // Fallback to '/'
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
+
+  const getLanguageName = (code: string) => {
+    switch(code) {
+      case 'en': return t('english');
+      case 'pt': return t('portuguese');
+      case 'pl': return t('polish');
+      default: return code;
+    }
+  };
 
   const navItems = [
     { href: '/', labelKey: 'home' },
@@ -112,7 +121,7 @@ export default function Header() {
             <DropdownMenuContent align="end">
               {appLanguages.map((lang) => (
                 <DropdownMenuItem key={lang.code} onSelect={() => handleLanguageChange(lang.code)} className="cursor-pointer">
-                    {lang.nativeLabel}
+                    {getLanguageName(lang.code)}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -154,7 +163,7 @@ export default function Header() {
                     <DropdownMenuContent align="start" className="w-[calc(300px-1rem-theme(spacing.2))] sm:w-[calc(400px-1rem-theme(spacing.2))]">
                       {appLanguages.map((lang) => (
                         <DropdownMenuItem key={lang.code} onSelect={() => handleLanguageChange(lang.code)} className="cursor-pointer">
-                            {lang.nativeLabel}
+                            {getLanguageName(lang.code)}
                         </DropdownMenuItem>
                       ))}
                     </DropdownMenuContent>

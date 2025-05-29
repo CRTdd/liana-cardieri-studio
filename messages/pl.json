@@ -13,6 +13,11 @@
     "callNow": "Zadzwoń Teraz: 519-578-5717",
     "selectedLanguage": "Polski"
   },
+  "Languages": {
+    "english": "Angielski",
+    "portuguese": "Portugalski",
+    "polish": "Polski"
+  },
   "HeroSection": {
     "headline": "Uśmiechaj się Pewnie dzięki Delikatnej, Eksperckiej Opiece Dr Liany Cardieri.",
     "subheading": "Stomatologia rodzinna i kosmetyczna w Kitchener, ON, dostosowana do Ciebie.",
