@@ -31,8 +31,10 @@ export default function HeroSection() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
   }, []);
 
   return (
@@ -91,8 +93,8 @@ export default function HeroSection() {
           <div className="hidden md:flex justify-center items-center">
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
-                src="/images/dental-office.jpg" // Using local image
-                alt={t('subheading')} // Alt text related to hero content
+                src="/images/dental-office-2.jpg"
+                alt={t('subheading')}
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
