@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
   
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-brand-light-blue">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-6xl mx-auto px-4 overflow-hidden">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             {t('headline')}
@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
           slidesPerView={1}
           spaceBetween={30}
           grabCursor={true}
-          centeredSlides={true}
+          centeredSlides={false}
           navigation
           pagination={{ clickable: true }}
           breakpoints={{

@@ -40,7 +40,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[70vh] flex items-center bg-brand-light-blue text-foreground px-4 overflow-hidden py-16 md:py-20">
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 max-w-screen-2xl"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image

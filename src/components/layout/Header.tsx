@@ -97,7 +97,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex min-h-[64px] max-w-screen-2xl items-center justify-between px-6 sm:px-10 lg:px-16">
+      <div className="container flex min-h-[64px] max-w-screen-2xl items-center justify-between px-6 sm:px-10 lg:px-16 mx-auto">
         <Link href="/" className="flex items-center gap-x-3 text-primary hover:text-brand-blue transition-colors">
           <Image
             src="https://placehold.co/40x40.png" // Request a 40x40 image

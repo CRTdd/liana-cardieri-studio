@@ -73,7 +73,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-16 md:py-24 bg-white">
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">{t("headline")}</h2>
           <p className="mt-4 text-lg text-foreground/70 max-w-2xl mx-auto">
