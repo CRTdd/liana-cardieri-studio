@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link'; // Using default Next.js Link
@@ -41,7 +40,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('drCardieriTitle')}</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-background p-8 rounded-xl shadow-xl">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-lg overflow-hidden shadow-md shrink-0">
-              <Image src="https://placehold.co/400x400.png" alt={t('drCardieriTitle')} layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
+              <Image src="/images/dr.cardieri.jpg" alt={t('drCardieriTitle')} layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
             </div>
             <div className="text-foreground/80 font-light">
               <p className="mb-4 text-lg">
@@ -64,39 +63,29 @@ export default function AboutPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('hygienistsTitle')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TeamMemberCard
-              name={t('sofiaName')}
-              title={t('sofiaTitle')}
-              imageUrl="https://placehold.co/300x300.png"
+              name="Margaret Rapacz, RDH"
+              title="Registered Dental Hygienist"
+              imageUrl="/images/Margaret.jpg"
               imageHint="hygienist portrait friendly"
-              bio={t('sofiaBio')}
+              bio="Margaret is an experienced dental hygienist trained to identify gum disease and educate patients on oral hygiene. She is dedicated to keeping your teeth and gums healthy."
             />
             <TeamMemberCard
-              name={t('marekName')}
-              title={t('marekTitle')}
-              imageUrl="https://placehold.co/300x300.png"
+              name="Connie Roth, RDH"
+              title="Registered Dental Hygienist"
+              imageUrl="/images/connie.jpg"
               imageHint="hygienist portrait smiling"
-              bio={t('marekBio')}
-            />
-             <TeamMemberCard
-              name={t('emilyName')}
-              title={t('emilyTitle')}
-              imageUrl="https://placehold.co/300x300.png"
-              imageHint="assistant portrait professional"
-              bio={t('emilyBio')}
+              bio="Connie is passionate about preventive care and enjoys helping patients achieve healthy smiles. She is committed to providing thorough cleanings and patient education."
             />
           </div>
         </section>
 
         <section className="text-center bg-background p-8 md:p-12 rounded-xl shadow-xl">
           <h2 className="text-3xl font-bold text-primary mb-6">{t('officeTitle')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
-              <Image src="https://placehold.co/600x400.png" alt={t('officeTitle') + " - Reception"} layout="fill" objectFit="cover" data-ai-hint="dental reception modern" />
-            </div>
-            <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
-              <Image src="https://placehold.co/600x400.png" alt={t('officeTitle') + " - Treatment Room"} layout="fill" objectFit="cover" data-ai-hint="dental chair clean" />
+          <div className="flex justify-center mb-8">
+            <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
+              <Image src="/images/dental-office.jpg" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
             </div>
           </div>
           <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">

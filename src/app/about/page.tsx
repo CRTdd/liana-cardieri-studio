@@ -36,17 +36,17 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">Dr. Liana Cardieri</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-background p-8 rounded-xl shadow-xl">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-lg overflow-hidden shadow-md shrink-0">
-              <Image src="https://placehold.co/400x400.png" alt="Dr. Liana Cardieri" layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
+              <Image src="/images/dr.cardieri.jpg" alt="Dr. Liana Cardieri" layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
             </div>
             <div className="text-foreground/80 font-light">
               <p className="mb-4 text-lg">
-                Dr. Liana Cardieri is a highly experienced and compassionate dentist dedicated to providing top-quality dental care. With over 20 years in the field, she combines her extensive knowledge with a gentle touch, ensuring every patient feels comfortable and well-cared for.
+                Dr. Liana Cardieri is a graduate of the Federal University of Ceara, Brazil and has over 20 years experience as a family and cosmetic dentist. Since 2012 she is proudly serving her patients on her own practice in Kitchener, ON.
               </p>
               <p className="mb-4">
-                Inspired by her multicultural background, Dr. Cardieri is fluent in English, Portuguese, and Polish. This allows her to connect with a diverse range of patients and provide care that is truly personalized. She believes in continuous learning and stays updated with the latest advancements in dentistry to offer the best treatment options.
+                The love for Dentistry has inspired her to continue to take several courses such as prosthodontics, cosmetic restorative dentistry and dental implants to keep her up to date on the most current dental practices and techniques. Dr. Cardieri can perform dental implants placement, root canals, restorations, crowns, fixed bridges and veneer treatment with very natural results. Over the years she has helped to create beautiful smiles!
               </p>
               <p>
-                Her philosophy is centered on patient education and preventive care, empowering individuals to maintain optimal oral health for life. Dr. Cardieri is an active member of the Ontario Dental Association (ODA) and is passionate about serving the Kitchener community.
+                From simple to complex treatments, it is very common to hear from patients that she is very gentle and how painless the treatment was! Dr. Liana has a beautiful family and is a caring mother of a boy, a girl and a playful dog, Lino. She loves music, movies and travelling with her family.
               </p>
               <div className="mt-6 flex space-x-4">
                 <div className="flex items-center text-primary">
@@ -61,44 +61,34 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-primary mb-8 text-center">Our Expert Hygienists</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-primary mb-8 text-center">Our Dental Hygienists</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TeamMemberCard 
-              name="Sofia Alves" 
+              name="Margaret Rapacz, RDH" 
               title="Registered Dental Hygienist" 
-              imageUrl="https://placehold.co/300x300.png"
+              imageUrl="/images/Margaret.jpg"
               imageHint="hygienist portrait friendly"
-              bio="Sofia is dedicated to providing thorough cleanings and educating patients on aural hygiene. She speaks Portuguese and English." 
+              bio="Margaret is an experienced dental hygienist trained to identify gum disease and educate patients on oral hygiene. She is dedicated to keeping your teeth and gums healthy." 
             />
             <TeamMemberCard 
-              name="Marek Kowalski" 
+              name="Connie Roth, RDH" 
               title="Registered Dental Hygienist" 
-              imageUrl="https://placehold.co/300x300.png" 
+              imageUrl="/images/connie.jpg" 
               imageHint="hygienist portrait smiling"
-              bio="Marek is passionate about preventive care and enjoys helping patients achieve healthy smiles. He is fluent in Polish and English." 
-            />
-             <TeamMemberCard 
-              name="Emily Chen" 
-              title="Dental Assistant" 
-              imageUrl="https://placehold.co/300x300.png" 
-              imageHint="assistant portrait professional"
-              bio="Emily ensures every visit runs smoothly and assists Dr. Cardieri with various procedures, always with a smile." 
+              bio="Connie is passionate about preventive care and enjoys helping patients achieve healthy smiles. She is committed to providing thorough cleanings and patient education." 
             />
           </div>
         </section>
 
         <section className="text-center bg-background p-8 md:p-12 rounded-xl shadow-xl">
-          <h2 className="text-3xl font-bold text-primary mb-6">Our Modern & Welcoming Office</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
-              <Image src="https://placehold.co/600x400.png" alt="Dental office reception" layout="fill" objectFit="cover" data-ai-hint="dental reception modern" />
-            </div>
-            <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
-              <Image src="https://placehold.co/600x400.png" alt="Dental treatment room" layout="fill" objectFit="cover" data-ai-hint="dental chair clean" />
+          <h2 className="text-3xl font-bold text-primary mb-6">Our Office</h2>
+          <div className="flex justify-center mb-8">
+            <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
+              <Image src="/images/dental-office.jpg" alt="Dental office" layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
             </div>
           </div>
           <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">
-            Step into a calm and inviting atmosphere where your comfort is our priority. Our state-of-the-art facility is equipped with the latest dental technology to ensure you receive the highest standard of care.
+            Our newly renovated office offers a comfortable and safe environment for your dental appointments. Our dedicated team of dental assistants, hygienists and receptionists are highly trained in the latest infection control protocols so our patients can rest assured their protection and health is our top priority. All of our six operatories are closed with glass walls and are equipped with HEPA air purifiers to prevent the spread of germs and viruses through-out the office.
           </p>
           <Button asChild size="lg" className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
             <Link href="/#contact">Contact Us to Schedule Your Visit</Link>
