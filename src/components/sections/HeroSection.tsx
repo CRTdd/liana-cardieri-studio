@@ -14,6 +14,13 @@ const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) =
   </div>
 );
 
+const LanguagePill = ({ flag, name }: { flag: string; name: string }) => (
+  <span className="inline-flex items-center bg-accent/20 text-primary text-sm font-medium px-4 py-2 rounded-full shadow-sm">
+    <span className="mr-2">{flag}</span>
+    {name}
+  </span>
+);
+
 export default function HeroSection() {
   const t = useTranslations('HeroSection');
   const [offsetY, setOffsetY] = useState(0);
@@ -68,14 +75,16 @@ export default function HeroSection() {
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
               <TrustBadge Icon={Award} text={t('trustBadgeExperience')} />
             </div>
-            <p className="mt-8 text-base font-light text-foreground/80 tracking-wide">
-              {t('taglineIntro')}{' '}
-              <span className="inline-block mr-1">🇺🇸</span>{t('languageEnglish')}
-              <span className="mx-1">/</span>
-              <span className="inline-block mr-1">🇵🇹</span>{t('languagePortuguese')}
-              <span className="mx-1">/</span>
-              <span className="inline-block mr-1">🇵🇱</span>{t('languagePolish')}
-            </p>
+            <div className="mt-8 text-center md:text-left">
+              <p className="text-base font-light text-foreground/80 tracking-wide mb-3">
+                {t('taglineIntro')}
+              </p>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                <LanguagePill flag="🇺🇸" name={t('languageEnglish')} />
+                <LanguagePill flag="🇵🇹" name={t('languagePortuguese')} />
+                <LanguagePill flag="🇵🇱" name={t('languagePolish')} />
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Image Placeholder */}
@@ -83,7 +92,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
                 src="https://placehold.co/600x450.png"
-                alt={t('headline')} // Using headline as alt text for the clinic image
+                alt={t('headline')}
                 data-ai-hint="modern dental clinic interior"
                 layout="fill"
                 objectFit="cover"
@@ -97,5 +106,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-    
