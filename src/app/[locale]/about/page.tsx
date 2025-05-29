@@ -41,7 +41,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('drCardieriTitle')}</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-background p-8 rounded-xl shadow-xl">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-lg overflow-hidden shadow-md shrink-0">
-              <Image src="https://placehold.co/288x288.png" alt={t('drCardieriTitle')} layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
+              <Image src="/images/dr.cardieri.jpg" alt={t('drCardieriTitle')} layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
             </div>
             <div className="text-foreground/80 font-light">
               <p className="mb-4 text-lg">
@@ -68,17 +68,26 @@ export default function AboutPage() {
             <TeamMemberCard
               name={t('sofiaName')}
               title={t('sofiaTitle')}
-              imageUrl="https://placehold.co/160x160.png"
+              imageUrl="/images/Margaret.jpg"
               imageHint="hygienist portrait friendly"
               bio={t('sofiaBio')}
             />
             <TeamMemberCard
               name={t('marekName')}
               title={t('marekTitle')}
-              imageUrl="https://placehold.co/160x160.png"
+              imageUrl="/images/connie.jpg"
               imageHint="hygienist portrait smiling"
               bio={t('marekBio')}
             />
+             {/* Removed Emily Chen as per previous design, assuming no image available or not to be included now
+            <TeamMemberCard
+              name={t('emilyName')}
+              title={t('emilyTitle')}
+              imageUrl="/images/emily.jpg" // Assuming emily.jpg exists in public/images
+              imageHint="dental assistant portrait"
+              bio={t('emilyBio')}
+            />
+            */}
           </div>
         </section>
 
@@ -86,7 +95,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-6">{t('officeTitle')}</h2>
           <div className="flex justify-center mb-8">
             <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
-              <Image src="https://placehold.co/896x256.png" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
+              <Image src="/images/dental-office.jpg" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
             </div>
           </div>
           <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">
