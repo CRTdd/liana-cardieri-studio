@@ -92,15 +92,17 @@ export default function HeroSection() {
 
           {/* Right Column: Image */}
           <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-full max-w-lg h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
+            <div className="relative w-full max-w-2xl h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
               <Image
-                src="/images/dental_office_2.jpg"
+                // src="/images/dental_office_2.jpg"
+                src="https://www.cardieridental.ca/wp-content/uploads/2014/11/slider1.png"
                 alt={t('subheading')}
                 data-ai-hint="modern dental clinic interior"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 quality={90}
                 className="rounded-lg"
+                sizes="100vw"
               />
             </div>
           </div>

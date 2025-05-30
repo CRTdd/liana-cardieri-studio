@@ -1,31 +1,28 @@
-import Image from 'next/image';
+'use client';
+
 import { Button } from '@/components/ui/button';
-import Link from 'next/link'; // Using default Next.js Link
+import Link from 'next/link';
 import { Award, Users, Smile } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import type { Metadata } from 'next';
+import { ClientImage } from '@/components/client-image';
 
 // export const metadata: Metadata = { // Metadata is typically handled by layout or generateMetadata
 //   title: 'About Us - Dr. Liana Cardieri',
 //   description: 'Learn more about Dr. Liana Cardieri, our dedicated team of hygienists, and our modern dental office in Kitchener.',
 // };
 
-const localImageLoader = ({ src }: { src: string }) => {
-  return src;
-};
-
 const TeamMemberCard = ({ name, title, imageUrl, bio, imageHint }: { name: string; title: string; imageUrl: string; bio: string, imageHint: string }) => (
   <div className="bg-background p-6 rounded-lg shadow-lg text-center transform transition-all duration-300 hover:scale-105">
     <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary">
-      <Image 
+      <ClientImage 
         src={imageUrl} 
         alt={name} 
         fill 
         className="object-cover"
         sizes="(max-width: 768px) 160px, 160px"
         priority={false}
-        loader={localImageLoader}
-        data-ai-hint={imageHint} 
+        imageHint={imageHint} 
       />
     </div>
     <h3 className="text-2xl font-bold text-primary">{name}</h3>
@@ -53,15 +50,14 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('drCardieriTitle')}</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-background p-8 rounded-xl shadow-xl">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-lg overflow-hidden shadow-md shrink-0">
-              <Image 
-                src="/images/dr.cardieri.jpg" 
+              <ClientImage 
+                src="https://www.cardieridental.ca/wp-content/uploads/2014/10/dr.cardieri-wb-232x300.jpg" 
                 alt={t('drCardieriTitle')} 
                 fill 
                 className="object-cover"
                 sizes="(max-width: 768px) 240px, 288px"
                 priority={true}
-                loader={localImageLoader}
-                data-ai-hint="dentist portrait professional" 
+                imageHint="dentist portrait professional" 
               />
             </div>
             <div className="text-foreground/80 font-light">
@@ -87,16 +83,18 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('hygienistsTitle')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TeamMemberCard
-              name={t('sofiaName')}
+              name="Margaret Rapacz"
               title={t('sofiaTitle')}
-              imageUrl="/images/Margaret.jpg"
+              // imageUrl="/images/Margaret.jpg"
+              imageUrl="https://www.cardieridental.ca/wp-content/uploads/2014/10/Margaret-wb-273x300.jpg"
               imageHint="hygienist portrait friendly"
               bio={t('sofiaBio')}
             />
             <TeamMemberCard
-              name={t('marekName')}
+              name="Connie Roth"
               title={t('marekTitle')}
-              imageUrl="/images/connie.jpg"
+              // imageUrl="/images/connie.jpg"
+              imageUrl="https://www.cardieridental.ca/wp-content/uploads/2014/10/connie-bw-1.jpg"
               imageHint="hygienist portrait smiling"
               bio={t('marekBio')}
             />
@@ -116,15 +114,15 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-6">{t('officeTitle')}</h2>
           <div className="flex justify-center mb-8">
             <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
-              <Image 
-                src="/images/dental_office.jpg" 
+              <ClientImage 
+                // src="/images/dental_office.jpg" 
+                src="https://www.cardieridental.ca/wp-content/uploads/2021/02/File_003-3-scaled-1140x417.jpeg" 
                 alt={t('officeTitle')} 
                 fill 
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 42rem"
                 priority={true}
-                loader={localImageLoader}
-                data-ai-hint="dental office modern" 
+                imageHint="dental office modern" 
               />
             </div>
           </div>
