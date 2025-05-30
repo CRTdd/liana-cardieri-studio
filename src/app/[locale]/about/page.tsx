@@ -10,10 +10,23 @@ import type { Metadata } from 'next';
 //   description: 'Learn more about Dr. Liana Cardieri, our dedicated team of hygienists, and our modern dental office in Kitchener.',
 // };
 
+const localImageLoader = ({ src }: { src: string }) => {
+  return src;
+};
+
 const TeamMemberCard = ({ name, title, imageUrl, bio, imageHint }: { name: string; title: string; imageUrl: string; bio: string, imageHint: string }) => (
   <div className="bg-background p-6 rounded-lg shadow-lg text-center transform transition-all duration-300 hover:scale-105">
     <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary">
-      <Image src={imageUrl} alt={name} layout="fill" objectFit="cover" data-ai-hint={imageHint} />
+      <Image 
+        src={imageUrl} 
+        alt={name} 
+        fill 
+        className="object-cover"
+        sizes="(max-width: 768px) 160px, 160px"
+        priority={false}
+        loader={localImageLoader}
+        data-ai-hint={imageHint} 
+      />
     </div>
     <h3 className="text-2xl font-bold text-primary">{name}</h3>
     <p className="text-brand-blue font-semibold">{title}</p>
@@ -40,7 +53,16 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">{t('drCardieriTitle')}</h2>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 bg-background p-8 rounded-xl shadow-xl">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-lg overflow-hidden shadow-md shrink-0">
-              <Image src="/images/dr.cardieri.jpg" alt={t('drCardieriTitle')} layout="fill" objectFit="cover" data-ai-hint="dentist portrait professional" />
+              <Image 
+                src="/images/dr.cardieri.jpg" 
+                alt={t('drCardieriTitle')} 
+                fill 
+                className="object-cover"
+                sizes="(max-width: 768px) 240px, 288px"
+                priority={true}
+                loader={localImageLoader}
+                data-ai-hint="dentist portrait professional" 
+              />
             </div>
             <div className="text-foreground/80 font-light">
               <p className="mb-4 text-lg">
@@ -94,7 +116,16 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-6">{t('officeTitle')}</h2>
           <div className="flex justify-center mb-8">
             <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
-              <Image src="/images/dental_office.jpg" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
+              <Image 
+                src="/images/dental_office.jpg" 
+                alt={t('officeTitle')} 
+                fill 
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 42rem"
+                priority={true}
+                loader={localImageLoader}
+                data-ai-hint="dental office modern" 
+              />
             </div>
           </div>
           <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">
