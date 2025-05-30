@@ -2,8 +2,9 @@
 
 import Link from 'next/link'; // Using Next.js's default Link
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'; // For non-locale path
+import { usePathname, useParams } from 'next/navigation'; // For non-locale path
 import { useLocale, useTranslations } from 'next-intl'; // For translations and current locale
+import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -37,6 +38,9 @@ export default function Header() {
   const tServices = useTranslations('ServicesPage.service');
   const currentLocale = useLocale();
   const currentFullPath = usePathname() || '/'; // Fallback to '/'
+  const locale = useParams().locale as string;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
@@ -97,6 +101,14 @@ export default function Header() {
     window.location.href = newPath;
   };
 
+  const isActive = (path: string) => {
+    return currentFullPath === path;
+  };
+
+  const serviceLinks = servicesData.map(service => ({
+    href: service.learnMoreLink.replace('[locale]', locale),
+    label: tServices(service.titleKey),
+  }));
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

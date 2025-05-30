@@ -5,7 +5,7 @@ export const servicesData = [
     descriptionKey: 'services.preventive.description',
     image: 'https://placehold.co/400x300?text=Preventive',
     imageHint: 'preventive dental care',
-    learnMoreLink: '/services/preventive',
+    learnMoreLink: '/[locale]/services/preventive',
   },
   {
     id: 'periodontal',
@@ -13,7 +13,7 @@ export const servicesData = [
     descriptionKey: 'services.periodontal.description',
     image: 'https://placehold.co/400x300?text=Gum+Treatment',
     imageHint: 'periodontal treatment',
-    learnMoreLink: '/services/periodontal',
+    learnMoreLink: '/[locale]/services/periodontal',
   },
   {
     id: 'restorative',
@@ -21,7 +21,7 @@ export const servicesData = [
     descriptionKey: 'services.restorative.description',
     image: 'https://placehold.co/400x300?text=Fillings',
     imageHint: 'dental fillings',
-    learnMoreLink: '/services/restorative',
+    learnMoreLink: '/[locale]/services/restorative',
     highlightKey: 'services.restorative.highlight',
   },
   {
@@ -30,7 +30,7 @@ export const servicesData = [
     descriptionKey: 'services.crowns-bridges.description',
     image: 'https://placehold.co/400x300?text=Crowns+%26+Bridges',
     imageHint: 'dental crowns and bridges',
-    learnMoreLink: '/services/crowns-bridges',
+    learnMoreLink: '/[locale]/services/crowns-bridges',
     highlightKey: 'services.crowns-bridges.highlight',
   },
   {
@@ -39,7 +39,7 @@ export const servicesData = [
     descriptionKey: 'services.implants.description',
     image: 'https://placehold.co/400x300?text=Implants',
     imageHint: 'dental implants',
-    learnMoreLink: '/services/implants',
+    learnMoreLink: '/[locale]/services/implants',
   },
   {
     id: 'cosmetic',
@@ -47,7 +47,7 @@ export const servicesData = [
     descriptionKey: 'services.cosmetic.description',
     image: 'https://placehold.co/400x300?text=Cosmetic',
     imageHint: 'cosmetic dentistry',
-    learnMoreLink: '/services/cosmetic',
+    learnMoreLink: '/[locale]/services/cosmetic',
   },
   {
     id: 'endodontic',
@@ -55,7 +55,7 @@ export const servicesData = [
     descriptionKey: 'services.endodontic.description',
     image: 'https://placehold.co/400x300?text=Root+Canal',
     imageHint: 'root canal treatment',
-    learnMoreLink: '/services/endodontic',
+    learnMoreLink: '/[locale]/services/endodontic',
   },
   {
     id: 'prosthetic',
@@ -63,7 +63,7 @@ export const servicesData = [
     descriptionKey: 'services.prosthetic.description',
     image: 'https://placehold.co/400x300?text=Dentures',
     imageHint: 'denture treatment',
-    learnMoreLink: '/services/prosthetic',
+    learnMoreLink: '/[locale]/services/prosthetic',
   },
   {
     id: 'digital-xray',
@@ -71,6 +71,6 @@ export const servicesData = [
     descriptionKey: 'services.digital-xray.description',
     image: 'https://placehold.co/400x300?text=Digital+X-Ray',
     imageHint: 'digital x-ray',
-    learnMoreLink: '/services/digital-xray',
+    learnMoreLink: '/[locale]/services/digital-xray',
   },
 ]; 
