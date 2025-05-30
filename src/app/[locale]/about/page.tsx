@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link'; // Using default Next.js Link
@@ -95,7 +94,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-primary mb-6">{t('officeTitle')}</h2>
           <div className="flex justify-center mb-8">
             <div className="relative h-64 w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
-              <Image src="/images/dental-office.jpg" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
+              <Image src="/images/dental_office.jpg" alt={t('officeTitle')} layout="fill" objectFit="cover" data-ai-hint="dental office modern" />
             </div>
           </div>
           <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">
