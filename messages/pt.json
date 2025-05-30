@@ -194,7 +194,58 @@
     "service": {
       "preventive": {
         "title": "Tratamento Preventivo",
-        "description": "A odontologia moderna se concentra na prevenção de doenças e intervenção mínima. Ajudamos a conservar seus dentes naturais e prevenir problemas recorrentes, oferecendo os mais recentes regimes de higiene oral, tratamentos com flúor, selantes de fissura e protetores bucais para esportes de contato."
+        "tagline": "Mantenha Seu Sorriso Saudável para a Vida",
+        "introduction": "A odontologia moderna se concentra na prevenção de doenças e intervenção mínima. Ajudamos a conservar seus dentes naturais e prevenir problemas recorrentes, oferecendo os mais recentes regimes de higiene bucal, tratamentos com flúor, selantes de fissura e protetores bucais para esportes de contato.",
+        "benefits": [
+          "Check-ups regulares para detectar problemas precocemente",
+          "Limpezas profissionais para saúde bucal ideal",
+          "Tratamentos com flúor para fortalecer os dentes",
+          "Selantes de fissura para prevenir cáries",
+          "Protetores bucais personalizados para esportes de contato",
+          "Educação sobre higiene bucal adequada"
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Acreditamos em preços transparentes e em ajudar você a maximizar seus benefícios de seguro. A maioria dos serviços preventivos é coberta por planos de seguro odontológico.",
+          "services": [
+            {
+              "name": "Check-up e Limpeza Regular",
+              "cost": "A partir de $150",
+              "insurance": "Geralmente coberto em 80-100%"
+            },
+            {
+              "name": "Tratamento com Flúor",
+              "cost": "A partir de $45",
+              "insurance": "Geralmente coberto para crianças"
+            },
+            {
+              "name": "Selantes Dentários",
+              "cost": "A partir de $65 por dente",
+              "insurance": "Geralmente coberto para crianças e adolescentes"
+            },
+            {
+              "name": "Protetor Bucal Personalizado",
+              "cost": "A partir de $250",
+              "insurance": "Pode ser coberto para uso em esportes"
+            }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        },
+        "faqs": [
+          {
+            "question": "Com que frequência devo visitar o dentista para check-ups?",
+            "answer": "A maioria dos pacientes deve visitar a cada 6 meses para check-ups e limpezas regulares. No entanto, alguns pacientes podem precisar de visitas mais frequentes com base em suas necessidades de saúde bucal."
+          },
+          {
+            "question": "O que acontece durante uma visita preventiva?",
+            "answer": "Sua visita inclui um exame completo, limpeza profissional, radiografias se necessário e recomendações personalizadas para manter uma saúde bucal ideal."
+          },
+          {
+            "question": "Os selantes dentários são eficazes na prevenção de cáries?",
+            "answer": "Sim, os selantes dentários podem reduzir o risco de cáries em até 80% no primeiro ano e continuar protegendo por vários anos após a aplicação."
+          }
+        ]
       },
       "periodontal": {
         "title": "Tratamento Periodontal (Gengival)",
@@ -252,17 +303,49 @@
           "Limpezas profissionais para saúde bucal ideal",
           "Tratamentos com flúor para fortalecer os dentes",
           "Selantes de fissura para prevenir cáries",
-          "Protetores bucais personalizados para esportes",
+          "Protetores bucais personalizados para esportes de contato",
           "Educação sobre higiene bucal adequada"
         ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Acreditamos em preços transparentes e em ajudar você a maximizar seus benefícios de seguro. A maioria dos serviços preventivos é coberta por planos de seguro odontológico.",
+          "services": [
+            {
+              "name": "Check-up e Limpeza Regular",
+              "cost": "A partir de $150",
+              "insurance": "Geralmente coberto em 80-100%"
+            },
+            {
+              "name": "Tratamento com Flúor",
+              "cost": "A partir de $45",
+              "insurance": "Geralmente coberto para crianças"
+            },
+            {
+              "name": "Selantes Dentários",
+              "cost": "A partir de $65 por dente",
+              "insurance": "Geralmente coberto para crianças e adolescentes"
+            },
+            {
+              "name": "Protetor Bucal Personalizado",
+              "cost": "A partir de $250",
+              "insurance": "Pode ser coberto para uso em esportes"
+            }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        },
         "faqs": [
           {
-            "question": "Com que frequência devo visitar para cuidados preventivos?",
-            "answer": "Recomendamos visitas a cada 6 meses para check-ups e limpezas regulares, embora alguns pacientes possam precisar de visitas mais frequentes dependendo de suas necessidades de saúde bucal."
+            "question": "Com que frequência devo visitar o dentista para check-ups?",
+            "answer": "A maioria dos pacientes deve visitar a cada 6 meses para check-ups e limpezas regulares. No entanto, alguns pacientes podem precisar de visitas mais frequentes com base em suas necessidades de saúde bucal."
           },
           {
-            "question": "Os tratamentos com flúor são seguros?",
-            "answer": "Sim, os tratamentos com flúor são seguros e eficazes na prevenção de cáries. Usamos flúor de grau profissional que é muito mais forte que os produtos de venda livre."
+            "question": "O que acontece durante uma visita preventiva?",
+            "answer": "Sua visita inclui um exame completo, limpeza profissional, radiografias se necessário e recomendações personalizadas para manter uma saúde bucal ideal."
+          },
+          {
+            "question": "Os selantes dentários são eficazes na prevenção de cáries?",
+            "answer": "Sim, os selantes dentários podem reduzir o risco de cáries em até 80% no primeiro ano e continuar protegendo por vários anos após a aplicação."
           }
         ]
       },
@@ -287,7 +370,24 @@
             "question": "Como a doença gengival é tratada?",
             "answer": "O tratamento varia de acordo com a severidade, desde limpeza profissional até raspagem profunda e alisamento radicular. Criaremos um plano de tratamento personalizado para suas necessidades."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Avaliação e Diagnóstico", "description": "Avaliação abrangente das gengivas e diagnóstico." },
+          { "title": "Terapia Inicial", "description": "Limpeza profissional e raspagem para remover placa e tártaro." },
+          { "title": "Limpeza Profunda (se necessário)", "description": "Raspagem e alisamento radicular para doença gengival avançada." },
+          { "title": "Manutenção e Acompanhamento", "description": "Check-ups regulares e limpezas para manter a saúde gengival." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. A maioria dos tratamentos periodontais é coberta por planos de seguro odontológico.",
+          "services": [
+            { "name": "Avaliação Inicial", "cost": "A partir de $120", "insurance": "Geralmente coberto em 80-100%" },
+            { "name": "Limpeza Profissional", "cost": "A partir de $150", "insurance": "Geralmente coberto em 80-100%" },
+            { "name": "Limpeza Profunda (Raspagem/Alisamento)", "cost": "A partir de $250 por quadrante", "insurance": "Frequentemente coberto para doença gengival" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "restorative": {
         "title": "Tratamento Restaurador",
@@ -310,7 +410,23 @@
             "question": "Quanto tempo duram as obturações?",
             "answer": "Obturações modernas podem durar 5-15 anos ou mais com os cuidados adequados. Check-ups regulares ajudam a garantir sua longevidade."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Diagnóstico e Planejamento", "description": "Avaliação da cárie ou dano e planejamento da restauração." },
+          { "title": "Preparação", "description": "Remoção da cárie e modelagem do dente para o preenchimento." },
+          { "title": "Colocação do Preenchimento", "description": "Colocação e modelagem do material restaurador." },
+          { "title": "Polimento e Ajuste de Mordida", "description": "Ajustes finais e polimento para conforto e função." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. A maioria dos tratamentos restauradores é coberta por planos de seguro odontológico.",
+          "services": [
+            { "name": "Restauração em Resina (Cor do Dente)", "cost": "A partir de $180", "insurance": "Geralmente coberto em 80-100%" },
+            { "name": "Restauração em Amálgama", "cost": "A partir de $150", "insurance": "Geralmente coberto em 80-100%" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "crowns-bridges": {
         "title": "Coroas e Pontes",
@@ -333,7 +449,24 @@
             "question": "Como cuido da minha coroa ou ponte?",
             "answer": "Boa higiene bucal, incluindo escovação, uso do fio dental e check-ups dentais regulares, é essencial para manter a longevidade da sua coroa ou ponte."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consulta e Planejamento", "description": "Avaliação e planejamento para colocação de coroa ou ponte." },
+          { "title": "Preparação do Dente", "description": "Modelagem do dente e moldagens." },
+          { "title": "Coroa/Ponte Provisória", "description": "Colocação de restauração provisória enquanto a definitiva é confeccionada." },
+          { "title": "Colocação Final", "description": "Ajuste e cimentação da coroa ou ponte definitiva." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. Coroas e pontes geralmente são parcialmente cobertas por planos de seguro odontológico.",
+          "services": [
+            { "name": "Coroa de Porcelana", "cost": "A partir de $1200", "insurance": "Frequentemente coberto em 50-80%" },
+            { "name": "Coroa de Zircônia", "cost": "A partir de $1400", "insurance": "Frequentemente coberto em 50-80%" },
+            { "name": "Ponte Dentária (por unidade)", "cost": "A partir de $1100", "insurance": "Frequentemente coberto em 50-80%" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "implants": {
         "title": "Implantes Dentários",
@@ -356,7 +489,23 @@
             "question": "Quanto tempo leva o processo de implante?",
             "answer": "O processo completo geralmente leva 3-6 meses, permitindo a cicatrização e integração do implante com o osso maxilar. Cada caso é único."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consulta e Planejamento", "description": "Avaliamos sua saúde bucal e criamos um plano personalizado de implante." },
+          { "title": "Colocação do Implante", "description": "Um pino de titânio é cirurgicamente colocado no osso sob anestesia local." },
+          { "title": "Cicatrização e Integração", "description": "O implante integra-se ao osso em 3–6 meses." },
+          { "title": "Colocação da Coroa", "description": "Uma coroa personalizada é fixada, completando seu novo sorriso." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. Implantes geralmente são parcialmente cobertos por planos de seguro odontológico.",
+          "services": [
+            { "name": "Implante Unitário (incluindo coroa)", "cost": "A partir de $3500", "insurance": "Cobertura parcial pode estar disponível" },
+            { "name": "Ponte Suportada por Implante", "cost": "A partir de $6000", "insurance": "Cobertura parcial pode estar disponível" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "cosmetic": {
         "title": "Odontologia Estética",
@@ -379,7 +528,24 @@
             "question": "Como sei qual tratamento cosmético é certo para mim?",
             "answer": "Uma consulta com a Dra. Cardieri é o primeiro passo. Ela avaliará seu sorriso, discutirá seus objetivos e recomendará as opções mais adequadas."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consulta e Design do Sorriso", "description": "Avaliação dos seus objetivos e planejamento do tratamento estético." },
+          { "title": "Preparação (se necessário)", "description": "Preparação mínima dos dentes para facetas ou resina." },
+          { "title": "Tratamento", "description": "Clareamento, resina ou colocação de facetas conforme planejado." },
+          { "title": "Resultados Finais e Cuidados", "description": "Revisão e orientações de cuidados para seu novo sorriso." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes. A maioria dos tratamentos estéticos não é coberta por planos de seguro odontológico.",
+          "services": [
+            { "name": "Clareamento Dental", "cost": "A partir de $350", "insurance": "Não coberto pelo seguro" },
+            { "name": "Facetas de Porcelana (por dente)", "cost": "A partir de $1200", "insurance": "Não coberto pelo seguro" },
+            { "name": "Resina Dental (por dente)", "cost": "A partir de $350", "insurance": "Não coberto pelo seguro" }
+          ],
+          "insuranceInfo": "Procedimentos estéticos normalmente não são cobertos pelo seguro. Entre em contato para mais detalhes.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "endodontic": {
         "title": "Tratamento Endodôntico",
@@ -402,7 +568,24 @@
             "question": "Quanto tempo leva um tratamento de canal?",
             "answer": "Um tratamento de canal típico leva 1-2 consultas, dependendo da complexidade do caso."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Diagnóstico e Radiografias", "description": "Avaliação e imagens para confirmar a necessidade de canal." },
+          { "title": "Anestesia e Isolamento", "description": "Anestesia do dente e isolamento para o tratamento." },
+          { "title": "Limpeza e Modelagem", "description": "Remoção do tecido infectado e modelagem dos canais." },
+          { "title": "Obturação e Selamento", "description": "Preenchimento dos canais e selamento do dente." },
+          { "title": "Restauração", "description": "Colocação de restauração ou coroa para restaurar a função." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. Tratamentos de canal geralmente são cobertos por planos de seguro odontológico.",
+          "services": [
+            { "name": "Canal Radicular (dente anterior)", "cost": "A partir de $700", "insurance": "Geralmente coberto em 80-100%" },
+            { "name": "Canal Radicular (molar)", "cost": "A partir de $1200", "insurance": "Geralmente coberto em 80-100%" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "prosthetic": {
         "title": "Tratamento Protético",
@@ -425,7 +608,23 @@
             "question": "Como cuido das minhas dentaduras?",
             "answer": "Limpeza regular, armazenamento adequado e check-ups de rotina são essenciais para manter suas dentaduras. Forneceremos instruções detalhadas de cuidados."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consulta e Moldagens", "description": "Avaliação e moldagens para confecção da prótese." },
+          { "title": "Prova e Ajustes", "description": "Ajuste e adaptação da prótese para conforto e função." },
+          { "title": "Colocação Final", "description": "Colocação da prótese finalizada e orientações de cuidados." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes e ajudamos você a maximizar seus benefícios de seguro. Próteses geralmente são parcialmente cobertas por planos de seguro odontológico.",
+          "services": [
+            { "name": "Prótese Total (superior ou inferior)", "cost": "A partir de $1800", "insurance": "Frequentemente coberto em 50-80%" },
+            { "name": "Prótese Parcial", "cost": "A partir de $1200", "insurance": "Frequentemente coberto em 50-80%" },
+            { "name": "Reparo de Prótese", "cost": "A partir de $150", "insurance": "Frequentemente coberto em 80-100%" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       },
       "digital-xray": {
         "title": "Raios-X Digitais",
@@ -448,7 +647,22 @@
             "question": "Os raios-x digitais são seguros?",
             "answer": "Sim, os raios-x digitais emitem até 80% menos radiação que os raios-x tradicionais em filme, tornando-os muito seguros para pacientes de todas as idades."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Agendamento de Imagem", "description": "Sessão rápida e confortável de raio-x digital ou câmera intraoral." },
+          { "title": "Revisão das Imagens", "description": "Revisão imediata das imagens com o dentista." },
+          { "title": "Diagnóstico e Planejamento", "description": "Uso das imagens para planejar o tratamento ou monitorar a saúde bucal." }
+        ],
+        "costs": {
+          "title": "Custos e Seguro",
+          "description": "Oferecemos preços transparentes. A maioria dos raios-x digitais é coberta por planos de seguro odontológico.",
+          "services": [
+            { "name": "Raio-X Digital (por imagem)", "cost": "A partir de $35", "insurance": "Geralmente coberto em 80-100%" },
+            { "name": "Exame com Câmera Intraoral", "cost": "A partir de $50", "insurance": "Geralmente coberto em 80-100%" }
+          ],
+          "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
+          "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
+        }
       }
     }
   },

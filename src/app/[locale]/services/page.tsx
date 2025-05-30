@@ -1,6 +1,4 @@
 'use client';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { servicesData } from '@/data/servicesData';
 import { CheckCircle, HelpCircle } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -12,8 +10,17 @@ export default function ServicesPage() {
   const locale = useParams().locale as string;
 
   return (
-    <div className="bg-brand-light-blue py-12 md:py-20">
-      <div className="container max-w-6xl mx-auto px-4">
+    <div 
+      className="relative"
+      style={{
+        backgroundImage: 'url("https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-brand-light-blue/75"></div>
+      <div className="relative container max-w-6xl mx-auto px-4 py-12 md:py-20">
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('headline')}

@@ -15,6 +15,12 @@ interface ServiceDetailProps {
   locale: string;
 }
 
+interface ServiceCost {
+  name: string;
+  cost: string;
+  insurance: string;
+}
+
 export default function ServiceDetail({ slug, locale }: ServiceDetailProps) {
   const t = useTranslations('ServiceDetailPage');
   const tServices = useTranslations('ServicesPage.service');
@@ -150,17 +156,32 @@ export default function ServiceDetail({ slug, locale }: ServiceDetailProps) {
               </section>
             )}
             {/* Cost & Insurance */}
-            <section className="bg-white p-6 rounded-xl shadow-md border-2 border-[#3A0CA3]" aria-label="Cost & Insurance Options">
-              <div className="flex items-center justify-center mb-2">
-                <DollarSign className="h-6 w-6 text-[#3A0CA3]" />
+            <section className="bg-white p-6 rounded-xl shadow-md" aria-label={t('services.preventive.costs.title')}>
+              <h2 className="text-2xl font-bold text-[#001524] mb-4 font-montserrat">{t('services.preventive.costs.title')}</h2>
+              <p className="text-[#001524]/80 mb-4 leading-relaxed font-light font-montserrat">
+                {t('services.preventive.costs.description')}
+              </p>
+              <div className="space-y-4">
+                {(() => {
+                  const services = t('services.preventive.costs.services', { returnObjects: true });
+                  if (Array.isArray(services)) {
+                    return services.map((service: ServiceCost, index: number) => (
+                      <div key={index} className="border-b border-gray-200 pb-3">
+                        <div className="flex justify-between items-center mb-1">
+                          <span className="font-semibold text-[#001524]">{service.name}</span>
+                          <span className="text-[#3A0CA3] font-medium">{service.cost}</span>
+                        </div>
+                        <p className="text-sm text-[#001524]/70">{service.insurance}</p>
+                      </div>
+                    ));
+                  }
+                  return null;
+                })()}
               </div>
-              <h2 className="text-xl font-bold text-[#001524] mb-2 text-center font-montserrat">Cost & Insurance Options</h2>
-              <p className="text-[#001524]/80 mb-2 text-center font-montserrat">
-                Dental implants typically range from $3,000 to $5,000 per tooth, depending on complexity. We offer flexible payment plans and work with most insurance providers to maximize your coverage.
-              </p>
-              <p className="text-[#001524]/60 text-xs text-center font-montserrat italic">
-                Costs vary based on individual needs; a consultation provides an accurate estimate.
-              </p>
+              <div className="mt-4 space-y-2">
+                <p className="text-[#001524]/80 text-sm">{t('services.preventive.costs.insuranceInfo')}</p>
+                <p className="text-[#001524]/80 text-sm">{t('services.preventive.costs.paymentOptions')}</p>
+              </div>
             </section>
           </div>
         </div>

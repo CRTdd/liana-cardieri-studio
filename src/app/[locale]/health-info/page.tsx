@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ExternalLink, ShieldCheck, BookOpen } from 'lucide-react';
 import { Metadata } from 'next';
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
   title: 'Oral Health Information - Dr. Liana Cardieri',
@@ -27,44 +28,45 @@ const HealthTopicCard = ({ title, description, imageUrl, imageHint, externalLink
 );
 
 export default function HealthInfoPage() {
+  const t = useTranslations('HealthInfoPage');
   return (
     <div className="bg-brand-light-blue py-12 md:py-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <header className="mb-12 text-center">
           <BookOpen className="h-16 w-16 text-brand-blue mx-auto mb-4 opacity-80" />
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-3">Important Oral Health Topics</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-3">{t('headline')}</h1>
           <p className="text-xl text-foreground/70 font-light">
-            Empowering you with knowledge for a healthier smile.
+            {t('subheadline')}
           </p>
         </header>
 
         <section className="space-y-10 mb-12">
           <HealthTopicCard
-            title="Understanding Gingivitis (Gum Disease)"
-            description="Gingivitis is the early stage of gum disease, caused by plaque buildup. Symptoms include red, swollen, or bleeding gums. If left untreated, it can progress to more serious periodontitis. Regular dental check-ups and good oral hygiene are key to prevention and treatment."
+            title={t('gingivitisTitle')}
+            description={t('gingivitisDescription')}
             imageUrl="https://placehold.co/400x300.png"
             imageHint="gum disease illustration"
             externalLink="https://www.cda-adc.ca/en/oral_health/cfyt/gum_diseases/"
-            linkText="Learn More from CDA"
+            linkText={t('gingivitisLinkText')}
           />
           <HealthTopicCard
-            title="Oral Cancer Awareness & Screening"
-            description="Oral cancer can affect any part of the mouth or throat. Early detection significantly improves treatment outcomes. Risk factors include tobacco use, excessive alcohol consumption, and HPV infection. Regular dental exams include screening for signs of oral cancer."
+            title={t('oralCancerTitle')}
+            description={t('oralCancerDescription')}
             imageUrl="https://placehold.co/400x300.png"
             imageHint="oral cancer screening"
             externalLink="https://www.oralcancerfoundation.org/facts/"
-            linkText="Oral Cancer Foundation"
+            linkText={t('oralCancerLinkText')}
           />
         </section>
         
         <section className="bg-background p-8 rounded-lg shadow-lg text-center">
             <ShieldCheck className="h-12 w-12 text-green-600 mx-auto mb-4" />
-            <h2 className="text-2xl font-semibold text-primary mb-4">Your Health is Our Priority</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">{t('priorityTitle')}</h2>
             <p className="text-foreground/80 leading-relaxed font-light mb-6 max-w-2xl mx-auto">
-                Regular dental check-ups are crucial for maintaining not only your oral health but also your overall well-being. Dr. Cardieri and her team are committed to providing comprehensive examinations and personalized advice.
+                {t('priorityDescription')}
             </p>
             <Button asChild size="lg" className="bg-brand-blue hover:bg-brand-pink text-white transition-all duration-300 transform hover:scale-105">
-                <Link href="/#contact">Schedule Your Check-up Today</Link>
+                <Link href="/#contact">{t('scheduleCheckupButton')}</Link>
             </Button>
         </section>
 

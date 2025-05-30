@@ -184,41 +184,212 @@
     "service": {
       "preventive": {
         "title": "Leczenie Profilaktyczne",
-        "description": "Nowoczesna stomatologia skupia się na zapobieganiu chorobom i minimalnej interwencji. Pomagamy zachować naturalne zęby i zapobiec nawrotom problemów, oferując najnowsze reżimy higieny jamy ustnej, zabiegi fluoryzacji, uszczelnianie bruzd i ochraniacze na zęby do sportów kontaktowych."
+        "tagline": "Zachowaj Zdrowy Uśmiech na Całe Życie",
+        "introduction": "Nowoczesna stomatologia skupia się na zapobieganiu chorobom i minimalnej interwencji. Pomagamy zachować naturalne zęby i zapobiec nawrotom problemów, oferując najnowsze reżimy higieny jamy ustnej, zabiegi fluoryzacji, uszczelnianie bruzd i ochraniacze na zęby do sportów kontaktowych.",
+        "benefits": [
+          "Regularne kontrole w celu wczesnego wykrycia problemów",
+          "Profesjonalne czyszczenie dla optymalnego zdrowia jamy ustnej",
+          "Zabiegi fluoryzacji wzmacniające zęby",
+          "Uszczelnianie bruzd zapobiegające próchnicy",
+          "Indywidualne ochraniacze na zęby do sportów kontaktowych",
+          "Edukacja w zakresie prawidłowej higieny jamy ustnej"
+        ],
+        "timeline": [
+          { "title": "Konsultacja i Planowanie", "description": "Ocena Twoich potrzeb stomatologicznych i stworzenie spersonalizowanego planu leczenia." },
+          { "title": "Leczenie", "description": "Wykonanie zabiegów higieny jamy ustnej, zabiegów fluoryzacji, uszczelniania bruzd i ochraniaczy." },
+          { "title": "Kontrola i Pielęgnacja", "description": "Regularne kontrole i pielęgnacja w celu utrzymania zdrowia jamy ustnej." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Wierzymy w przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Większość usług profilaktycznych jest objęta planami ubezpieczenia stomatologicznego.",
+          "services": [
+            { "name": "Regularna Kontrola i Czyszczenie", "cost": "Od $150", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Zabieg Fluoryzacji", "cost": "Od $45", "insurance": "Zazwyczaj pokrywane dla dzieci" },
+            { "name": "Uszczelnianie Bruzd", "cost": "Od $65 za ząb", "insurance": "Zazwyczaj pokrywane dla dzieci i młodzieży" },
+            { "name": "Indywidualny Ochraniacz na Zęby", "cost": "Od $250", "insurance": "Może być pokrywane w przypadku sportów kontaktowych" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        },
+        "faqs": [
+          {
+            "question": "Jak często powinienem/powinnam odwiedzać dentystę na kontrole?",
+            "answer": "Większość pacjentów powinna odwiedzać dentystę co 6 miesięcy na regularne kontrole i czyszczenie. Jednak niektórzy pacjenci mogą wymagać częstszych wizyt w zależności od ich potrzeb zdrowotnych jamy ustnej."
+          },
+          {
+            "question": "Co dzieje się podczas wizyty profilaktycznej?",
+            "answer": "Twoja wizyta obejmuje dokładne badanie, profesjonalne czyszczenie, zdjęcia RTG w razie potrzeby oraz spersonalizowane zalecenia dotyczące utrzymania optymalnego zdrowia jamy ustnej."
+          },
+          {
+            "question": "Czy uszczelnianie bruzd jest skuteczne w zapobieganiu próchnicy?",
+            "answer": "Tak, uszczelnianie bruzd może zmniejszyć ryzyko próchnicy nawet o 80% w pierwszym roku i nadal chronić przez kilka lat po założeniu."
+          }
+        ]
       },
       "periodontal": {
         "title": "Leczenie Periodontologiczne (Dziąseł)",
-        "description": "Oferujemy kompleksową profilaktykę i leczenie chorób dziąseł z naszymi zarejestrowanymi higienistkami stomatologicznymi i możemy skierować do najlepszych specjalistów od dziąseł, jeśli zajdzie taka potrzeba."
+        "description": "Oferujemy kompleksową profilaktykę i leczenie chorób dziąseł z naszymi zarejestrowanymi higienistkami stomatologicznymi i możemy skierować do najlepszych specjalistów od dziąseł, jeśli zajdzie taka potrzeba.",
+        "timeline": [
+          { "title": "Ocena i Diagnoza", "description": "Kompleksowa ocena dziąseł i diagnoza." },
+          { "title": "Terapia Wstępna", "description": "Profesjonalne czyszczenie i skaling w celu usunięcia płytki i kamienia nazębnego." },
+          { "title": "Głębokie Czyszczenie (jeśli potrzebne)", "description": "Skaling i wygładzanie korzeni przy zaawansowanej chorobie dziąseł." },
+          { "title": "Utrzymanie i Kontrola", "description": "Regularne wizyty kontrolne i czyszczenie dla utrzymania zdrowia dziąseł." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Większość zabiegów periodontologicznych jest objęta planami ubezpieczenia stomatologicznego.",
+          "services": [
+            { "name": "Wstępna Ocena", "cost": "Od $120", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Profesjonalne Czyszczenie", "cost": "Od $150", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Głębokie Czyszczenie (Skaling/Wygładzanie)", "cost": "Od $250 za ćwiartkę", "insurance": "Często pokrywane przy chorobach dziąseł" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "restorative": {
         "title": "Leczenie Odbudowujące (Wypełnienia)",
         "description": "Używamy najnowszych materiałów do wypełnień, w tym żywic kompozytowych w kolorze zęba, cementów szklano-jonomerowych, specjalnych stopów i amalgamatu.",
-        "highlight": "Opcje Bezbolesne"
+        "highlight": "Opcje Bezbolesne",
+        "timeline": [
+          { "title": "Diagnoza i Planowanie Leczenia", "description": "Ocena próchnicy lub uszkodzenia zęba i planowanie odbudowy." },
+          { "title": "Przygotowanie", "description": "Usunięcie próchnicy i przygotowanie zęba do wypełnienia." },
+          { "title": "Założenie Wypełnienia", "description": "Założenie i uformowanie materiału wypełniającego." },
+          { "title": "Polerowanie i Sprawdzenie Zgryzu", "description": "Ostateczne dopasowanie i polerowanie dla komfortu i funkcji." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Większość zabiegów odbudowujących jest objęta planami ubezpieczenia stomatologicznego.",
+          "services": [
+            { "name": "Wypełnienie Kompozytowe (kolor zęba)", "cost": "Od $180", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Wypełnienie Amalgamatowe", "cost": "Od $150", "insurance": "Zazwyczaj pokrywane w 80-100%" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "crowns-bridges": {
         "title": "Korony i Mosty Stałe",
         "description": "Dla zębów wymagających większej wytrzymałości lub estetyki oferujemy korony porcelanowe, cyrkonowe lub złote. Mosty są dostępne do wypełnienia luk po brakujących zębach. Oferujemy również korony w tym samym dniu dla dodatkowej wygody.",
-        "highlight": "Korony Tego Samego Dnia"
+        "highlight": "Korony Tego Samego Dnia",
+        "timeline": [
+          { "title": "Konsultacja i Planowanie", "description": "Ocena i planowanie założenia korony lub mostu." },
+          { "title": "Przygotowanie Zęba", "description": "Opracowanie zęba i pobranie wycisków." },
+          { "title": "Tymczasowa Korona/Most", "description": "Założenie tymczasowej odbudowy na czas wykonania ostatecznej." },
+          { "title": "Założenie Ostateczne", "description": "Dopasowanie i zacementowanie stałej korony lub mostu." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Korony i mosty są często częściowo pokrywane przez ubezpieczenie stomatologiczne.",
+          "services": [
+            { "name": "Korona Porcelanowa", "cost": "Od $1200", "insurance": "Często pokrywane w 50-80%" },
+            { "name": "Korona Cyrkonowa", "cost": "Od $1400", "insurance": "Często pokrywane w 50-80%" },
+            { "name": "Most (za jednostkę)", "cost": "Od $1100", "insurance": "Często pokrywane w 50-80%" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "implants": {
         "title": "Implanty Zębowe",
-        "description": "Implanty tytanowe zastępują brakujące zęby bez uszkadzania sąsiednich zębów. Wyglądają i funkcjonują jak naturalne zęby i mogą pomóc w przypadku luźnych protez."
+        "description": "Implanty tytanowe zastępują brakujące zęby bez uszkadzania sąsiednich zębów. Wyglądają i funkcjonują jak naturalne zęby i mogą pomóc w przypadku luźnych protez.",
+        "timeline": [
+          { "title": "Konsultacja i Planowanie", "description": "Ocenimy Twoje zdrowie jamy ustnej i stworzymy spersonalizowany plan leczenia implantologicznego." },
+          { "title": "Wszczepienie Implantu", "description": "Tytanowy implant jest chirurgicznie umieszczany w kości pod znieczuleniem miejscowym." },
+          { "title": "Gojenie i Integracja", "description": "Implant zrasta się z kością przez 3–6 miesięcy." },
+          { "title": "Założenie Korony", "description": "Mocowana jest indywidualna korona, kończąc Twój nowy uśmiech." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Implanty są często częściowo pokrywane przez ubezpieczenie stomatologiczne.",
+          "services": [
+            { "name": "Implant Jednozębny (z koroną)", "cost": "Od $3500", "insurance": "Częściowa refundacja może być dostępna" },
+            { "name": "Most na Implantach", "cost": "Od $6000", "insurance": "Częściowa refundacja może być dostępna" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "cosmetic": {
         "title": "Stomatologia Estetyczna",
-        "description": "Oferujemy wybielanie, licówki kompozytowe lub porcelanowe oraz inne zabiegi kosmetyczne mające na celu zmianę kształtu i poprawę wyglądu zębów."
+        "description": "Oferujemy wybielanie, licówki kompozytowe lub porcelanowe oraz inne zabiegi kosmetyczne mające na celu zmianę kształtu i poprawę wyglądu zębów.",
+        "timeline": [
+          { "title": "Konsultacja i Projekt Uśmiechu", "description": "Ocena Twoich celów i planowanie leczenia estetycznego." },
+          { "title": "Przygotowanie (jeśli potrzebne)", "description": "Minimalne przygotowanie zębów do licówek lub bondingu." },
+          { "title": "Leczenie", "description": "Wybielanie, bonding lub założenie licówek zgodnie z planem." },
+          { "title": "Efekt Końcowy i Pielęgnacja", "description": "Omówienie efektów i instrukcje pielęgnacji nowego uśmiechu." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny. Większość zabiegów estetycznych nie jest objęta ubezpieczeniem stomatologicznym.",
+          "services": [
+            { "name": "Wybielanie Zębów", "cost": "Od $350", "insurance": "Nie pokrywane przez ubezpieczenie" },
+            { "name": "Licówka Porcelanowa (za ząb)", "cost": "Od $1200", "insurance": "Nie pokrywane przez ubezpieczenie" },
+            { "name": "Bonding (za ząb)", "cost": "Od $350", "insurance": "Nie pokrywane przez ubezpieczenie" }
+          ],
+          "insuranceInfo": "Zabiegi estetyczne zazwyczaj nie są pokrywane przez ubezpieczenie. Skontaktuj się z nami po szczegóły.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "endodontic": {
         "title": "Leczenie Endodontyczne (Kanałowe)",
-        "description": "Naszym celem jest uratowanie zainfekowanych zębów poprzez leczenie kanałowe, usunięcie zainfekowanego nerwu, oczyszczenie i uszczelnienie kanałów, aby zapobiec ponownemu zakażeniu."
+        "description": "Naszym celem jest uratowanie zainfekowanych zębów poprzez leczenie kanałowe, usunięcie zainfekowanego nerwu, oczyszczenie i uszczelnienie kanałów, aby zapobiec ponownemu zakażeniu.",
+        "timeline": [
+          { "title": "Diagnoza i RTG", "description": "Ocena i zdjęcia w celu potwierdzenia potrzeby leczenia kanałowego." },
+          { "title": "Znieczulenie i Izolacja", "description": "Znieczulenie zęba i izolacja do zabiegu." },
+          { "title": "Czyszczenie i Kształtowanie", "description": "Usunięcie zakażonej tkanki i opracowanie kanałów korzeniowych." },
+          { "title": "Wypełnienie i Uszczelnienie", "description": "Wypełnienie kanałów i uszczelnienie zęba." },
+          { "title": "Odbudowa", "description": "Założenie wypełnienia lub korony w celu przywrócenia funkcji." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Leczenie kanałowe jest często pokrywane przez ubezpieczenie stomatologiczne.",
+          "services": [
+            { "name": "Leczenie Kanałowe (ząb przedni)", "cost": "Od $700", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Leczenie Kanałowe (ząb trzonowy)", "cost": "Od $1200", "insurance": "Zazwyczaj pokrywane w 80-100%" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "prosthetic": {
         "title": "Leczenie Protetyczne (Protezy)",
-        "description": "Oferujemy pełne i częściowe protezy, w tym naprawy w tym samym dniu."
+        "description": "Oferujemy pełne i częściowe protezy, w tym naprawy w tym samym dniu.",
+        "timeline": [
+          { "title": "Konsultacja i Wyciski", "description": "Ocena i pobranie wycisków do wykonania protezy." },
+          { "title": "Przymiarka i Korekty", "description": "Dopasowanie i korekty protezy dla komfortu i funkcji." },
+          { "title": "Założenie Ostateczne", "description": "Założenie gotowej protezy i instrukcje pielęgnacji." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Protezy są często częściowo pokrywane przez ubezpieczenie stomatologiczne.",
+          "services": [
+            { "name": "Proteza Całkowita (górna lub dolna)", "cost": "Od $1800", "insurance": "Często pokrywane w 50-80%" },
+            { "name": "Proteza Częściowa", "cost": "Od $1200", "insurance": "Często pokrywane w 50-80%" },
+            { "name": "Naprawa Protezy", "cost": "Od $150", "insurance": "Często pokrywane w 80-100%" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       },
       "digital-xray": {
         "title": "Kamery Wewnątrzustne i Cyfrowe RTG",
-        "description": "Wszystkie gabinety są wyposażone w kamery wewnątrzustne i cyfrowe aparaty RTG, co zmniejsza ekspozycję na promieniowanie nawet o 80% w porównaniu z tradycyjnym filmem."
+        "description": "Wszystkie gabinety są wyposażone w kamery wewnątrzustne i cyfrowe aparaty RTG, co zmniejsza ekspozycję na promieniowanie nawet o 80% w porównaniu z tradycyjnym filmem.",
+        "timeline": [
+          { "title": "Wizyta na Zdjęcia", "description": "Szybka i komfortowa sesja zdjęć cyfrowych lub kamerą wewnątrzustną." },
+          { "title": "Przegląd Obrazów", "description": "Natychmiastowy przegląd zdjęć z dentystą." },
+          { "title": "Diagnoza i Planowanie", "description": "Wykorzystanie obrazów do planowania leczenia lub monitorowania zdrowia jamy ustnej." }
+        ],
+        "costs": {
+          "title": "Koszty i Ubezpieczenie",
+          "description": "Oferujemy przejrzyste ceny. Większość zdjęć cyfrowych jest pokrywana przez ubezpieczenie stomatologiczne.",
+          "services": [
+            { "name": "Zdjęcie Cyfrowe (za obraz)", "cost": "Od $35", "insurance": "Zazwyczaj pokrywane w 80-100%" },
+            { "name": "Badanie Kamerą Wewnątrzustną", "cost": "Od $50", "insurance": "Zazwyczaj pokrywane w 80-100%" }
+          ],
+          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
+        }
       }
     }
   },

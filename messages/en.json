@@ -185,41 +185,223 @@
     "service": {
       "preventive": {
         "title": "Preventive Treatment",
-        "description": "Keep your smile healthy with regular checkups, cleanings, and protective treatments."
+        "tagline": "Keep Your Smile Healthy for Life",
+        "introduction": "Modern dentistry focuses on disease prevention and minimal intervention. We help conserve your natural teeth and prevent problems from recurring, offering the latest oral hygiene regimes, fluoride treatments, fissure sealants, and mouth guards for contact sports.",
+        "benefits": [
+          "Regular check-ups to catch issues early",
+          "Professional cleanings for optimal oral health",
+          "Fluoride treatments to strengthen teeth",
+          "Fissure sealants to prevent cavities",
+          "Custom mouth guards for contact sports",
+          "Education on proper oral hygiene"
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We believe in transparent pricing and helping you maximize your insurance benefits. Most preventive services are covered by dental insurance plans.",
+          "services": [
+            {
+              "name": "Regular Check-up & Cleaning",
+              "cost": "Starting at $150",
+              "insurance": "Usually covered at 80-100%"
+            },
+            {
+              "name": "Fluoride Treatment",
+              "cost": "Starting at $45",
+              "insurance": "Usually covered for children"
+            },
+            {
+              "name": "Dental Sealants",
+              "cost": "Starting at $65 per tooth",
+              "insurance": "Usually covered for children and teens"
+            },
+            {
+              "name": "Custom Mouth Guard",
+              "cost": "Starting at $250",
+              "insurance": "May be covered for sports-related use"
+            }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        },
+        "faqs": [
+          {
+            "question": "How often should I visit the dentist for checkups?",
+            "answer": "Most patients should visit every 6 months for regular checkups and cleanings. However, some patients may need more frequent visits based on their oral health needs."
+          },
+          {
+            "question": "What happens during a preventive dental visit?",
+            "answer": "Your visit includes a thorough examination, professional cleaning, X-rays if needed, and personalized recommendations for maintaining optimal oral health."
+          },
+          {
+            "question": "Are dental sealants effective for cavity prevention?",
+            "answer": "Yes, dental sealants can reduce the risk of cavities by up to 80% in the first year and continue to protect for several years after placement."
+          }
+        ]
       },
       "periodontal": {
         "title": "Periodontal (Gum) Treatment",
-        "description": "Expert care for gum disease prevention and treatment by our registered hygienists."
+        "description": "Expert care for gum disease prevention and treatment by our registered hygienists.",
+        "timeline": [
+          { "title": "Assessment & Diagnosis", "description": "Comprehensive gum evaluation and diagnosis." },
+          { "title": "Initial Therapy", "description": "Professional cleaning and scaling to remove plaque and tartar." },
+          { "title": "Deep Cleaning (if needed)", "description": "Scaling and root planing for advanced gum disease." },
+          { "title": "Maintenance & Follow-up", "description": "Regular check-ups and cleanings to maintain gum health." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Most periodontal treatments are covered by dental insurance plans.",
+          "services": [
+            { "name": "Initial Assessment", "cost": "Starting at $120", "insurance": "Usually covered at 80-100%" },
+            { "name": "Professional Cleaning", "cost": "Starting at $150", "insurance": "Usually covered at 80-100%" },
+            { "name": "Deep Cleaning (Scaling/Root Planing)", "cost": "Starting at $250 per quadrant", "insurance": "Often covered for gum disease" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "restorative": {
         "title": "Restorative Treatment (Fillings)",
         "description": "Modern, tooth-colored fillings that blend naturally with your smile.",
-        "highlight": "Pain-Free Options"
+        "highlight": "Pain-Free Options",
+        "timeline": [
+          { "title": "Diagnosis & Treatment Planning", "description": "Assessment of tooth decay or damage and planning the restoration." },
+          { "title": "Preparation", "description": "Removal of decay and shaping the tooth for filling." },
+          { "title": "Filling Placement", "description": "Placement and shaping of the filling material." },
+          { "title": "Polishing & Bite Check", "description": "Final adjustments and polishing for comfort and function." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Most restorative treatments are covered by dental insurance plans.",
+          "services": [
+            { "name": "Tooth-Colored Filling (Composite)", "cost": "Starting at $180", "insurance": "Usually covered at 80-100%" },
+            { "name": "Silver Amalgam Filling", "cost": "Starting at $150", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "crowns-bridges": {
         "title": "Crowns and Fixed Bridges",
         "description": "Strong, natural-looking crowns and bridges to restore your smile's function and beauty.",
-        "highlight": "Same-Day Crowns"
+        "highlight": "Same-Day Crowns",
+        "timeline": [
+          { "title": "Consultation & Planning", "description": "Assessment and planning for crown or bridge placement." },
+          { "title": "Tooth Preparation", "description": "Shaping the tooth and taking impressions." },
+          { "title": "Temporary Crown/Bridge", "description": "Placement of a temporary restoration while the final is made." },
+          { "title": "Final Placement", "description": "Fitting and cementing the permanent crown or bridge." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Crowns and bridges are often covered partially by dental insurance plans.",
+          "services": [
+            { "name": "Porcelain Crown", "cost": "Starting at $1200", "insurance": "Often covered at 50-80%" },
+            { "name": "Zirconia Crown", "cost": "Starting at $1400", "insurance": "Often covered at 50-80%" },
+            { "name": "Dental Bridge (per unit)", "cost": "Starting at $1100", "insurance": "Often covered at 50-80%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "implants": {
         "title": "Dental Implants",
-        "description": "Permanent solution for missing teeth that looks and feels natural."
+        "description": "Permanent solution for missing teeth that looks and feels natural.",
+        "timeline": [
+          { "title": "Consultation & Planning", "description": "We assess your oral health and create a personalized implant plan." },
+          { "title": "Implant Placement", "description": "A titanium post is surgically placed into your jawbone under local anesthesia." },
+          { "title": "Healing & Integration", "description": "The implant integrates with your bone over 3–6 months." },
+          { "title": "Crown Placement", "description": "A custom crown is attached, completing your new smile." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Implants are often partially covered by dental insurance plans.",
+          "services": [
+            { "name": "Single Tooth Implant (including crown)", "cost": "Starting at $3500", "insurance": "Partial coverage may be available" },
+            { "name": "Implant-Supported Bridge", "cost": "Starting at $6000", "insurance": "Partial coverage may be available" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "cosmetic": {
         "title": "Cosmetic Dentistry",
-        "description": "Transform your smile with whitening, veneers, and other cosmetic enhancements."
+        "description": "Transform your smile with whitening, veneers, and other cosmetic enhancements.",
+        "timeline": [
+          { "title": "Consultation & Smile Design", "description": "Assessment of your goals and planning your cosmetic treatment." },
+          { "title": "Preparation (if needed)", "description": "Minimal tooth preparation for veneers or bonding." },
+          { "title": "Treatment", "description": "Whitening, bonding, or veneer placement as planned." },
+          { "title": "Final Results & Care", "description": "Review and care instructions for your new smile." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing. Most cosmetic treatments are not covered by dental insurance plans.",
+          "services": [
+            { "name": "Teeth Whitening", "cost": "Starting at $350", "insurance": "Not covered by insurance" },
+            { "name": "Porcelain Veneers (per tooth)", "cost": "Starting at $1200", "insurance": "Not covered by insurance" },
+            { "name": "Dental Bonding (per tooth)", "cost": "Starting at $350", "insurance": "Not covered by insurance" }
+          ],
+          "insuranceInfo": "Cosmetic procedures are typically not covered by insurance. Contact us for details.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "endodontic": {
         "title": "Endodontic Treatment (Root Canal)",
-        "description": "Save your natural teeth with gentle, effective root canal treatment."
+        "description": "Save your natural teeth with gentle, effective root canal treatment.",
+        "timeline": [
+          { "title": "Diagnosis & X-rays", "description": "Assessment and imaging to confirm the need for root canal." },
+          { "title": "Anesthesia & Isolation", "description": "Numbing the tooth and isolating it for treatment." },
+          { "title": "Cleaning & Shaping", "description": "Removal of infected tissue and shaping of the root canals." },
+          { "title": "Filling & Sealing", "description": "Filling the canals and sealing the tooth." },
+          { "title": "Restoration", "description": "Placement of a filling or crown to restore function." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Root canal treatments are often covered by dental insurance plans.",
+          "services": [
+            { "name": "Root Canal (front tooth)", "cost": "Starting at $700", "insurance": "Usually covered at 80-100%" },
+            { "name": "Root Canal (molar)", "cost": "Starting at $1200", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "prosthetic": {
         "title": "Prosthetic Treatment (Dentures)",
-        "description": "Comfortable, natural-looking dentures with same-day repair options."
+        "description": "Comfortable, natural-looking dentures with same-day repair options.",
+        "timeline": [
+          { "title": "Consultation & Impressions", "description": "Assessment and impressions for denture fabrication." },
+          { "title": "Try-in & Adjustments", "description": "Fitting and adjusting the denture for comfort and function." },
+          { "title": "Final Placement", "description": "Placement of the finished denture and care instructions." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Dentures are often partially covered by dental insurance plans.",
+          "services": [
+            { "name": "Full Denture (upper or lower)", "cost": "Starting at $1800", "insurance": "Often covered at 50-80%" },
+            { "name": "Partial Denture", "cost": "Starting at $1200", "insurance": "Often covered at 50-80%" },
+            { "name": "Denture Repair", "cost": "Starting at $150", "insurance": "Often covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "digital-xray": {
         "title": "Intra-Oral Cameras & Digital X-Rays",
-        "description": "Advanced imaging with 80% less radiation than traditional x-rays."
+        "description": "Advanced imaging with 80% less radiation than traditional x-rays.",
+        "timeline": [
+          { "title": "Imaging Appointment", "description": "Quick and comfortable digital x-ray or intra-oral camera session." },
+          { "title": "Image Review", "description": "Immediate review of images with your dentist." },
+          { "title": "Diagnosis & Planning", "description": "Use of images to plan your treatment or monitor oral health." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing. Most digital x-rays are covered by dental insurance plans.",
+          "services": [
+            { "name": "Digital X-ray (per image)", "cost": "Starting at $35", "insurance": "Usually covered at 80-100%" },
+            { "name": "Intra-Oral Camera Exam", "cost": "Starting at $50", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       }
     }
   },
@@ -243,17 +425,49 @@
           "Professional cleanings for optimal oral health",
           "Fluoride treatments to strengthen teeth",
           "Fissure sealants to prevent cavities",
-          "Custom mouth guards for sports protection",
+          "Custom mouth guards for contact sports",
           "Education on proper oral hygiene"
         ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We believe in transparent pricing and helping you maximize your insurance benefits. Most preventive services are covered by dental insurance plans.",
+          "services": [
+            {
+              "name": "Regular Check-up & Cleaning",
+              "cost": "Starting at $150",
+              "insurance": "Usually covered at 80-100%"
+            },
+            {
+              "name": "Fluoride Treatment",
+              "cost": "Starting at $45",
+              "insurance": "Usually covered for children"
+            },
+            {
+              "name": "Dental Sealants",
+              "cost": "Starting at $65 per tooth",
+              "insurance": "Usually covered for children and teens"
+            },
+            {
+              "name": "Custom Mouth Guard",
+              "cost": "Starting at $250",
+              "insurance": "May be covered for sports-related use"
+            }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        },
         "faqs": [
           {
-            "question": "How often should I visit for preventive care?",
-            "answer": "We recommend visiting every 6 months for regular check-ups and cleanings, though some patients may need more frequent visits based on their oral health needs."
+            "question": "How often should I visit the dentist for checkups?",
+            "answer": "Most patients should visit every 6 months for regular checkups and cleanings. However, some patients may need more frequent visits based on their oral health needs."
           },
           {
-            "question": "Are fluoride treatments safe?",
-            "answer": "Yes, fluoride treatments are safe and effective in preventing tooth decay. We use professional-grade fluoride that's much stronger than over-the-counter products."
+            "question": "What happens during a preventive dental visit?",
+            "answer": "Your visit includes a thorough examination, professional cleaning, X-rays if needed, and personalized recommendations for maintaining optimal oral health."
+          },
+          {
+            "question": "Are dental sealants effective for cavity prevention?",
+            "answer": "Yes, dental sealants can reduce the risk of cavities by up to 80% in the first year and continue to protect for several years after placement."
           }
         ]
       },
@@ -278,7 +492,24 @@
             "question": "How is gum disease treated?",
             "answer": "Treatment varies based on severity, from professional cleaning to deep scaling and root planing. We'll create a personalized treatment plan for your needs."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Assessment & Diagnosis", "description": "Comprehensive gum evaluation and diagnosis." },
+          { "title": "Initial Therapy", "description": "Professional cleaning and scaling to remove plaque and tartar." },
+          { "title": "Deep Cleaning (if needed)", "description": "Scaling and root planing for advanced gum disease." },
+          { "title": "Maintenance & Follow-up", "description": "Regular check-ups and cleanings to maintain gum health." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Most periodontal treatments are covered by dental insurance plans.",
+          "services": [
+            { "name": "Initial Assessment", "cost": "Starting at $120", "insurance": "Usually covered at 80-100%" },
+            { "name": "Professional Cleaning", "cost": "Starting at $150", "insurance": "Usually covered at 80-100%" },
+            { "name": "Deep Cleaning (Scaling/Root Planing)", "cost": "Starting at $250 per quadrant", "insurance": "Often covered for gum disease" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "restorative": {
         "title": "Restorative Treatment",
@@ -301,7 +532,23 @@
             "question": "How long do fillings last?",
             "answer": "Modern fillings can last 5-15 years or more with proper care. Regular check-ups help ensure their longevity."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Diagnosis & Treatment Planning", "description": "Assessment of tooth decay or damage and planning the restoration." },
+          { "title": "Preparation", "description": "Removal of decay and shaping the tooth for filling." },
+          { "title": "Filling Placement", "description": "Placement and shaping of the filling material." },
+          { "title": "Polishing & Bite Check", "description": "Final adjustments and polishing for comfort and function." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Most restorative treatments are covered by dental insurance plans.",
+          "services": [
+            { "name": "Tooth-Colored Filling (Composite)", "cost": "Starting at $180", "insurance": "Usually covered at 80-100%" },
+            { "name": "Silver Amalgam Filling", "cost": "Starting at $150", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "crowns-bridges": {
         "title": "Crowns and Bridges",
@@ -324,7 +571,24 @@
             "question": "How do I care for my crown or bridge?",
             "answer": "Good oral hygiene, including brushing, flossing, and regular dental check-ups, is essential to maintain the longevity of your crown or bridge."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consultation & Planning", "description": "Assessment and planning for crown or bridge placement." },
+          { "title": "Tooth Preparation", "description": "Shaping the tooth and taking impressions." },
+          { "title": "Temporary Crown/Bridge", "description": "Placement of a temporary restoration while the final is made." },
+          { "title": "Final Placement", "description": "Fitting and cementing the permanent crown or bridge." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Crowns and bridges are often covered partially by dental insurance plans.",
+          "services": [
+            { "name": "Porcelain Crown", "cost": "Starting at $1200", "insurance": "Often covered at 50-80%" },
+            { "name": "Zirconia Crown", "cost": "Starting at $1400", "insurance": "Often covered at 50-80%" },
+            { "name": "Dental Bridge (per unit)", "cost": "Starting at $1100", "insurance": "Often covered at 50-80%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "implants": {
         "title": "Dental Implants",
@@ -347,7 +611,23 @@
             "question": "How long does the implant process take?",
             "answer": "The entire process typically takes 3-6 months, allowing for healing and integration of the implant with the jawbone. Each case is unique."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consultation & Planning", "description": "We assess your oral health and create a personalized implant plan." },
+          { "title": "Implant Placement", "description": "A titanium post is surgically placed into your jawbone under local anesthesia." },
+          { "title": "Healing & Integration", "description": "The implant integrates with your bone over 3–6 months." },
+          { "title": "Crown Placement", "description": "A custom crown is attached, completing your new smile." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Implants are often partially covered by dental insurance plans.",
+          "services": [
+            { "name": "Single Tooth Implant (including crown)", "cost": "Starting at $3500", "insurance": "Partial coverage may be available" },
+            { "name": "Implant-Supported Bridge", "cost": "Starting at $6000", "insurance": "Partial coverage may be available" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "cosmetic": {
         "title": "Cosmetic Dentistry",
@@ -370,7 +650,24 @@
             "question": "How do I know which cosmetic treatment is right for me?",
             "answer": "A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consultation & Smile Design", "description": "Assessment of your goals and planning your cosmetic treatment." },
+          { "title": "Preparation (if needed)", "description": "Minimal tooth preparation for veneers or bonding." },
+          { "title": "Treatment", "description": "Whitening, bonding, or veneer placement as planned." },
+          { "title": "Final Results & Care", "description": "Review and care instructions for your new smile." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing. Most cosmetic treatments are not covered by dental insurance plans.",
+          "services": [
+            { "name": "Teeth Whitening", "cost": "Starting at $350", "insurance": "Not covered by insurance" },
+            { "name": "Porcelain Veneers (per tooth)", "cost": "Starting at $1200", "insurance": "Not covered by insurance" },
+            { "name": "Dental Bonding (per tooth)", "cost": "Starting at $350", "insurance": "Not covered by insurance" }
+          ],
+          "insuranceInfo": "Cosmetic procedures are typically not covered by insurance. Contact us for details.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "endodontic": {
         "title": "Endodontic Treatment",
@@ -393,7 +690,24 @@
             "question": "How long does a root canal take?",
             "answer": "A typical root canal treatment takes 1-2 appointments, depending on the complexity of the case."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Diagnosis & X-rays", "description": "Assessment and imaging to confirm the need for root canal." },
+          { "title": "Anesthesia & Isolation", "description": "Numbing the tooth and isolating it for treatment." },
+          { "title": "Cleaning & Shaping", "description": "Removal of infected tissue and shaping of the root canals." },
+          { "title": "Filling & Sealing", "description": "Filling the canals and sealing the tooth." },
+          { "title": "Restoration", "description": "Placement of a filling or crown to restore function." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Root canal treatments are often covered by dental insurance plans.",
+          "services": [
+            { "name": "Root Canal (front tooth)", "cost": "Starting at $700", "insurance": "Usually covered at 80-100%" },
+            { "name": "Root Canal (molar)", "cost": "Starting at $1200", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "prosthetic": {
         "title": "Prosthetic Treatment",
@@ -416,7 +730,23 @@
             "question": "How do I care for my dentures?",
             "answer": "Regular cleaning, proper storage, and routine check-ups are essential for maintaining your dentures. We'll provide detailed care instructions."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Consultation & Impressions", "description": "Assessment and impressions for denture fabrication." },
+          { "title": "Try-in & Adjustments", "description": "Fitting and adjusting the denture for comfort and function." },
+          { "title": "Final Placement", "description": "Placement of the finished denture and care instructions." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing and help you maximize your insurance benefits. Dentures are often partially covered by dental insurance plans.",
+          "services": [
+            { "name": "Full Denture (upper or lower)", "cost": "Starting at $1800", "insurance": "Often covered at 50-80%" },
+            { "name": "Partial Denture", "cost": "Starting at $1200", "insurance": "Often covered at 50-80%" },
+            { "name": "Denture Repair", "cost": "Starting at $150", "insurance": "Often covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       },
       "digital-xray": {
         "title": "Digital X-Rays",
@@ -439,7 +769,22 @@
             "question": "Are digital x-rays safe?",
             "answer": "Yes, digital x-rays emit up to 80% less radiation than traditional film x-rays, making them very safe for patients of all ages."
           }
-        ]
+        ],
+        "timeline": [
+          { "title": "Imaging Appointment", "description": "Quick and comfortable digital x-ray or intra-oral camera session." },
+          { "title": "Image Review", "description": "Immediate review of images with your dentist." },
+          { "title": "Diagnosis & Planning", "description": "Use of images to plan your treatment or monitor oral health." }
+        ],
+        "costs": {
+          "title": "Costs & Insurance",
+          "description": "We offer transparent pricing. Most digital x-rays are covered by dental insurance plans.",
+          "services": [
+            { "name": "Digital X-ray (per image)", "cost": "Starting at $35", "insurance": "Usually covered at 80-100%" },
+            { "name": "Intra-Oral Camera Exam", "cost": "Starting at $50", "insurance": "Usually covered at 80-100%" }
+          ],
+          "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
+          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+        }
       }
     }
   },

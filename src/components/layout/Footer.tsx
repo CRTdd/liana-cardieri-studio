@@ -24,8 +24,8 @@ export default function Footer() {
             <li><Link href="/services" className="hover:text-primary-foreground/60 transition-colors">{tNav('services')}</Link></li>
             <li><Link href="/#contact" className="hover:text-primary-foreground/60 transition-colors">{tNav('contact')}</Link></li>
             <li><Link href="/financial-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('financialInfo')}</Link></li>
-             <li><Link href="/health-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('healthInfo')}</Link></li>
              <li><Link href="/testimonials" className="hover:text-primary-foreground/60 transition-colors">{tNav('testimonials')}</Link></li>
+             <li><Link href="/health-info" className="hover:text-primary-foreground/60 transition-colors">{tNav('healthInfo')}</Link></li>
           </ul>
         </div>
         <div>
