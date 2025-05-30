@@ -19,7 +19,7 @@ export default function ServiceCard({ service, locale, variant = 'default' }: Se
 
   if (variant === 'featured') {
     return (
-      <Card className="flex flex-col min-w-[340px] w-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-102 bg-background rounded-xl border-border group">
+      <Card className="flex flex-col min-w-[340px] w-full h-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-102 bg-background rounded-xl border-border group">
         <div className="relative h-56 w-full overflow-hidden">
           <Image
             src={service.image}
@@ -39,7 +39,7 @@ export default function ServiceCard({ service, locale, variant = 'default' }: Se
             </CardTitle>
           </div>
         </div>
-        <CardContent className="p-6 pt-0 flex-grow">
+        <CardContent className="p-6 flex-grow">
           <p className="text-foreground/80 text-base font-light">
             {t(`service.${service.id}.description`)}
           </p>

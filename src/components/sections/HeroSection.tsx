@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -6,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Award } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 const TrustBadge = ({ Icon, text }: { Icon: React.ElementType; text: string }) => (
   <div className="flex items-center space-x-2 bg-white/30 backdrop-blur-sm p-3 rounded-lg shadow-md">
@@ -20,6 +20,11 @@ const LanguagePill = ({ flag, name }: { flag: string; name: string }) => (
     {name}
   </span>
 );
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+};
 
 export default function HeroSection() {
   const t = useTranslations('HeroSection');
@@ -67,32 +72,67 @@ export default function HeroSection() {
             <p className="mt-6 text-lg sm:text-xl font-light text-foreground/90 max-w-xl">
               {t('subheading')}
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="mt-8 md:mt-10 bg-brand-pink hover:bg-brand-blue text-white text-lg py-4 px-10 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-brand-blue/50 w-full sm:w-auto md:w-auto"
-              aria-label={t('ctaButton')}
+            <motion.div
+              variants={fadeInUp}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="w-full sm:w-auto md:w-auto"
             >
-              <a href="tel:519-578-5717">{t('ctaButton')}</a>
-            </Button>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+              <Button
+                asChild
+                size="lg"
+                className="mt-8 md:mt-10 bg-brand-pink hover:bg-brand-blue text-white text-lg py-4 px-10 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-brand-blue/50 w-full sm:w-auto md:w-auto"
+                aria-label={t('ctaButton')}
+              >
+                <a href="tel:519-578-5717">{t('ctaButton')}</a>
+              </Button>
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6"
+            >
               <TrustBadge Icon={Award} text={t('trustBadgeExperience')} />
-            </div>
+            </motion.div>
             <div className="mt-8 text-center md:text-left">
               <p className="text-base font-light text-foreground/80 tracking-wide mb-3">
                 {t('taglineIntro')}
               </p>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                <LanguagePill flag="🇺🇸" name={t('languageEnglish')} />
-                <LanguagePill flag="🇵🇹" name={t('languagePortuguese')} />
-                <LanguagePill flag="🇵🇱" name={t('languagePolish')} />
+                {[{flag: '🇺🇸', name: t('languageEnglish')}, {flag: '🇵🇹', name: t('languagePortuguese')}, {flag: '🇵🇱', name: t('languagePolish')}].map((pill, idx) => (
+                  <motion.span
+                    key={pill.name}
+                    variants={fadeInUp}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true, amount: 0.6 }}
+                    transition={{ duration: 0.6, delay: 0.5 + idx * 0.15 }}
+                    className="inline-flex items-center bg-accent/20 text-primary text-sm font-medium px-4 py-2 rounded-full shadow-lg"
+                  >
+                    <span className="mr-2">{pill.flag}</span>
+                    {pill.name}
+                  </motion.span>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Right Column: Image */}
           <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-full max-w-2xl h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50">
+            <motion.div
+              initial={{ scale: 1 }}
+              animate={{ scale: 1.07 }}
+              transition={{
+                duration: 1.8,
+                ease: 'easeInOut',
+              }}
+              className="relative w-full max-w-2xl h-auto aspect-[4/3] rounded-xl shadow-2xl overflow-hidden border-4 border-white/50"
+            >
               <Image
                 // src="/images/dental_office_2.jpg"
                 src="https://www.cardieridental.ca/wp-content/uploads/2014/11/slider1.png"
@@ -104,7 +144,7 @@ export default function HeroSection() {
                 className="rounded-lg"
                 sizes="100vw"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
