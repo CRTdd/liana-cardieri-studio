@@ -185,41 +185,41 @@
     "service": {
       "preventive": {
         "title": "Preventive Treatment",
-        "description": "Modern dentistry focuses on disease prevention and minimal intervention. We help conserve your natural teeth and prevent problems from recurring, offering the latest oral hygiene regimes, fluoride treatments, fissure sealants, and mouth guards for contact sports."
+        "description": "Keep your smile healthy with regular checkups, cleanings, and protective treatments."
       },
       "periodontal": {
         "title": "Periodontal (Gum) Treatment",
-        "description": "We offer comprehensive gum disease prevention and treatment with our registered dental hygienists, and can refer to top gum specialists if needed."
+        "description": "Expert care for gum disease prevention and treatment by our registered hygienists."
       },
       "restorative": {
         "title": "Restorative Treatment (Fillings)",
-        "description": "We use the latest materials for fillings, including tooth-colored composite resins, glass ionomer cements, special alloys, and amalgam.",
+        "description": "Modern, tooth-colored fillings that blend naturally with your smile.",
         "highlight": "Pain-Free Options"
       },
       "crowns-bridges": {
         "title": "Crowns and Fixed Bridges",
-        "description": "For teeth needing superior strength or aesthetics, we offer porcelain, zirconia, or gold crowns. Bridges are available to close gaps from missing teeth. We also offer same-day crowns for extra convenience.",
+        "description": "Strong, natural-looking crowns and bridges to restore your smile's function and beauty.",
         "highlight": "Same-Day Crowns"
       },
       "implants": {
         "title": "Dental Implants",
-        "description": "Titanium implants replace missing teeth without damaging surrounding teeth. They look and function like natural teeth and can help with loose dentures."
+        "description": "Permanent solution for missing teeth that looks and feels natural."
       },
       "cosmetic": {
         "title": "Cosmetic Dentistry",
-        "description": "We offer whitening, composite or porcelain veneers, and other cosmetic procedures to reshape and improve the appearance of your teeth."
+        "description": "Transform your smile with whitening, veneers, and other cosmetic enhancements."
       },
       "endodontic": {
         "title": "Endodontic Treatment (Root Canal)",
-        "description": "We aim to save infected teeth with root canal treatment, removing the infected nerve, cleaning, and sealing the canals to prevent re-infection."
+        "description": "Save your natural teeth with gentle, effective root canal treatment."
       },
       "prosthetic": {
         "title": "Prosthetic Treatment (Dentures)",
-        "description": "We provide full and partial dentures, including same-day repairs."
+        "description": "Comfortable, natural-looking dentures with same-day repair options."
       },
       "digital-xray": {
         "title": "Intra-Oral Cameras & Digital X-Rays",
-        "description": "All operatories are equipped with intra-oral cameras and digital x-rays, reducing radiation exposure by up to 80% compared to traditional film."
+        "description": "Advanced imaging with 80% less radiation than traditional x-rays."
       }
     }
   },

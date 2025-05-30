@@ -8,6 +8,7 @@ import { procedureStepsData } from '@/data/procedureStepsData';
 import { servicesData } from '@/data/servicesData';
 import { Card, CardContent } from '@/components/ui/card';
 import { servicePagesData } from '@/data/servicePagesData';
+import ServiceCard from './ServiceCard';
 
 interface ServiceDetailProps {
   slug: string;
@@ -169,29 +170,12 @@ export default function ServiceDetail({ slug, locale }: ServiceDetailProps) {
           <h2 className="text-xl font-bold text-[#001524] mb-4 text-center font-montserrat">Explore Related Services</h2>
           <div className="grid gap-4 md:grid-cols-3">
             {relatedServices.map((relatedService) => (
-              <Link
+              <ServiceCard
                 key={relatedService.id}
-                href={`/${locale}/services/${relatedService.id}`}
-                className="group flex flex-col bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:border-[#F72585] hover:border-2"
-              >
-                <div className="relative w-full h-48 flex-shrink-0">
-                  <Image
-                    src={relatedService.image}
-                    alt={tServices(`${relatedService.id}.title`)}
-                    fill
-                    className="object-cover rounded-lg"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-bold text-[#3A0CA3] mb-2 font-montserrat">
-                    {tServices(`${relatedService.id}.title`)}
-                  </h3>
-                  <p className="text-[#001524]/80 text-sm font-montserrat">
-                    {tServices(`${relatedService.id}.description`)}
-                  </p>
-                </div>
-              </Link>
+                service={relatedService}
+                locale={locale}
+                variant="related"
+              />
             ))}
           </div>
         </section>

@@ -40,7 +40,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[70vh] flex items-center bg-brand-light-blue text-foreground px-4 overflow-hidden py-16 md:py-20">
       <div
-        className="absolute inset-0 z-0 max-w-screen-2xl"
+        className="absolute inset-0 z-0 "
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       >
         <Image
@@ -51,7 +51,8 @@ export default function HeroSection() {
           style={{ objectFit: 'cover' }}
           quality={85}
           priority
-          className="opacity-20 md:opacity-30"
+          className="opacity-20 md:opacity-30 w-full h-full"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light-blue via-brand-light-blue/70 to-transparent"></div>
       </div>

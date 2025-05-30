@@ -6,7 +6,11 @@
     "testimonials": "Opinie",
     "contact": "Kontakt",
     "financialInfo": "Informacje Finansowe",
-    "healthInfo": "Informacje o Zdrowiu"
+    "healthInfo": "Informacje o Zdrowiu",
+    "backToServices": "Powrót do Usług",
+    "bookAppointment": "Umów Wizytę",
+    "learnMore": "Dowiedz się Więcej",
+    "allServices": "Wszystkie Usługi"
   },
   "Header": {
     "brandName": "Dr. Liana Cardieri",
@@ -145,7 +149,7 @@
     "readyDescription": "Skontaktuj się z nami już dziś, aby omówić swoje potrzeby stomatologiczne lub umówić się na wizytę u dr Liany Cardieri.",
     "bookAppointmentButton": "Umów Wizytę",
     "benefitsTitle": "Korzyści z Naszej Opieki",
-    "benefits": [
+    "benefitsList": [
       "Kompleksowa opieka dla wszystkich potrzeb stomatologicznych",
       "Najnowsza technologia i materiały",
       "Korony w tym samym dniu dla Twojej wygody",

@@ -1,76 +1,91 @@
-export const servicesData = [
+export interface Service {
+  id: string;
+  titleKey: string;
+  descriptionKey: string;
+  image: string;
+  imageHint: string;
+  learnMoreLink: string;
+  highlightKey?: string;
+}
+
+export const servicesData: Service[] = [
   {
     id: 'preventive',
-    titleKey: 'services.preventive.title',
-    descriptionKey: 'services.preventive.description',
+    titleKey: 'ServicesPage.service.preventive.title',
+    descriptionKey: 'ServicesPage.service.preventive.description',
     image: 'https://placehold.co/400x300?text=Preventive',
     imageHint: 'preventive dental care',
     learnMoreLink: '/[locale]/services/preventive',
   },
   {
     id: 'periodontal',
-    titleKey: 'services.periodontal.title',
-    descriptionKey: 'services.periodontal.description',
+    titleKey: 'ServicesPage.service.periodontal.title',
+    descriptionKey: 'ServicesPage.service.periodontal.description',
     image: 'https://placehold.co/400x300?text=Gum+Treatment',
     imageHint: 'periodontal treatment',
     learnMoreLink: '/[locale]/services/periodontal',
   },
   {
     id: 'restorative',
-    titleKey: 'services.restorative.title',
-    descriptionKey: 'services.restorative.description',
+    titleKey: 'ServicesPage.service.restorative.title',
+    descriptionKey: 'ServicesPage.service.restorative.description',
     image: 'https://placehold.co/400x300?text=Fillings',
     imageHint: 'dental fillings',
     learnMoreLink: '/[locale]/services/restorative',
-    highlightKey: 'services.restorative.highlight',
+    highlightKey: 'ServicesPage.service.restorative.highlight',
   },
   {
     id: 'crowns-bridges',
-    titleKey: 'services.crowns-bridges.title',
-    descriptionKey: 'services.crowns-bridges.description',
+    titleKey: 'ServicesPage.service.crowns-bridges.title',
+    descriptionKey: 'ServicesPage.service.crowns-bridges.description',
     image: 'https://placehold.co/400x300?text=Crowns+%26+Bridges',
     imageHint: 'dental crowns and bridges',
     learnMoreLink: '/[locale]/services/crowns-bridges',
-    highlightKey: 'services.crowns-bridges.highlight',
+    highlightKey: 'ServicesPage.service.crowns-bridges.highlight',
   },
   {
     id: 'implants',
-    titleKey: 'services.implants.title',
-    descriptionKey: 'services.implants.description',
+    titleKey: 'ServicesPage.service.implants.title',
+    descriptionKey: 'ServicesPage.service.implants.description',
     image: 'https://placehold.co/400x300?text=Implants',
     imageHint: 'dental implants',
     learnMoreLink: '/[locale]/services/implants',
   },
   {
     id: 'cosmetic',
-    titleKey: 'services.cosmetic.title',
-    descriptionKey: 'services.cosmetic.description',
+    titleKey: 'ServicesPage.service.cosmetic.title',
+    descriptionKey: 'ServicesPage.service.cosmetic.description',
     image: 'https://placehold.co/400x300?text=Cosmetic',
     imageHint: 'cosmetic dentistry',
     learnMoreLink: '/[locale]/services/cosmetic',
   },
   {
     id: 'endodontic',
-    titleKey: 'services.endodontic.title',
-    descriptionKey: 'services.endodontic.description',
+    titleKey: 'ServicesPage.service.endodontic.title',
+    descriptionKey: 'ServicesPage.service.endodontic.description',
     image: 'https://placehold.co/400x300?text=Root+Canal',
     imageHint: 'root canal treatment',
     learnMoreLink: '/[locale]/services/endodontic',
   },
   {
     id: 'prosthetic',
-    titleKey: 'services.prosthetic.title',
-    descriptionKey: 'services.prosthetic.description',
+    titleKey: 'ServicesPage.service.prosthetic.title',
+    descriptionKey: 'ServicesPage.service.prosthetic.description',
     image: 'https://placehold.co/400x300?text=Dentures',
     imageHint: 'denture treatment',
     learnMoreLink: '/[locale]/services/prosthetic',
   },
   {
     id: 'digital-xray',
-    titleKey: 'services.digital-xray.title',
-    descriptionKey: 'services.digital-xray.description',
+    titleKey: 'ServicesPage.service.digital-xray.title',
+    descriptionKey: 'ServicesPage.service.digital-xray.description',
     image: 'https://placehold.co/400x300?text=Digital+X-Ray',
     imageHint: 'digital x-ray',
     learnMoreLink: '/[locale]/services/digital-xray',
   },
-]; 
+];
+
+// Export a subset of services for the home page
+export const homeServicesData = servicesData.filter(service => 
+  ['restorative', 'preventive', 'crowns-bridges'].includes(service.id)
+); 

@@ -16,7 +16,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { servicesData } from '@/lib/data';
+import { servicesData } from '@/data/servicesData';
 
 const appLanguages = [
   { code: 'en', nativeLabel: 'EN' },
@@ -35,12 +35,11 @@ export default function Header() {
   const tNav = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const t = useTranslations('Languages');
-  const tServices = useTranslations('ServicesPage.service');
+  const tServices = useTranslations('ServicesPage');
   const currentLocale = useLocale();
   const currentFullPath = usePathname() || '/'; // Fallback to '/'
   const locale = useParams().locale as string;
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const currentSelectedLanguage = appLanguages.find(lang => lang.code === currentLocale) || appLanguages[0];
 
@@ -93,6 +92,13 @@ export default function Header() {
     // For other paths, prepend the target locale to the unlocalized segment
     return `/${targetLocale}${pathWithoutLocale}`;
   };
+
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`;
+    }
+    return href;
+  };
   
   const handleLanguageChange = (newLocale: string) => {
     setLanguageCookie(newLocale);
@@ -107,7 +113,7 @@ export default function Header() {
 
   const serviceLinks = servicesData.map(service => ({
     href: service.learnMoreLink.replace('[locale]', locale),
-    label: tServices(service.titleKey),
+    label: tServices(`service.${service.id}.title`),
   }));
 
   return (
@@ -125,12 +131,12 @@ export default function Header() {
           <span className="font-bold text-2xl flex items-center leading-none">{tHeader('brandName')}</span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-x-8 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-x-4 text-sm font-medium">
           {navItems.map((item) => (
             item.hasDropdown ? (
               <DropdownMenu key={item.labelKey}>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary h-10 leading-none">
+                  <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary h-10 leading-none" size='ghost'>
                     <span>{tNav(item.labelKey as any)}</span>
                     <ChevronDown className="h-4 w-4 opacity-50" />
                   </Button>
@@ -145,7 +151,7 @@ export default function Header() {
                   {servicesData.map((service) => (
                     <DropdownMenuItem key={service.id} asChild>
                       <Link href={service.learnMoreLink} className="cursor-pointer">
-                        {tServices(`${service.id}.title`)}
+                        {tServices(`service.${service.id}.title`)}
                       </Link>
                     </DropdownMenuItem>
                   ))}
@@ -179,13 +185,13 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-           <Button asChild className="bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105 h-10 flex items-center px-5 leading-none">
+           <Button asChild className="hidden xl:flex bg-brand-pink hover:bg-pink-700 text-white transition-all duration-300 transform hover:scale-105 h-10 items-center px-5 leading-none">
             <a href="tel:519-578-5717" className="flex items-center h-10 leading-none">{tHeader('callNow')}</a>
           </Button>
         </nav>
 
         <div className="md:hidden">
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
@@ -198,25 +204,28 @@ export default function Header() {
                   item.hasDropdown ? (
                     <div key={item.labelKey} className="space-y-2">
                       <Link
-                        href={item.href}
+                        href={getLocalizedHref(item.href)}
                         className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                        onClick={() => setIsOpen(false)}
                       >
                         {tNav(item.labelKey as any)}
                       </Link>
                       <div className="pl-4 space-y-2">
                         <Link
-                          href={item.href}
+                          href={getLocalizedHref(item.href)}
                           className="block text-base font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                          onClick={() => setIsOpen(false)}
                         >
                           {tNav('allServices')}
                         </Link>
                         {servicesData.map((service) => (
                           <Link
                             key={service.id}
-                            href={service.learnMoreLink}
+                            href={service.learnMoreLink.replace('[locale]', locale)}
                             className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
+                            onClick={() => setIsOpen(false)}
                           >
-                            {tServices(`${service.id}.title`)}
+                            {tServices(`service.${service.id}.title`)}
                           </Link>
                         ))}
                       </div>
@@ -224,8 +233,9 @@ export default function Header() {
                   ) : (
                     <Link
                       key={item.labelKey}
-                      href={item.href}
+                      href={getLocalizedHref(item.href)}
                       className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                      onClick={() => setIsOpen(false)}
                     >
                       {tNav(item.labelKey as any)}
                     </Link>
