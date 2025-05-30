@@ -188,11 +188,13 @@
       },
       "restorative": {
         "title": "Tratamento Restaurador (Obturações)",
-        "description": "Utilizamos os materiais mais recentes para obturações, incluindo resinas compostas da cor do dente, cimentos de ionômero de vidro, ligas especiais e amálgama."
+        "description": "Utilizamos os materiais mais recentes para obturações, incluindo resinas compostas da cor do dente, cimentos de ionômero de vidro, ligas especiais e amálgama.",
+        "highlight": "Opções Sem Dor"
       },
       "crowns-bridges": {
         "title": "Coroas e Pontes Fixas",
-        "description": "Para dentes que necessitam de maior resistência ou estética, oferecemos coroas de porcelana, zircônia ou ouro. As pontes estão disponíveis para fechar espaços de dentes ausentes. Também oferecemos coroas no mesmo dia para maior conveniência."
+        "description": "Para dentes que necessitam de maior resistência ou estética, oferecemos coroas de porcelana, zircônia ou ouro. As pontes estão disponíveis para fechar espaços de dentes ausentes. Também oferecemos coroas no mesmo dia para maior conveniência.",
+        "highlight": "Coroas no Mesmo Dia"
       },
       "implants": {
         "title": "Implantes Dentários",

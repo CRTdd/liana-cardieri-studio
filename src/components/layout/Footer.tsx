@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-foreground text-background/80 py-8">
-      <div className="container max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+      <div className="container max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         <div>
           <h3 className="text-xl font-bold text-primary-foreground mb-4">{t('brandName')}</h3>
           <p className="text-sm">{t('tagline')}</p>

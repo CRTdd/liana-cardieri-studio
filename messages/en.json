@@ -188,11 +188,13 @@
       },
       "restorative": {
         "title": "Restorative Treatment (Fillings)",
-        "description": "We use the latest materials for fillings, including tooth-colored composite resins, glass ionomer cements, special alloys, and amalgam."
+        "description": "We use the latest materials for fillings, including tooth-colored composite resins, glass ionomer cements, special alloys, and amalgam.",
+        "highlight": "Pain-Free Options"
       },
       "crowns-bridges": {
         "title": "Crowns and Fixed Bridges",
-        "description": "For teeth needing superior strength or aesthetics, we offer porcelain, zirconia, or gold crowns. Bridges are available to close gaps from missing teeth. We also offer same-day crowns for extra convenience."
+        "description": "For teeth needing superior strength or aesthetics, we offer porcelain, zirconia, or gold crowns. Bridges are available to close gaps from missing teeth. We also offer same-day crowns for extra convenience.",
+        "highlight": "Same-Day Crowns"
       },
       "implants": {
         "title": "Dental Implants",

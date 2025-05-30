@@ -188,11 +188,13 @@
       },
       "restorative": {
         "title": "Leczenie Odbudowujące (Wypełnienia)",
-        "description": "Używamy najnowszych materiałów do wypełnień, w tym żywic kompozytowych w kolorze zęba, cementów szklano-jonomerowych, specjalnych stopów i amalgamatu."
+        "description": "Używamy najnowszych materiałów do wypełnień, w tym żywic kompozytowych w kolorze zęba, cementów szklano-jonomerowych, specjalnych stopów i amalgamatu.",
+        "highlight": "Opcje Bezbolesne"
       },
       "crowns-bridges": {
         "title": "Korony i Mosty Stałe",
-        "description": "Dla zębów wymagających większej wytrzymałości lub estetyki oferujemy korony porcelanowe, cyrkonowe lub złote. Mosty są dostępne do wypełnienia luk po brakujących zębach. Oferujemy również korony w tym samym dniu dla dodatkowej wygody."
+        "description": "Dla zębów wymagających większej wytrzymałości lub estetyki oferujemy korony porcelanowe, cyrkonowe lub złote. Mosty są dostępne do wypełnienia luk po brakujących zębach. Oferujemy również korony w tym samym dniu dla dodatkowej wygody.",
+        "highlight": "Korony Tego Samego Dnia"
       },
       "implants": {
         "title": "Implanty Zębowe",

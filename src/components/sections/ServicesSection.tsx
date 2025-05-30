@@ -34,12 +34,12 @@ const ServiceCard = ({ service }: { service: typeof homeServicesData[number] }) 
       <CardFooter className="p-6 bg-secondary/30 flex flex-col items-center space-y-3">
         <Button asChild variant="outline" className="text-base border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white w-full transition-colors duration-300 group shadow-md">
           <Link href={service.learnMoreLink}>
-            {t('ServicesSection.learnMore')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            {t('ServicesSection.serviceCard.learnMoreButton')} <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </Button>
         <Button asChild className="text-base bg-brand-blue hover:bg-brand-pink text-white w-full transition-colors duration-300 group shadow-md">
           <a href="tel:519-578-5717">
-            <Phone className="mr-2 h-4 w-4" /> {t('ServicesSection.callToDiscuss')}
+            <Phone className="mr-2 h-4 w-4" /> {t('ServicesSection.serviceCard.callToDiscussButton')}
           </a>
         </Button>
       </CardFooter>
