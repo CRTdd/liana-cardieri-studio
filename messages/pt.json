@@ -4,6 +4,7 @@
     "about": "Sobre Nós",
     "services": "Serviços",
     "testimonials": "Depoimentos",
+    "info": "Informações",
     "contact": "Contato",
     "financialInfo": "Informações Financeiras",
     "healthInfo": "Informações de Saúde",
@@ -194,6 +195,7 @@
     "service": {
       "preventive": {
         "title": "Tratamento Preventivo",
+        "description": "Mantenha seu sorriso saudável com nosso cuidado preventivo abrangente, incluindo check-ups regulares, limpezas profissionais e tratamentos protetores.",
         "tagline": "Mantenha Seu Sorriso Saudável para a Vida",
         "introduction": "A odontologia moderna se concentra na prevenção de doenças e intervenção mínima. Ajudamos a conservar seus dentes naturais e prevenir problemas recorrentes, oferecendo os mais recentes regimes de higiene bucal, tratamentos com flúor, selantes de fissura e protetores bucais para esportes de contato.",
         "benefits": [

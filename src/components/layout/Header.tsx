@@ -67,6 +67,7 @@ export default function Header() {
     { href: '/', labelKey: 'home' },
     { href: '/about', labelKey: 'about' },
     { href: '/services', labelKey: 'services', hasDropdown: true },
+    { href: '/info', labelKey: 'info', hasDropdown: true },
     { href: '/testimonials', labelKey: 'testimonials' },
     { href: '/#contact', labelKey: 'contact' },
   ];
@@ -142,19 +143,36 @@ export default function Header() {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-[200px]">
-                  <DropdownMenuItem asChild>
-                    <Link href={`/${locale}${item.href}`} className="cursor-pointer font-medium">
-                      {tNav('allServices')}
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  {serviceLinks.map((service) => (
-                    <DropdownMenuItem key={service.href} asChild>
-                      <Link href={service.href} className="cursor-pointer">
-                        {service.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
+                  {item.labelKey === 'services' ? (
+                    <>
+                      <DropdownMenuItem asChild>
+                        <Link href={`/${locale}${item.href}`} className="cursor-pointer font-medium">
+                          {tNav('allServices')}
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuSeparator />
+                      {serviceLinks.map((service) => (
+                        <DropdownMenuItem key={service.href} asChild>
+                          <Link href={service.href} className="cursor-pointer">
+                            {service.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </>
+                  ) : item.labelKey === 'info' ? (
+                    <>
+                      <DropdownMenuItem asChild>
+                        <Link href={`/${locale}/financial`} className="cursor-pointer">
+                          {tNav('financialInfo')}
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link href={`/${locale}/health`} className="cursor-pointer">
+                          {tNav('healthInfo')}
+                        </Link>
+                      </DropdownMenuItem>
+                    </>
+                  ) : null}
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
@@ -211,23 +229,44 @@ export default function Header() {
                         {tNav(item.labelKey as any)}
                       </Link>
                       <div className="pl-4 space-y-2">
-                        <Link
-                          href={getLocalizedHref(item.href)}
-                          className="block text-base font-medium transition-colors hover:text-primary text-foreground/80 px-2"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {tNav('allServices')}
-                        </Link>
-                        {servicesData.map((service) => (
-                          <Link
-                            key={service.id}
-                            href={service.learnMoreLink.replace('[locale]', locale)}
-                            className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {tServices(`service.${service.id}.title`)}
-                          </Link>
-                        ))}
+                        {item.labelKey === 'services' ? (
+                          <>
+                            <Link
+                              href={getLocalizedHref(item.href)}
+                              className="block text-base font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {tNav('allServices')}
+                            </Link>
+                            {servicesData.map((service) => (
+                              <Link
+                                key={service.id}
+                                href={service.learnMoreLink.replace('[locale]', locale)}
+                                className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {tServices(`service.${service.id}.title`)}
+                              </Link>
+                            ))}
+                          </>
+                        ) : item.labelKey === 'info' ? (
+                          <>
+                            <Link
+                              href={`/${locale}/financial`}
+                              className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {tNav('financialInfo')}
+                            </Link>
+                            <Link
+                              href={`/${locale}/health`}
+                              className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {tNav('healthInfo')}
+                            </Link>
+                          </>
+                        ) : null}
                       </div>
                     </div>
                   ) : (

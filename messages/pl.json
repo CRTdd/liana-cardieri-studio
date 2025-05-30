@@ -4,6 +4,7 @@
     "about": "O nas",
     "services": "Usługi",
     "testimonials": "Opinie",
+    "info": "Informacje",
     "contact": "Kontakt",
     "financialInfo": "Informacje Finansowe",
     "healthInfo": "Informacje o Zdrowiu",
@@ -184,6 +185,7 @@
     "service": {
       "preventive": {
         "title": "Leczenie Profilaktyczne",
+        "description": "Zachowaj zdrowy uśmiech dzięki naszej kompleksowej opiece profilaktycznej, obejmującej regularne kontrole, profesjonalne czyszczenie i zabiegi ochronne.",
         "tagline": "Zachowaj Zdrowy Uśmiech na Całe Życie",
         "introduction": "Nowoczesna stomatologia skupia się na zapobieganiu chorobom i minimalnej interwencji. Pomagamy zachować naturalne zęby i zapobiec nawrotom problemów, oferując najnowsze reżimy higieny jamy ustnej, zabiegi fluoryzacji, uszczelnianie bruzd i ochraniacze na zęby do sportów kontaktowych.",
         "benefits": [

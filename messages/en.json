@@ -5,6 +5,7 @@
     "services": "Services",
     "testimonials": "Testimonials",
     "contact": "Contact",
+    "info": "Information",
     "financialInfo": "Financial Info",
     "healthInfo": "Health Info",
     "backToServices": "Back to Services",
@@ -185,6 +186,7 @@
     "service": {
       "preventive": {
         "title": "Preventive Treatment",
+        "description": "Keep your smile healthy with our comprehensive preventive care, including regular check-ups, professional cleanings, and protective treatments.",
         "tagline": "Keep Your Smile Healthy for Life",
         "introduction": "Modern dentistry focuses on disease prevention and minimal intervention. We help conserve your natural teeth and prevent problems from recurring, offering the latest oral hygiene regimes, fluoride treatments, fissure sealants, and mouth guards for contact sports.",
         "benefits": [
