@@ -13,7 +13,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+import { servicesData } from '@/lib/data';
 
 const appLanguages = [
   { code: 'en', nativeLabel: 'EN' },
@@ -32,6 +34,7 @@ export default function Header() {
   const tNav = useTranslations('Navigation');
   const tHeader = useTranslations('Header');
   const t = useTranslations('Languages');
+  const tServices = useTranslations('ServicesPage.service');
   const currentLocale = useLocale();
   const currentFullPath = usePathname() || '/'; // Fallback to '/'
 
@@ -60,7 +63,7 @@ export default function Header() {
   const navItems = [
     { href: '/', labelKey: 'home' },
     { href: '/about', labelKey: 'about' },
-    { href: '/services', labelKey: 'services' },
+    { href: '/services', labelKey: 'services', hasDropdown: true },
     { href: '/testimonials', labelKey: 'testimonials' },
     { href: '/#contact', labelKey: 'contact' },
   ];
@@ -112,13 +115,39 @@ export default function Header() {
         
         <nav className="hidden md:flex items-center gap-x-8 text-sm font-medium">
           {navItems.map((item) => (
-            <Link
-              key={item.labelKey}
-              href={item.href} 
-              className="transition-colors hover:text-primary text-foreground/80 flex items-center h-10 leading-none"
-            >
-              {tNav(item.labelKey as any)}
-            </Link>
+            item.hasDropdown ? (
+              <DropdownMenu key={item.labelKey}>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" className="flex items-center space-x-1 text-foreground/80 hover:text-primary h-10 leading-none">
+                    <span>{tNav(item.labelKey as any)}</span>
+                    <ChevronDown className="h-4 w-4 opacity-50" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-[200px]">
+                  <DropdownMenuItem asChild>
+                    <Link href={item.href} className="cursor-pointer font-medium">
+                      {tNav('allServices')}
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  {servicesData.map((service) => (
+                    <DropdownMenuItem key={service.id} asChild>
+                      <Link href={service.learnMoreLink} className="cursor-pointer">
+                        {tServices(`${service.id}.title`)}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Link
+                key={item.labelKey}
+                href={item.href} 
+                className="transition-colors hover:text-primary text-foreground/80 flex items-center h-10 leading-none"
+              >
+                {tNav(item.labelKey as any)}
+              </Link>
+            )
           ))}
 
           <DropdownMenu>
@@ -154,13 +183,41 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
               <nav className="flex flex-col space-y-4 pt-8">
                 {navItems.map((item) => (
-                  <Link
-                    key={item.labelKey}
-                    href={item.href}
-                    className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
-                  >
-                    {tNav(item.labelKey as any)}
-                  </Link>
+                  item.hasDropdown ? (
+                    <div key={item.labelKey} className="space-y-2">
+                      <Link
+                        href={item.href}
+                        className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                      >
+                        {tNav(item.labelKey as any)}
+                      </Link>
+                      <div className="pl-4 space-y-2">
+                        <Link
+                          href={item.href}
+                          className="block text-base font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                        >
+                          {tNav('allServices')}
+                        </Link>
+                        {servicesData.map((service) => (
+                          <Link
+                            key={service.id}
+                            href={service.learnMoreLink}
+                            className="block text-base transition-colors hover:text-primary text-foreground/80 px-2"
+                          >
+                            {tServices(`${service.id}.title`)}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      key={item.labelKey}
+                      href={item.href}
+                      className="text-lg font-medium transition-colors hover:text-primary text-foreground/80 px-2"
+                    >
+                      {tNav(item.labelKey as any)}
+                    </Link>
+                  )
                 ))}
                 <div className="px-2">
                    <DropdownMenu>

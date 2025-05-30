@@ -99,11 +99,11 @@ export default function ServicesPage() {
         {/* Two-column layout for Benefits and FAQ */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
           <section className="bg-gradient-to-br from-white via-background to-brand-light-blue p-8 md:p-12 rounded-2xl shadow-2xl border border-brand-blue/10">
-            <h2 className="text-3xl font-bold text-primary mb-8 flex items-center justify-center gap-3">
+            <h2 className="text-3xl font-bold text-center mb-8">
               {t('ServicesPage.benefitsTitle')}
             </h2>
             <ul className="space-y-5 text-lg text-foreground/90 font-medium max-w-2xl mx-auto">
-              {t.raw('ServicesPage.benefits').map((benefit: string, idx: number) => (
+              {t.raw('ServicesPage.benefitsList').map((benefit: string, idx: number) => (
                 <li key={idx} className="flex items-start gap-3">
                   <CheckCircle className="text-brand-blue mt-1 flex-shrink-0" size={22} />
                   <span className="font-semibold">{benefit}</span>

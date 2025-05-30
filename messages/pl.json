@@ -320,6 +320,29 @@
           { "question": "[TRANSLATE] What cosmetic procedures do you offer?", "answer": "[TRANSLATE] We offer teeth whitening, veneers, dental bonding, gum contouring, and smile makeovers, among other services." },
           { "question": "[TRANSLATE] How do I know which cosmetic treatment is right for me?", "answer": "[TRANSLATE] A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options." }
         ]
+      },
+      "implants": {
+        "title": "Implanty Zębowe",
+        "tagline": "Trwałe Rozwiązanie dla Brakujących Zębów",
+        "introduction": "Implanty tytanowe zastępują brakujące zęby bez uszkadzania sąsiednich zębów. Wyglądają i funkcjonują jak naturalne zęby i mogą pomóc w przypadku luźnych protez.",
+        "benefits": [
+          "Trwałe rozwiązanie dla brakujących zębów",
+          "Naturalny wygląd i odczucie",
+          "Zachowuje strukturę kości szczęki",
+          "Poprawia zdolność żucia",
+          "Brak wpływu na sąsiednie zęby",
+          "Długotrwałe rezultaty"
+        ],
+        "faqs": [
+          {
+            "question": "Czy jestem kandydatem/kandydatką do implantów zębowych?",
+            "answer": "Większość osób z dobrym ogólnym i stomatologicznym zdrowiem jest kandydatami. Konsultacja z dr Cardieri określi, czy implanty są odpowiednie dla Ciebie."
+          },
+          {
+            "question": "Ile trwa proces implantacji?",
+            "answer": "Cały proces zazwyczaj trwa 3-6 miesięcy, pozwalając na gojenie i integrację implantu z kością szczęki. Każdy przypadek jest unikalny."
+          }
+        ]
       }
     }
   },

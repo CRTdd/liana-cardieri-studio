@@ -6,7 +6,11 @@
     "testimonials": "Depoimentos",
     "contact": "Contato",
     "financialInfo": "Informações Financeiras",
-    "healthInfo": "Informações de Saúde"
+    "healthInfo": "Informações de Saúde",
+    "backToServices": "Voltar aos Serviços",
+    "bookAppointment": "Agendar Consulta",
+    "learnMore": "Saiba Mais",
+    "allServices": "Todos os Serviços"
   },
   "Header": {
     "brandName": "Dra. Liana Cardieri",
@@ -154,6 +158,16 @@
       "Radiação reduzida com radiografias digitais",
       "Afiliados aos melhores especialistas"
     ],
+    "benefits": "Benefícios",
+    "relatedServices": "Serviços Relacionados",
+    "benefitsList": [
+      "Equipe profissional e experiente",
+      "Equipamento de última geração",
+      "Ambiente confortável e relaxante",
+      "Planos de tratamento personalizados",
+      "Cuidado abrangente",
+      "Técnicas e materiais modernos"
+    ],
     "faqTitle": "Perguntas Frequentes",
     "faqs": [
       {
@@ -219,106 +233,221 @@
     }
   },
   "ServiceDetailPage": {
-    "serviceNotFound": "[TRANSLATE] Service not found.",
-    "moreDetailsComing": "[TRANSLATE] More details for this service are coming soon!",
-    "backToServicesButton": "[TRANSLATE] Back to Services",
-    "whatIsTitle": "[TRANSLATE] What is {serviceName}?",
-    "keyBenefitsTitle": "[TRANSLATE] Key Benefits",
-    "faqTitle": "[TRANSLATE] Frequently Asked Questions",
-    "interestedTitle": "[TRANSLATE] Interested in {serviceName}?",
-    "interestedDescription": "[TRANSLATE] Contact us today to learn more or to schedule a consultation with Dr. Liana Cardieri.",
-    "bookConsultationButton": "[TRANSLATE] Book Your Consultation",
+    "serviceNotFound": "Serviço não encontrado.",
+    "moreDetailsComing": "Mais detalhes para este serviço em breve!",
+    "backToServicesButton": "Voltar aos Serviços",
+    "whatIsTitle": "O que é {serviceName}?",
+    "keyBenefitsTitle": "Benefícios Principais",
+    "faqTitle": "Perguntas Frequentes",
+    "interestedTitle": "Interessado em {serviceName}?",
+    "interestedDescription": "Entre em contato hoje mesmo para saber mais ou agendar uma consulta com a Dra. Liana Cardieri.",
+    "bookConsultationButton": "Agende Sua Consulta",
     "services": {
-      "zoom-whitening": {
-        "title": "[TRANSLATE] Zoom Whitening",
-        "tagline": "[TRANSLATE] Achieve a Dazzling Smile in Just One Visit",
-        "introduction": "[TRANSLATE] Our Zoom Whitening treatment is a fast, safe, and effective way to brighten your teeth by several shades. Get a radiant, confident smile with professional results you can trust.",
+      "preventive": {
+        "title": "Tratamento Preventivo",
+        "tagline": "Mantenha Seu Sorriso Saudável para a Vida",
+        "introduction": "A odontologia moderna se concentra na prevenção de doenças e intervenção mínima. Ajudamos a conservar seus dentes naturais e prevenir problemas recorrentes, oferecendo os mais recentes regimes de higiene bucal, tratamentos com flúor, selantes de fissura e protetores bucais para esportes de contato.",
         "benefits": [
-          "[TRANSLATE] Noticeably whiter teeth in about an hour.",
-          "[TRANSLATE] Safe procedure performed by dental professionals.",
-          "[TRANSLATE] Long-lasting results with proper care.",
-          "[TRANSLATE] Boosts confidence and enhances your smile."
+          "Check-ups regulares para detectar problemas precocemente",
+          "Limpezas profissionais para saúde bucal ideal",
+          "Tratamentos com flúor para fortalecer os dentes",
+          "Selantes de fissura para prevenir cáries",
+          "Protetores bucais personalizados para esportes",
+          "Educação sobre higiene bucal adequada"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] Is Zoom Whitening painful?", "answer": "[TRANSLATE] Most patients experience little to no discomfort. Some may have temporary sensitivity, which usually subsides quickly. We take measures to ensure your comfort throughout the procedure." },
-          { "question": "[TRANSLATE] How long do the results last?", "answer": "[TRANSLATE] With good oral hygiene and avoiding staining foods/drinks, results can last for a year or more. Touch-up treatments can help maintain your bright smile." },
-          { "question": "[TRANSLATE] Is it safe for my teeth?", "answer": "[TRANSLATE] Yes, Zoom Whitening is a safe procedure when performed by a qualified dental professional. It does not damage tooth enamel." }
+          {
+            "question": "Com que frequência devo visitar para cuidados preventivos?",
+            "answer": "Recomendamos visitas a cada 6 meses para check-ups e limpezas regulares, embora alguns pacientes possam precisar de visitas mais frequentes dependendo de suas necessidades de saúde bucal."
+          },
+          {
+            "question": "Os tratamentos com flúor são seguros?",
+            "answer": "Sim, os tratamentos com flúor são seguros e eficazes na prevenção de cáries. Usamos flúor de grau profissional que é muito mais forte que os produtos de venda livre."
+          }
         ]
       },
-      "dental-implants": {
-        "title": "[TRANSLATE] Dental Implants",
-        "tagline": "[TRANSLATE] Restore Your Smile with Lasting Confidence",
-        "introduction": "[TRANSLATE] Regain confidence and full dental function with our expert dental implants. Designed for lasting comfort and a natural appearance, implants are the gold standard for replacing missing teeth.",
+      "periodontal": {
+        "title": "Tratamento Periodontal",
+        "tagline": "Gengivas Saudáveis, Sorriso Saudável",
+        "introduction": "Oferecemos prevenção e tratamento abrangente de doenças gengivais com nossos higienistas dentais registrados, e podemos encaminhar para especialistas em gengiva quando necessário.",
         "benefits": [
-          "[TRANSLATE] Permanent solution for missing teeth.",
-          "[TRANSLATE] Looks, feels, and functions like natural teeth.",
-          "[TRANSLATE] Prevents bone loss in the jaw.",
-          "[TRANSLATE] Improves speech and chewing ability."
+          "Detecção precoce de doenças gengivais",
+          "Limpeza profunda profissional",
+          "Tratamento de doenças gengivais",
+          "Educação sobre cuidados preventivos",
+          "Programas regulares de manutenção",
+          "Encaminhamentos para especialistas quando necessário"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] Am I a candidate for dental implants?", "answer": "[TRANSLATE] Most people with good general and oral health are candidates. A consultation with Dr. Cardieri will determine if implants are right for you." },
-          { "question": "[TRANSLATE] Is the implant procedure painful?", "answer": "[TRANSLATE] We use local anesthesia and offer sedation options to ensure your comfort. Post-procedure discomfort is typically manageable with over-the-counter pain relievers." },
-          { "question": "[TRANSLATE] How long does the process take?", "answer": "[TRANSLATE] The entire process can take several months, allowing for healing and integration of the implant with the jawbone. Each case is unique." }
+          {
+            "question": "Quais são os sinais de doença gengival?",
+            "answer": "Sinais comuns incluem gengivas vermelhas, inchadas ou sangrando, mau hálito persistente, gengivas retraídas e dentes soltos. Check-ups regulares ajudam a detectar esses problemas precocemente."
+          },
+          {
+            "question": "Como a doença gengival é tratada?",
+            "answer": "O tratamento varia de acordo com a severidade, desde limpeza profissional até raspagem profunda e alisamento radicular. Criaremos um plano de tratamento personalizado para suas necessidades."
+          }
         ]
       },
-      "fillings": {
-        "title": "[TRANSLATE] Dental Fillings",
-        "tagline": "[TRANSLATE] Restore and Protect Your Teeth",
-        "introduction": "[TRANSLATE] We offer both silver (amalgam) and tooth-colored (resin composite) fillings to repair cavities and restore the strength and integrity of your teeth.",
+      "restorative": {
+        "title": "Tratamento Restaurador",
+        "tagline": "Restaura a Beleza Natural dos Seus Dentes",
+        "introduction": "Usamos os mais recentes materiais para obturações, incluindo resinas compostas da cor do dente, cimentos de ionômero de vidro, ligas especiais e amálgama.",
         "benefits": [
-          "[TRANSLATE] Stops the progression of tooth decay.",
-          "[TRANSLATE] Restores tooth structure and function.",
-          "[TRANSLATE] Tooth-colored fillings offer a natural appearance.",
-          "[TRANSLATE] Durable and long-lasting solutions."
+          "Obturações da cor do dente para aparência natural",
+          "Materiais duráveis e de longa duração",
+          "Remoção mínima da estrutura do dente",
+          "Procedimentos confortáveis e sem dor",
+          "Tratamento rápido e eficiente",
+          "Função mastigatória restaurada"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] Which type of filling is best for me?", "answer": "[TRANSLATE] Dr. Cardieri will discuss the pros and cons of each material and recommend the best option based on the location and extent of the decay, cost considerations, and your aesthetic preferences." },
-          { "question": "[TRANSLATE] Do fillings hurt?", "answer": "[TRANSLATE] The area will be numbed with local anesthesia before the procedure, so you should not feel any pain during the filling process." }
+          {
+            "question": "Qual tipo de obturação é melhor para mim?",
+            "answer": "A escolha depende da localização e tamanho da cárie, suas preferências estéticas e orçamento. Discutiremos todas as opções para ajudar você a tomar uma decisão informada."
+          },
+          {
+            "question": "Quanto tempo duram as obturações?",
+            "answer": "Obturações modernas podem durar 5-15 anos ou mais com os cuidados adequados. Check-ups regulares ajudam a garantir sua longevidade."
+          }
         ]
       },
       "crowns-bridges": {
-        "title": "[TRANSLATE] Crowns & Bridges",
-        "tagline": "[TRANSLATE] Strengthen and Replace Teeth with Precision",
-        "introduction": "[TRANSLATE] Dental crowns protect and strengthen damaged teeth, while bridges replace one or more missing teeth. We offer high-quality, custom-fitted restorations, including same-day crown options.",
+        "title": "Coroas e Pontes",
+        "tagline": "Restaura a Força e Beleza do Seu Sorriso",
+        "introduction": "Para dentes que precisam de força ou estética superior, oferecemos coroas de porcelana, zircônia ou ouro. Pontes estão disponíveis para fechar espaços de dentes ausentes. Também oferecemos coroas no mesmo dia para maior conveniência.",
         "benefits": [
-          "[TRANSLATE] Restores the shape, size, and strength of a tooth (crowns).",
-          "[TRANSLATE] Replaces missing teeth, restoring your smile and chewing ability (bridges).",
-          "[TRANSLATE] Prevents adjacent teeth from shifting.",
-          "[TRANSLATE] Durable and aesthetically pleasing options available."
+          "Opções de coroas no mesmo dia disponíveis",
+          "Resultados de aparência natural",
+          "Durabilidade e longa duração",
+          "Função mastigatória restaurada",
+          "Fala melhorada",
+          "Previne deslocamento dos dentes"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] What are same-day crowns?", "answer": "[TRANSLATE] Using advanced CEREC technology, we can design, create, and place a custom ceramic crown in a single appointment, saving you time and multiple visits." },
-          { "question": "[TRANSLATE] How do I care for my crown or bridge?", "answer": "[TRANSLATE] Good oral hygiene, including brushing, flossing, and regular dental check-ups, is essential to maintain the longevity of your crown or bridge." }
+          {
+            "question": "O que são coroas no mesmo dia?",
+            "answer": "Usando tecnologia CEREC avançada, podemos projetar, criar e colocar uma coroa de cerâmica personalizada em uma única consulta, economizando seu tempo e múltiplas visitas."
+          },
+          {
+            "question": "Como cuido da minha coroa ou ponte?",
+            "answer": "Boa higiene bucal, incluindo escovação, uso do fio dental e check-ups dentais regulares, é essencial para manter a longevidade da sua coroa ou ponte."
+          }
         ]
       },
-      "family-dentistry": {
-        "title": "[TRANSLATE] Family Dentistry",
-        "tagline": "[TRANSLATE] Comprehensive Dental Care for All Ages",
-        "introduction": "[TRANSLATE] From your child's first visit to grandparent's routine care, we provide a full range of dental services for the entire family in a comfortable and friendly environment.",
+      "implants": {
+        "title": "Implantes Dentários",
+        "tagline": "Solução Permanente para Dentes Ausentes",
+        "introduction": "Implantes de titânio substituem dentes ausentes sem danificar os dentes adjacentes. Eles parecem e funcionam como dentes naturais e podem ajudar com dentaduras soltas.",
         "benefits": [
-          "[TRANSLATE] Convenient care for the whole family in one location.",
-          "[TRANSLATE] Focus on preventative care and education.",
-          "[TRANSLATE] Early detection and treatment of dental issues.",
-          "[TRANSLATE] Building lifelong healthy oral habits."
+          "Solução permanente para dentes ausentes",
+          "Aparência e sensação naturais",
+          "Preserva a estrutura do osso maxilar",
+          "Melhora a capacidade de mastigação",
+          "Sem impacto nos dentes adjacentes",
+          "Resultados de longa duração"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] When should my child first see a dentist?", "answer": "[TRANSLATE] The Canadian Dental Association recommends a child's first dental visit by age one, or within six months of their first tooth erupting." },
-          { "question": "[TRANSLATE] What services are included in family dentistry?", "answer": "[TRANSLATE] This includes regular check-ups, cleanings, fluoride treatments, sealants, fillings, and guidance on oral hygiene specific to different age groups." }
+          {
+            "question": "Sou candidato a implantes dentários?",
+            "answer": "A maioria das pessoas com boa saúde geral e bucal são candidatas. Uma consulta com a Dra. Cardieri determinará se os implantes são adequados para você."
+          },
+          {
+            "question": "Quanto tempo leva o processo de implante?",
+            "answer": "O processo completo geralmente leva 3-6 meses, permitindo a cicatrização e integração do implante com o osso maxilar. Cada caso é único."
+          }
         ]
       },
-      "cosmetic-dentistry": {
-        "title": "[TRANSLATE] Cosmetic Dentistry",
-        "tagline": "[TRANSLATE] Transform Your Smile, Boost Your Confidence",
-        "introduction": "[TRANSLATE] Enhance the appearance of your smile with our wide range of cosmetic dental treatments. Dr. Cardieri will work with you to create a personalized plan to achieve your dream smile.",
+      "cosmetic": {
+        "title": "Odontologia Estética",
+        "tagline": "Transforme Seu Sorriso",
+        "introduction": "Oferecemos clareamento, facetas de resina ou porcelana, e outros procedimentos cosméticos para remodelar e melhorar a aparência dos seus dentes.",
         "benefits": [
-          "[TRANSLATE] Improve tooth color, shape, size, and alignment.",
-          "[TRANSLATE] Boost self-esteem and confidence.",
-          "[TRANSLATE] Treatments tailored to your specific aesthetic goals.",
-          "[TRANSLATE] Utilizes modern techniques and materials for natural-looking results."
+          "Clareamento dental profissional",
+          "Facetas de porcelana",
+          "Bonding dental",
+          "Transformação do sorriso",
+          "Resultados de aparência natural",
+          "Confiança aumentada"
         ],
         "faqs": [
-          { "question": "[TRANSLATE] What cosmetic procedures do you offer?", "answer": "[TRANSLATE] We offer teeth whitening, veneers, dental bonding, gum contouring, and smile makeovers, among other services." },
-          { "question": "[TRANSLATE] How do I know which cosmetic treatment is right for me?", "answer": "[TRANSLATE] A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options." }
+          {
+            "question": "Quais procedimentos cosméticos vocês oferecem?",
+            "answer": "Oferecemos clareamento dental, facetas, bonding dental, contorno gengival e transformação do sorriso, entre outros serviços."
+          },
+          {
+            "question": "Como sei qual tratamento cosmético é certo para mim?",
+            "answer": "Uma consulta com a Dra. Cardieri é o primeiro passo. Ela avaliará seu sorriso, discutirá seus objetivos e recomendará as opções mais adequadas."
+          }
+        ]
+      },
+      "endodontic": {
+        "title": "Tratamento Endodôntico",
+        "tagline": "Salve Seus Dentes Naturais",
+        "introduction": "Buscamos salvar dentes infectados com tratamento de canal, removendo o nervo infectado, limpando e selando os canais para prevenir reinfecção.",
+        "benefits": [
+          "Salva dentes naturais",
+          "Alivia a dor",
+          "Previne a propagação da infecção",
+          "Mantém a estrutura do maxilar",
+          "Preserva a função mastigatória",
+          "Solução de longa duração"
+        ],
+        "faqs": [
+          {
+            "question": "O tratamento de canal é doloroso?",
+            "answer": "Técnicas modernas e anestesia tornam o tratamento de canal relativamente indolor. A maioria dos pacientes relata sentir-se confortável durante o procedimento."
+          },
+          {
+            "question": "Quanto tempo leva um tratamento de canal?",
+            "answer": "Um tratamento de canal típico leva 1-2 consultas, dependendo da complexidade do caso."
+          }
+        ]
+      },
+      "prosthetic": {
+        "title": "Tratamento Protético",
+        "tagline": "Complete Seu Sorriso",
+        "introduction": "Fornecemos dentaduras totais e parciais, incluindo reparos no mesmo dia.",
+        "benefits": [
+          "Dentaduras totais e parciais",
+          "Reparos no mesmo dia",
+          "Capacidade de mastigação melhorada",
+          "Fala aprimorada",
+          "Aparência natural",
+          "Ajuste confortável"
+        ],
+        "faqs": [
+          {
+            "question": "Quanto tempo leva para se acostumar com dentaduras?",
+            "answer": "A maioria dos pacientes se adapta às novas dentaduras em algumas semanas. Fornecemos orientação e ajustes para garantir o máximo conforto."
+          },
+          {
+            "question": "Como cuido das minhas dentaduras?",
+            "answer": "Limpeza regular, armazenamento adequado e check-ups de rotina são essenciais para manter suas dentaduras. Forneceremos instruções detalhadas de cuidados."
+          }
+        ]
+      },
+      "digital-xray": {
+        "title": "Raios-X Digitais",
+        "tagline": "Tecnologia Avançada de Imagem",
+        "introduction": "Todos os consultórios estão equipados com câmeras intra-orais e raios-x digitais, reduzindo a exposição à radiação em até 80% em comparação com o filme tradicional.",
+        "benefits": [
+          "Exposição reduzida à radiação",
+          "Resultados instantâneos",
+          "Capacidades diagnósticas aprimoradas",
+          "Melhor educação do paciente",
+          "Amigável ao meio ambiente",
+          "Planejamento de tratamento melhorado"
+        ],
+        "faqs": [
+          {
+            "question": "Com que frequência devo fazer raios-x dentais?",
+            "answer": "A frequência depende das suas necessidades de saúde bucal. A maioria dos adultos precisa de raios-x a cada 1-2 anos, enquanto aqueles com condições específicas podem precisar com mais frequência."
+          },
+          {
+            "question": "Os raios-x digitais são seguros?",
+            "answer": "Sim, os raios-x digitais emitem até 80% menos radiação que os raios-x tradicionais em filme, tornando-os muito seguros para pacientes de todas as idades."
+          }
         ]
       }
     }

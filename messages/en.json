@@ -6,7 +6,11 @@
     "testimonials": "Testimonials",
     "contact": "Contact",
     "financialInfo": "Financial Info",
-    "healthInfo": "Health Info"
+    "healthInfo": "Health Info",
+    "backToServices": "Back to Services",
+    "bookAppointment": "Book Appointment",
+    "learnMore": "Learn More",
+    "allServices": "All Services"
   },
   "Header": {
     "brandName": "Dr. Liana Cardieri",
@@ -145,7 +149,7 @@
     "readyDescription": "Contact us today to discuss your dental needs or to schedule an appointment with Dr. Liana Cardieri.",
     "bookAppointmentButton": "Book Your Appointment",
     "benefitsTitle": "Benefits of Our Care",
-    "benefits": [
+    "benefitsList": [
       "Comprehensive care for all dental needs",
       "Latest technology and materials",
       "Same-day crowns for convenience",
@@ -154,6 +158,7 @@
       "Reduced radiation with digital x-rays",
       "Affiliations with top specialists"
     ],
+    "relatedServices": "Related Services",
     "faqTitle": "Frequently Asked Questions",
     "faqs": [
       {
@@ -229,96 +234,211 @@
     "interestedDescription": "Contact us today to learn more or to schedule a consultation with Dr. Liana Cardieri.",
     "bookConsultationButton": "Book Your Consultation",
     "services": {
-      "zoom-whitening": {
-        "title": "Zoom Whitening",
-        "tagline": "Achieve a Dazzling Smile in Just One Visit",
-        "introduction": "Our Zoom Whitening treatment is a fast, safe, and effective way to brighten your teeth by several shades. Get a radiant, confident smile with professional results you can trust.",
+      "preventive": {
+        "title": "Preventive Treatment",
+        "tagline": "Keep Your Smile Healthy for Life",
+        "introduction": "Modern dentistry focuses on disease prevention and minimal intervention. We help conserve your natural teeth and prevent problems from recurring, offering the latest oral hygiene regimes, fluoride treatments, fissure sealants, and mouth guards for contact sports.",
         "benefits": [
-          "Noticeably whiter teeth in about an hour.",
-          "Safe procedure performed by dental professionals.",
-          "Long-lasting results with proper care.",
-          "Boosts confidence and enhances your smile."
+          "Regular check-ups to catch issues early",
+          "Professional cleanings for optimal oral health",
+          "Fluoride treatments to strengthen teeth",
+          "Fissure sealants to prevent cavities",
+          "Custom mouth guards for sports protection",
+          "Education on proper oral hygiene"
         ],
         "faqs": [
-          { "question": "Is Zoom Whitening painful?", "answer": "Most patients experience little to no discomfort. Some may have temporary sensitivity, which usually subsides quickly. We take measures to ensure your comfort throughout the procedure." },
-          { "question": "How long do the results last?", "answer": "With good oral hygiene and avoiding staining foods/drinks, results can last for a year or more. Touch-up treatments can help maintain your bright smile." },
-          { "question": "Is it safe for my teeth?", "answer": "Yes, Zoom Whitening is a safe procedure when performed by a qualified dental professional. It does not damage tooth enamel." }
+          {
+            "question": "How often should I visit for preventive care?",
+            "answer": "We recommend visiting every 6 months for regular check-ups and cleanings, though some patients may need more frequent visits based on their oral health needs."
+          },
+          {
+            "question": "Are fluoride treatments safe?",
+            "answer": "Yes, fluoride treatments are safe and effective in preventing tooth decay. We use professional-grade fluoride that's much stronger than over-the-counter products."
+          }
         ]
       },
-      "dental-implants": {
-        "title": "Dental Implants",
-        "tagline": "Restore Your Smile with Lasting Confidence",
-        "introduction": "Regain confidence and full dental function with our expert dental implants. Designed for lasting comfort and a natural appearance, implants are the gold standard for replacing missing teeth.",
+      "periodontal": {
+        "title": "Periodontal Treatment",
+        "tagline": "Healthy Gums, Healthy Smile",
+        "introduction": "We offer comprehensive gum disease prevention and treatment with our registered dental hygienists, and can refer to top gum specialists if needed.",
         "benefits": [
-          "Permanent solution for missing teeth.",
-          "Looks, feels, and functions like natural teeth.",
-          "Prevents bone loss in the jaw.",
-          "Improves speech and chewing ability."
+          "Early detection of gum disease",
+          "Professional deep cleaning",
+          "Gum disease treatment",
+          "Preventive care education",
+          "Regular maintenance programs",
+          "Referrals to specialists when needed"
         ],
         "faqs": [
-          { "question": "Am I a candidate for dental implants?", "answer": "Most people with good general and oral health are candidates. A consultation with Dr. Cardieri will determine if implants are right for you." },
-          { "question": "Is the implant procedure painful?", "answer": "We use local anesthesia and offer sedation options to ensure your comfort. Post-procedure discomfort is typically manageable with over-the-counter pain relievers." },
-          { "question": "How long does the process take?", "answer": "The entire process can take several months, allowing for healing and integration of the implant with the jawbone. Each case is unique." }
+          {
+            "question": "What are the signs of gum disease?",
+            "answer": "Common signs include red, swollen, or bleeding gums, persistent bad breath, receding gums, and loose teeth. Regular check-ups help catch these issues early."
+          },
+          {
+            "question": "How is gum disease treated?",
+            "answer": "Treatment varies based on severity, from professional cleaning to deep scaling and root planing. We'll create a personalized treatment plan for your needs."
+          }
         ]
       },
-      "fillings": {
-        "title": "Dental Fillings",
-        "tagline": "Restore and Protect Your Teeth",
-        "introduction": "We offer both silver (amalgam) and tooth-colored (resin composite) fillings to repair cavities and restore the strength and integrity of your teeth.",
+      "restorative": {
+        "title": "Restorative Treatment",
+        "tagline": "Restore Your Teeth's Natural Beauty",
+        "introduction": "We use the latest materials for fillings, including tooth-colored composite resins, glass ionomer cements, special alloys, and amalgam.",
         "benefits": [
-          "Stops the progression of tooth decay.",
-          "Restores tooth structure and function.",
-          "Tooth-colored fillings offer a natural appearance.",
-          "Durable and long-lasting solutions."
+          "Tooth-colored fillings for natural appearance",
+          "Durable and long-lasting materials",
+          "Minimal tooth structure removal",
+          "Comfortable and pain-free procedures",
+          "Quick and efficient treatment",
+          "Restored chewing function"
         ],
         "faqs": [
-          { "question": "Which type of filling is best for me?", "answer": "Dr. Cardieri will discuss the pros and cons of each material and recommend the best option based on the location and extent of the decay, cost considerations, and your aesthetic preferences." },
-          { "question": "Do fillings hurt?", "answer": "The area will be numbed with local anesthesia before the procedure, so you should not feel any pain during the filling process." }
+          {
+            "question": "Which type of filling is best for me?",
+            "answer": "The choice depends on the location and size of the cavity, your aesthetic preferences, and budget. We'll discuss all options to help you make an informed decision."
+          },
+          {
+            "question": "How long do fillings last?",
+            "answer": "Modern fillings can last 5-15 years or more with proper care. Regular check-ups help ensure their longevity."
+          }
         ]
       },
       "crowns-bridges": {
-        "title": "Crowns & Bridges",
-        "tagline": "Strengthen and Replace Teeth with Precision",
-        "introduction": "Dental crowns protect and strengthen damaged teeth, while bridges replace one or more missing teeth. We offer high-quality, custom-fitted restorations, including same-day crown options.",
+        "title": "Crowns and Bridges",
+        "tagline": "Restore Your Smile's Strength and Beauty",
+        "introduction": "For teeth needing superior strength or aesthetics, we offer porcelain, zirconia, or gold crowns. Bridges are available to close gaps from missing teeth. We also offer same-day crowns for extra convenience.",
         "benefits": [
-          "Restores the shape, size, and strength of a tooth (crowns).",
-          "Replaces missing teeth, restoring your smile and chewing ability (bridges).",
-          "Prevents adjacent teeth from shifting.",
-          "Durable and aesthetically pleasing options available."
+          "Same-day crown options available",
+          "Natural-looking results",
+          "Durable and long-lasting",
+          "Restored chewing function",
+          "Improved speech",
+          "Prevents teeth shifting"
         ],
         "faqs": [
-          { "question": "What are same-day crowns?", "answer": "Using advanced CEREC technology, we can design, create, and place a custom ceramic crown in a single appointment, saving you time and multiple visits." },
-          { "question": "How do I care for my crown or bridge?", "answer": "Good oral hygiene, including brushing, flossing, and regular dental check-ups, is essential to maintain the longevity of your crown or bridge." }
+          {
+            "question": "What are same-day crowns?",
+            "answer": "Using advanced CEREC technology, we can design, create, and place a custom ceramic crown in a single appointment, saving you time and multiple visits."
+          },
+          {
+            "question": "How do I care for my crown or bridge?",
+            "answer": "Good oral hygiene, including brushing, flossing, and regular dental check-ups, is essential to maintain the longevity of your crown or bridge."
+          }
         ]
       },
-      "family-dentistry": {
-        "title": "Family Dentistry",
-        "tagline": "Comprehensive Dental Care for All Ages",
-        "introduction": "From your child's first visit to grandparent's routine care, we provide a full range of dental services for the entire family in a comfortable and friendly environment.",
+      "implants": {
+        "title": "Dental Implants",
+        "tagline": "Permanent Solution for Missing Teeth",
+        "introduction": "Titanium implants replace missing teeth without damaging surrounding teeth. They look and function like natural teeth and can help with loose dentures.",
         "benefits": [
-          "Convenient care for the whole family in one location.",
-          "Focus on preventative care and education.",
-          "Early detection and treatment of dental issues.",
-          "Building lifelong healthy oral habits."
+          "Permanent solution for missing teeth",
+          "Natural look and feel",
+          "Preserves jawbone structure",
+          "Improves chewing ability",
+          "No impact on adjacent teeth",
+          "Long-lasting results"
         ],
         "faqs": [
-          { "question": "When should my child first see a dentist?", "answer": "The Canadian Dental Association recommends a child's first dental visit by age one, or within six months of their first tooth erupting." },
-          { "question": "What services are included in family dentistry?", "answer": "This includes regular check-ups, cleanings, fluoride treatments, sealants, fillings, and guidance on oral hygiene specific to different age groups." }
+          {
+            "question": "Am I a candidate for dental implants?",
+            "answer": "Most people with good general and oral health are candidates. A consultation with Dr. Cardieri will determine if implants are right for you."
+          },
+          {
+            "question": "How long does the implant process take?",
+            "answer": "The entire process typically takes 3-6 months, allowing for healing and integration of the implant with the jawbone. Each case is unique."
+          }
         ]
       },
-      "cosmetic-dentistry": {
+      "cosmetic": {
         "title": "Cosmetic Dentistry",
-        "tagline": "Transform Your Smile, Boost Your Confidence",
-        "introduction": "Enhance the appearance of your smile with our wide range of cosmetic dental treatments. Dr. Cardieri will work with you to create a personalized plan to achieve your dream smile.",
+        "tagline": "Transform Your Smile",
+        "introduction": "We offer whitening, composite or porcelain veneers, and other cosmetic procedures to reshape and improve the appearance of your teeth.",
         "benefits": [
-          "Improve tooth color, shape, size, and alignment.",
-          "Boost self-esteem and confidence.",
-          "Treatments tailored to your specific aesthetic goals.",
-          "Utilizes modern techniques and materials for natural-looking results."
+          "Professional teeth whitening",
+          "Porcelain veneers",
+          "Dental bonding",
+          "Smile makeovers",
+          "Natural-looking results",
+          "Boosted confidence"
         ],
         "faqs": [
-          { "question": "What cosmetic procedures do you offer?", "answer": "We offer teeth whitening, veneers, dental bonding, gum contouring, and smile makeovers, among other services." },
-          { "question": "How do I know which cosmetic treatment is right for me?", "answer": "A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options." }
+          {
+            "question": "What cosmetic procedures do you offer?",
+            "answer": "We offer teeth whitening, veneers, dental bonding, gum contouring, and smile makeovers, among other services."
+          },
+          {
+            "question": "How do I know which cosmetic treatment is right for me?",
+            "answer": "A consultation with Dr. Cardieri is the first step. She will assess your smile, discuss your goals, and recommend the most suitable options."
+          }
+        ]
+      },
+      "endodontic": {
+        "title": "Endodontic Treatment",
+        "tagline": "Save Your Natural Teeth",
+        "introduction": "We aim to save infected teeth with root canal treatment, removing the infected nerve, cleaning, and sealing the canals to prevent re-infection.",
+        "benefits": [
+          "Save natural teeth",
+          "Relieve pain",
+          "Prevent infection spread",
+          "Maintain jaw structure",
+          "Preserve chewing function",
+          "Long-term solution"
+        ],
+        "faqs": [
+          {
+            "question": "Is root canal treatment painful?",
+            "answer": "Modern techniques and anesthesia make root canal treatment relatively painless. Most patients report feeling comfortable during the procedure."
+          },
+          {
+            "question": "How long does a root canal take?",
+            "answer": "A typical root canal treatment takes 1-2 appointments, depending on the complexity of the case."
+          }
+        ]
+      },
+      "prosthetic": {
+        "title": "Prosthetic Treatment",
+        "tagline": "Complete Your Smile",
+        "introduction": "We provide full and partial dentures, including same-day repairs.",
+        "benefits": [
+          "Full and partial dentures",
+          "Same-day repairs",
+          "Improved chewing ability",
+          "Enhanced speech",
+          "Natural appearance",
+          "Comfortable fit"
+        ],
+        "faqs": [
+          {
+            "question": "How long does it take to get used to dentures?",
+            "answer": "Most patients adapt to their new dentures within a few weeks. We provide guidance and adjustments to ensure maximum comfort."
+          },
+          {
+            "question": "How do I care for my dentures?",
+            "answer": "Regular cleaning, proper storage, and routine check-ups are essential for maintaining your dentures. We'll provide detailed care instructions."
+          }
+        ]
+      },
+      "digital-xray": {
+        "title": "Digital X-Rays",
+        "tagline": "Advanced Imaging Technology",
+        "introduction": "All operatories are equipped with intra-oral cameras and digital x-rays, reducing radiation exposure by up to 80% compared to traditional film.",
+        "benefits": [
+          "Reduced radiation exposure",
+          "Instant results",
+          "Enhanced diagnostic capabilities",
+          "Better patient education",
+          "Environmentally friendly",
+          "Improved treatment planning"
+        ],
+        "faqs": [
+          {
+            "question": "How often should I get dental x-rays?",
+            "answer": "The frequency depends on your oral health needs. Most adults need x-rays every 1-2 years, while those with specific conditions may need them more often."
+          },
+          {
+            "question": "Are digital x-rays safe?",
+            "answer": "Yes, digital x-rays emit up to 80% less radiation than traditional film x-rays, making them very safe for patients of all ages."
+          }
         ]
       }
     }
