@@ -119,13 +119,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex min-h-[64px] max-w-screen-2xl items-center justify-between px-6 sm:px-10 lg:px-16 mx-auto">
-        <Link href="/" className="flex items-center gap-x-3 text-primary hover:text-brand-blue transition-colors">
+        <Link href={`/${locale}`} className="flex items-center gap-x-3 text-primary hover:text-brand-blue transition-colors">
           <Image
-            src="https://placehold.co/40x40.png" // Request a 40x40 image
+            src="https://placehold.co/40x40.png"
             alt={tHeader('brandName')}
-            width={40} // Render at 40px
-            height={40} // Render at 40px
-            className="block" // Removed h-10 w-10
+            width={40}
+            height={40}
+            className="block"
             data-ai-hint="dental logo"
           />
           <span className="font-bold text-2xl flex items-center leading-none">{tHeader('brandName')}</span>
@@ -143,15 +143,15 @@ export default function Header() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start" className="w-[200px]">
                   <DropdownMenuItem asChild>
-                    <Link href={item.href} className="cursor-pointer font-medium">
+                    <Link href={`/${locale}${item.href}`} className="cursor-pointer font-medium">
                       {tNav('allServices')}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  {servicesData.map((service) => (
-                    <DropdownMenuItem key={service.id} asChild>
-                      <Link href={service.learnMoreLink} className="cursor-pointer">
-                        {tServices(`service.${service.id}.title`)}
+                  {serviceLinks.map((service) => (
+                    <DropdownMenuItem key={service.href} asChild>
+                      <Link href={service.href} className="cursor-pointer">
+                        {service.label}
                       </Link>
                     </DropdownMenuItem>
                   ))}
@@ -160,7 +160,7 @@ export default function Header() {
             ) : (
               <Link
                 key={item.labelKey}
-                href={item.href} 
+                href={`/${locale}${item.href}`}
                 className="transition-colors hover:text-primary text-foreground/80 flex items-center h-10 leading-none"
               >
                 {tNav(item.labelKey as any)}

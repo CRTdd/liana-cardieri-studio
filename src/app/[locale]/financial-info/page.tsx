@@ -2,10 +2,11 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { DollarSign, HelpCircle, Phone } from 'lucide-react';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Financial Information - Kitchener Smiles',
-  description: 'Learn about payment options, insurance, and financing at Kitchener Smiles. We strive to make quality dental care affordable.',
+export const metadata: Metadata = {
+  title: 'Financial Information - Dr. Liana Cardieri',
+  description: 'Learn about payment options, insurance, and financing at Dr. Liana Cardieri\'s practice. We strive to make quality dental care affordable.',
 };
 
 const faqs = [
@@ -23,7 +24,7 @@ const faqs = [
   },
   {
     question: 'Will my treatment hurt?',
-    answer: 'Our gentle techniques and caring approach ensure maximum comfort. We offer various pain management options, including local anesthesia and sedation if needed. We’re here to put you at ease and make your experience as comfortable as possible.',
+    answer: 'Our gentle techniques and caring approach ensure maximum comfort. We offer various pain management options, including local anesthesia and sedation if needed. We're here to put you at ease and make your experience as comfortable as possible.',
   },
   {
     question: 'What if I need to cancel or reschedule my appointment?',
@@ -45,8 +46,8 @@ export default function FinancialInfoPage() {
 
         <section className="mb-12 bg-background p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold text-primary mb-4">Our Commitment to You</h2>
-          <p className="text-foreground/80 leading-relaxed font-light mb-4">
-            At Kitchener Smiles, we believe that everyone deserves access to high-quality dental care. We strive to make our services affordable and transparent. Our team is here to help you navigate payment options, insurance claims, and any financial questions you may have.
+          <p className="text-lg text-foreground/80 font-light mb-8 max-w-2xl mx-auto">
+            At Dr. Liana Cardieri's practice, we believe that everyone deserves access to high-quality dental care. We strive to make our services affordable and transparent. Our team is here to help you navigate payment options, insurance claims, and any financial questions you may have.
           </p>
           <p className="text-foreground/80 leading-relaxed font-light">
             We will always provide you with a detailed treatment plan and cost estimate before any procedure begins. Your oral health is our priority, and we're committed to working with you to achieve your smile goals within your budget.

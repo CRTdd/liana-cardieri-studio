@@ -2,10 +2,11 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ExternalLink, ShieldCheck, BookOpen } from 'lucide-react';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Oral Health Information - Kitchener Smiles',
-  description: 'Learn about important oral health topics like gingivitis and oral cancer. Kitchener Smiles provides resources for patient education.',
+export const metadata: Metadata = {
+  title: 'Oral Health Information - Dr. Liana Cardieri',
+  description: 'Learn about important oral health topics like gingivitis and oral cancer. Dr. Liana Cardieri provides resources for patient education.',
 };
 
 const HealthTopicCard = ({ title, description, imageUrl, imageHint, externalLink, linkText }: { title: string; description: string; imageUrl: string; imageHint: string; externalLink: string, linkText: string }) => (

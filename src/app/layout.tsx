@@ -7,7 +7,7 @@ import type { ReactNode } from 'react';
 
 // Remove metadata export from here, as it's handled by the localized layout
 // export const metadata: Metadata = {
-//   title: 'Kitchener Smiles Dental',
+//   title: 'Dr. Liana Cardieri Dental',
 //   description: 'Family and Cosmetic Dentistry in Kitchener, ON.',
 // };
 

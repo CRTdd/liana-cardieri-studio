@@ -512,12 +512,14 @@
     "scheduleCheckupButton": "Schedule Your Check-up Today"
   },
   "TestimonialsPage": {
-    "headline": "What Our Patients Are Saying",
-    "description": "We are proud of the positive feedback we receive from our valued patients. Your trust and satisfaction are our greatest rewards.",
-    "shareExperienceTitle": "Share Your Experience",
-    "shareExperienceDescription": "If you've had a positive experience with Dr. Liana Cardieri, we'd love to hear from you! Your feedback helps us continue to provide the best possible care.",
-    "leaveReviewOnlineButton": "Leave a Review Online",
-    "contactUsDirectlyButton": "Contact Us Directly"
+    "title": "What Our Patients Are Saying",
+    "subtitle": "We are proud of the positive feedback we receive from our valued patients. Your trust and satisfaction are our greatest rewards.",
+    "shareExperience": {
+      "title": "Share Your Experience",
+      "description": "If you've had a positive experience with Dr. Liana Cardieri, we'd love to hear from you! Your feedback helps us continue to provide the best possible care.",
+      "reviewButton": "Leave a Review Online",
+      "contactButton": "Contact Us Directly"
+    }
   },
   "data": {
     "services": {
@@ -537,11 +539,26 @@
       }
     },
     "testimonials": [
-      { "quote": "Painless and professional! Dr. Cardieri and her team are fantastic. I highly recommend them.", "author": "J.S." },
-      { "quote": "The best dental experience I've ever had. Everyone is so friendly and caring. My smile has never looked better!", "author": "M.B." },
-      { "quote": "I was nervous about my procedure, but they made me feel comfortable and at ease. Truly exceptional service.", "author": "A.K." },
-      { "quote": "Multilingual staff was a huge plus for my family. They explained everything clearly in Portuguese.", "author": "C.O." },
-      { "quote": "Efficient, modern, and very skilled. The same-day crown service is amazing!", "author": "L.P." }
+      {
+        "quote": "Dr. Cardieri and her team are amazing! They made me feel comfortable and explained everything clearly. The office is modern and clean, and the staff is very friendly.",
+        "author": "John Smith"
+      },
+      {
+        "quote": "I've been a patient for years and always receive excellent care. The team is professional and caring, and they make dental visits stress-free.",
+        "author": "Maria Brown"
+      },
+      {
+        "quote": "As someone who was anxious about dental visits, I can't thank Dr. Cardieri enough. She's gentle, patient, and truly cares about her patients' comfort.",
+        "author": "Anna Kowalski"
+      },
+      {
+        "quote": "The multilingual staff is a huge plus! Being able to communicate in my native language makes me feel more at ease during my visits.",
+        "author": "Carlos Oliveira"
+      },
+      {
+        "quote": "I'm impressed with the modern technology and same-day crown service. Dr. Cardieri's practice is truly at the forefront of dental care.",
+        "author": "Lisa Patel"
+      }
     ],
     "whyChooseUs": [
       { "title": "Gentle Care", "description": "We prioritize your comfort with gentle techniques and a compassionate approach." },
