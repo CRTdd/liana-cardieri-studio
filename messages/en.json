@@ -198,32 +198,16 @@
           "Education on proper oral hygiene"
         ],
         "costs": {
-          "title": "Costs & Insurance",
+          "title": "Costs and Insurance",
           "description": "We believe in transparent pricing and helping you maximize your insurance benefits. Most preventive services are covered by dental insurance plans.",
           "services": [
-            {
-              "name": "Regular Check-up & Cleaning",
-              "cost": "Starting at $150",
-              "insurance": "Usually covered at 80-100%"
-            },
-            {
-              "name": "Fluoride Treatment",
-              "cost": "Starting at $45",
-              "insurance": "Usually covered for children"
-            },
-            {
-              "name": "Dental Sealants",
-              "cost": "Starting at $65 per tooth",
-              "insurance": "Usually covered for children and teens"
-            },
-            {
-              "name": "Custom Mouth Guard",
-              "cost": "Starting at $250",
-              "insurance": "May be covered for sports-related use"
-            }
+            "Regular Check-up and Cleaning - Starting at $150 (Usually covered at 80-100%)",
+            "Fluoride Treatment - Starting at $45 (Usually covered for children)",
+            "Dental Sealants - Starting at $65 per tooth (Usually covered for children and teens)",
+            "Custom Mouthguard - Starting at $250 (May be covered for sports use)"
           ],
           "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
-          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+          "paymentOptions": "We offer flexible payment options, including payment plans and accept various payment methods."
         },
         "faqs": [
           {
@@ -431,32 +415,16 @@
           "Education on proper oral hygiene"
         ],
         "costs": {
-          "title": "Costs & Insurance",
+          "title": "Costs and Insurance",
           "description": "We believe in transparent pricing and helping you maximize your insurance benefits. Most preventive services are covered by dental insurance plans.",
           "services": [
-            {
-              "name": "Regular Check-up & Cleaning",
-              "cost": "Starting at $150",
-              "insurance": "Usually covered at 80-100%"
-            },
-            {
-              "name": "Fluoride Treatment",
-              "cost": "Starting at $45",
-              "insurance": "Usually covered for children"
-            },
-            {
-              "name": "Dental Sealants",
-              "cost": "Starting at $65 per tooth",
-              "insurance": "Usually covered for children and teens"
-            },
-            {
-              "name": "Custom Mouth Guard",
-              "cost": "Starting at $250",
-              "insurance": "May be covered for sports-related use"
-            }
+            "Regular Check-up and Cleaning - Starting at $150 (Usually covered at 80-100%)",
+            "Fluoride Treatment - Starting at $45 (Usually covered for children)",
+            "Dental Sealants - Starting at $65 per tooth (Usually covered for children and teens)",
+            "Custom Mouthguard - Starting at $250 (May be covered for sports use)"
           ],
           "insuranceInfo": "We accept most major insurance plans and will help you understand your coverage. Contact us to verify your specific benefits.",
-          "paymentOptions": "We offer flexible payment options including payment plans and accept various payment methods."
+          "paymentOptions": "We offer flexible payment options, including payment plans and accept various payment methods."
         },
         "faqs": [
           {

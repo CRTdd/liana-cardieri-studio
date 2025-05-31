@@ -163,19 +163,33 @@ export default function ServiceDetail({ slug, locale }: ServiceDetailProps) {
               </p>
               <div className="space-y-4">
                 {(() => {
-                  const services = t('services.preventive.costs.services', { returnObjects: true });
-                  if (Array.isArray(services)) {
-                    return services.map((service: ServiceCost, index: number) => (
+                  // Default services as fallback
+                  const defaultServices = [
+                    "Regular Check-up and Cleaning - Starting at $150 (Usually covered at 80-100%)",
+                    "Fluoride Treatment - Starting at $45 (Usually covered for children)",
+                    "Dental Sealants - Starting at $65 per tooth (Usually covered for children and teens)",
+                    "Custom Mouthguard - Starting at $250 (May be covered for sports use)"
+                  ];
+
+                  // Try to get services from translations, fall back to defaults if not found
+                  const services = [
+                    tServices(`${service.id}.costs.services.0`, { fallback: defaultServices[0] }),
+                    tServices(`${service.id}.costs.services.1`, { fallback: defaultServices[1] }),
+                    tServices(`${service.id}.costs.services.2`, { fallback: defaultServices[2] }),
+                    tServices(`${service.id}.costs.services.3`, { fallback: defaultServices[3] })
+                  ].filter(Boolean); // Remove any undefined entries
+                  
+                  return services.map((service, index) => {
+                    const [name, cost] = service.split(' - ');
+                    return (
                       <div key={index} className="border-b border-gray-200 pb-3">
                         <div className="flex justify-between items-center mb-1">
-                          <span className="font-semibold text-[#001524]">{service.name}</span>
-                          <span className="text-[#3A0CA3] font-medium">{service.cost}</span>
+                          <span className="font-semibold text-[#001524]">{name}</span>
+                          <span className="text-[#3A0CA3] font-medium">{cost}</span>
                         </div>
-                        <p className="text-sm text-[#001524]/70">{service.insurance}</p>
                       </div>
-                    ));
-                  }
-                  return null;
+                    );
+                  });
                 })()}
               </div>
               <div className="mt-4 space-y-2">

@@ -203,14 +203,14 @@
         ],
         "costs": {
           "title": "Koszty i Ubezpieczenie",
-          "description": "Wierzymy w przejrzyste ceny i pomagamy maksymalizować korzyści z ubezpieczenia. Większość usług profilaktycznych jest objęta planami ubezpieczenia stomatologicznego.",
+          "description": "Wierzymy w przejrzyste ceny i pomagamy maksymalnie wykorzystać świadczenia ubezpieczeniowe. Większość usług profilaktycznych jest objęta ubezpieczeniem stomatologicznym.",
           "services": [
-            { "name": "Regularna Kontrola i Czyszczenie", "cost": "Od $150", "insurance": "Zazwyczaj pokrywane w 80-100%" },
-            { "name": "Zabieg Fluoryzacji", "cost": "Od $45", "insurance": "Zazwyczaj pokrywane dla dzieci" },
-            { "name": "Uszczelnianie Bruzd", "cost": "Od $65 za ząb", "insurance": "Zazwyczaj pokrywane dla dzieci i młodzieży" },
-            { "name": "Indywidualny Ochraniacz na Zęby", "cost": "Od $250", "insurance": "Może być pokrywane w przypadku sportów kontaktowych" }
+            "Regularne Badanie i Czyszczenie - Od 150$ (Zazwyczaj pokrywane w 80-100%)",
+            "Zabieg Fluoryzacji - Od 45$ (Zazwyczaj pokrywane dla dzieci)",
+            "Lakowanie Zębów - Od 65$ za ząb (Zazwyczaj pokrywane dla dzieci i młodzieży)",
+            "Indywidualna Szyna Ochronna - Od 250$ (Może być pokrywane dla sportowców)"
           ],
-          "insuranceInfo": "Akceptujemy większość głównych planów ubezpieczeniowych i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby zweryfikować Twoje konkretne korzyści.",
+          "insuranceInfo": "Akceptujemy większość głównych ubezpieczycieli i pomożemy Ci zrozumieć zakres ubezpieczenia. Skontaktuj się z nami, aby sprawdzić swoje konkretne świadczenia.",
           "paymentOptions": "Oferujemy elastyczne opcje płatności, w tym plany ratalne i akceptujemy różne metody płatności."
         },
         "faqs": [

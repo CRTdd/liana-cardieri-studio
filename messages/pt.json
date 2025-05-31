@@ -210,26 +210,10 @@
           "title": "Custos e Seguro",
           "description": "Acreditamos em preços transparentes e em ajudar você a maximizar seus benefícios de seguro. A maioria dos serviços preventivos é coberta por planos de seguro odontológico.",
           "services": [
-            {
-              "name": "Check-up e Limpeza Regular",
-              "cost": "A partir de $150",
-              "insurance": "Geralmente coberto em 80-100%"
-            },
-            {
-              "name": "Tratamento com Flúor",
-              "cost": "A partir de $45",
-              "insurance": "Geralmente coberto para crianças"
-            },
-            {
-              "name": "Selantes Dentários",
-              "cost": "A partir de $65 por dente",
-              "insurance": "Geralmente coberto para crianças e adolescentes"
-            },
-            {
-              "name": "Protetor Bucal Personalizado",
-              "cost": "A partir de $250",
-              "insurance": "Pode ser coberto para uso em esportes"
-            }
+            "Check-up e Limpeza Regular - A partir de $150 (Geralmente coberto em 80-100%)",
+            "Tratamento com Flúor - A partir de $45 (Geralmente coberto para crianças)",
+            "Selantes Dentários - A partir de $65 por dente (Geralmente coberto para crianças e adolescentes)",
+            "Protetor Bucal Personalizado - A partir de $250 (Pode ser coberto para uso em esportes)"
           ],
           "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
           "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
@@ -312,26 +296,10 @@
           "title": "Custos e Seguro",
           "description": "Acreditamos em preços transparentes e em ajudar você a maximizar seus benefícios de seguro. A maioria dos serviços preventivos é coberta por planos de seguro odontológico.",
           "services": [
-            {
-              "name": "Check-up e Limpeza Regular",
-              "cost": "A partir de $150",
-              "insurance": "Geralmente coberto em 80-100%"
-            },
-            {
-              "name": "Tratamento com Flúor",
-              "cost": "A partir de $45",
-              "insurance": "Geralmente coberto para crianças"
-            },
-            {
-              "name": "Selantes Dentários",
-              "cost": "A partir de $65 por dente",
-              "insurance": "Geralmente coberto para crianças e adolescentes"
-            },
-            {
-              "name": "Protetor Bucal Personalizado",
-              "cost": "A partir de $250",
-              "insurance": "Pode ser coberto para uso em esportes"
-            }
+            "Check-up e Limpeza Regular - A partir de $150 (Geralmente coberto em 80-100%)",
+            "Tratamento com Flúor - A partir de $45 (Geralmente coberto para crianças)",
+            "Selantes Dentários - A partir de $65 por dente (Geralmente coberto para crianças e adolescentes)",
+            "Protetor Bucal Personalizado - A partir de $250 (Pode ser coberto para uso em esportes)"
           ],
           "insuranceInfo": "Aceitamos a maioria dos principais planos de seguro e ajudaremos você a entender sua cobertura. Entre em contato para verificar seus benefícios específicos.",
           "paymentOptions": "Oferecemos opções de pagamento flexíveis, incluindo planos de pagamento e aceitamos vários métodos de pagamento."
